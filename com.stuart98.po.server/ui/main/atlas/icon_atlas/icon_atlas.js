@@ -150,7 +150,7 @@ $(document).ready(function () {
 			'l_hover_laser',
 			'l_hover_ship',
 			'l_hover_tank_adv',
-			'l_land_barrier',
+			'land_barrier',
 			'l_necromancer',
 			'l_scout_bot',
 			'l_scout_bot_radar_mode',
@@ -170,7 +170,7 @@ $(document).ready(function () {
 
         self.sendIconList = function () {
             var list = model.strategicIcons();
-            engine.call('handle_icon_list', list, 42);
+            engine.call('handle_icon_list', list, 52);
         }
     }
     model = new IconAtlasViewModel();
