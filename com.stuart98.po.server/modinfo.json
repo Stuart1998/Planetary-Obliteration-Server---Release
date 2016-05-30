@@ -10,6 +10,9 @@
   "companions": [
     "bluntdistortionproductiondanger"
   ],
+  "dependencies": [
+    "bluntdistortionproductiondanger"
+  ],
   "description": "A complete rework of PA from the top down focussed on creating a more fluid experience with a TA derived feel. REQUIRES PA:TITANS!",
   "display_name": "uptown affliction battery flush",
   "enabled": true,
