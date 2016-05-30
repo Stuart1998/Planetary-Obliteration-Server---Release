@@ -1,0 +1,83 @@
+{
+  "TEMP_texelinfo": 9.4493,
+  "area_build_separation": 8,
+  "atrophy_cool_down": 30,
+  "atrophy_rate": 20,
+  "base_spec": "/pa/units/vanilla/land/base_structure/base_structure.json",
+  "build_metal_cost": 750,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "description": "Long-Range Anti-Air Tower: Long range, high damage missiles. No AoE.",
+  "display_name": "Gadfly",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 0.3,
+      "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/air_defense_fire"
+    }
+  },
+  "guard_layer": "WL_Air",
+  "max_health": 800,
+  "mesh_bounds": [
+    7,
+    7,
+    10
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+      "filename": "/pa/units/legion/land/l_air_defense_medium/l_air_defense_medium.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/decals/skirt_air_defense_missile_adv.json"
+    },
+    {
+      "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+      "filename": "/pa/units/legion/land/l_air_defense_medium/l_air_defense_medium.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "nearby_target_tick_update_interval": 10,
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 120,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 16
+  },
+  "si_name": "air_defense",
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": [
+        "socket_rightMuzzle",
+        "socket_leftMuzzle"
+      ],
+      "spec_id": "/pa/units/legion/land/l_air_defense_medium/l_air_defense_medium_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Land",
+    "UNITTYPE_AirDefense",
+    "UNITTYPE_Defense",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Custom1"
+  ]
+}

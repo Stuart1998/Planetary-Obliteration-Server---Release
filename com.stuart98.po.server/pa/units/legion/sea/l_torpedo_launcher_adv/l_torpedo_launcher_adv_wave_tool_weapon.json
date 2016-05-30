@@ -1,0 +1,24 @@
+{
+  "ammo_capacity": 1,
+  "ammo_demand": 1,
+  "ammo_id": "/pa/units/legion/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv_wave_ammo.json",
+  "ammo_per_shot": 0.33,
+  "ammo_source": "time",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": true,
+  "fire_arc_pitch": 60,
+  "idle_aim_delay": 1,
+  "max_range": 300,
+  "min_firing_velocity": 70,
+  "pitch_range": 90,
+  "pitch_rate": 60,
+  "rate_of_fire": 6,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_WaterSurface"
+  ],
+  "yaw_range": 30,
+  "yaw_rate": 180
+}

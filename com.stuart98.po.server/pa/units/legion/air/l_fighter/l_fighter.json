@@ -1,0 +1,121 @@
+{
+  "TEMP_texelinfo": 6.1803,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_fighter_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/fighter"
+    }
+  },
+  "base_spec": "/pa/units/vanilla/air/base_flyer/base_flyer.json",
+  "build_metal_cost": 240,
+  "description": "Fast Air Interceptor. Attacks Air.",
+  "display_name": "Scythe",
+  "events": {
+    "fired": {
+      "audio_cue": "/SE/Weapons/air/fighter_fire"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "thrust_right",
+      "filename": "/pa/units/legion/air/l_fighter/fighter_lines_thrust.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust_left",
+      "filename": "/pa/units/legion/air/l_fighter/fighter_lines_thrust.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust_right",
+      "filename": "/pa/units/legion/air/l_fighter/fighter_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust_left",
+      "filename": "/pa/units/legion/air/l_fighter/fighter_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust_left",
+      "filename": "/pa/units/legion/air/l_fighter/fighter_lines.pfx",
+      "offset": [
+        1.828,
+        -2.175,
+        -1.316
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust_right",
+      "filename": "/pa/units/legion/air/l_fighter/fighter_lines.pfx",
+      "offset": [
+        -1.828,
+        -2.175,
+        -1.31
+      ],
+      "type": "moving_forward"
+    }
+  ],
+  "guard_layer": "WL_Air",
+  "max_health": 210,
+  "mesh_bounds": [
+    9,
+    6.5,
+    3.1
+  ],
+  "model": {
+    "arrows": 5,
+    "filename": "/pa/units/legion/air/l_fighter/l_fighter.papa"
+  },
+  "navigation": {
+    "acceleration": 40,
+    "bank_factor": 5,
+    "brake": 40,
+    "move_speed": 85,
+    "turn_speed": 300
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 15
+  },
+  "si_name": "fighter",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": [
+        "socket_muzzleLeft",
+        "socket_muzzleRight"
+      ],
+      "projectiles_per_fire": 2,
+      "spec_id": "/pa/units/legion/air/l_fighter/l_fighter_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Fighter",
+    "UNITTYPE_Air",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
+}

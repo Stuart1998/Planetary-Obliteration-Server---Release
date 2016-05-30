@@ -1,0 +1,23 @@
+{
+  "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
+  "damage": 100,
+  "flight_type": "Ballistic",
+  "full_damage_splash_radius": 2,
+  "fx_trail": {
+    "filename": "/pa/units/legion/sea/l_destroyer/t1_shell_proj_trail.pfx",
+    "offset": [
+      0.0,
+      0.7,
+      0.0
+    ]
+  },
+  "initial_velocity": 200,
+  "lifetime": 10,
+  "max_velocity": 200,
+  "model": {
+    "filename": "/pa/units/air/shell/shell.papa"
+  },
+  "splash_damage": 67,
+  "splash_damages_allies": true,
+  "splash_radius": 8
+}

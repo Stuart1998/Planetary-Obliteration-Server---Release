@@ -1,0 +1,160 @@
+{
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        -0.3,
+        6.3600006
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/Sub_Commander_move_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/sub_commander"
+    },
+    "sing_selection_response": {
+      "cue": "/SE/UI/plus/sing"
+    }
+  },
+  "base_spec": "/pa/units/vanilla/land/base_bot/base_bot.json",
+  "build_metal_cost": 400,
+  "description": "Flame Bot- Fast, very heavy damage but light armor.",
+  "display_name": "Pyro",
+  "events": {
+    "fired": {
+      "audio_cue": "/SE/Weapons/veh/tank_flame",
+      "effect_spec": "/pa/units/legion/land/l_flame_bot/fired_flame.pfx socket_rightMuzzle"
+    }
+  },
+  "headlights": [
+    {
+      "bone": "bone_spine",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "far_distance": 30.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 6.0,
+      "near_distance": 3.0,
+      "near_height": 5.0,
+      "near_width": 5.0,
+      "offset": [
+        0,
+        -1.2894,
+        0.89280003
+      ],
+      "orientation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "shadow_resolution": 128
+    }
+  ],
+  "lamps": [
+    {
+      "bone": "bone_spine",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 5.0,
+      "offset": [
+        0,
+        -1.8000001,
+        2.5776
+      ],
+      "radius": 2.0
+    },
+    {
+      "bone": "bone_leftShoulder",
+      "color": [
+        0.4,
+        1.0,
+        0.01
+      ],
+      "intensity": 2.0,
+      "offset": [
+        0.24000001,
+        2.0760002,
+        -0.66
+      ],
+      "radius": 4.0
+    }
+  ],
+  "max_health": 500,
+  "mesh_bounds": [
+    6.3,
+    5.52,
+    7.8
+  ],
+  "model": {
+    "animations": {
+      "aim_down": "/pa/units/legion/land/l_flame_bot/l_flame_bot_anim_aimDown.papa",
+      "aim_up": "/pa/units/legion/land/l_flame_bot/l_flame_bot_anim_aimUp.papa",
+      "idle": "/pa/units/legion/land/l_flame_bot/l_flame_bot_anim_idle01.papa",
+      "walk": "/pa/units/legion/land/l_flame_bot/l_flame_bot_anim_walk01.papa",
+      "walk_stop": "/pa/units/legion/land/l_flame_bot/l_flame_bot_anim_walkStop.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/commander_raptor_anim_tree.json",
+    "filename": "/pa/units/legion/land/l_flame_bot/l_flame_bot.papa",
+    "walk_speed": 4.93
+  },
+  "navigation": {
+    "acceleration": 150,
+    "brake": 150,
+    "move_speed": 15,
+    "turn_speed": 240
+  },
+  "physics": {
+    "radius": 2
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 50,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 10
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "spec_id": "/pa/units/legion/land/l_flame_bot/l_flame_bot_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Heavy",
+    "UNITTYPE_Custom1"
+  ]
+}

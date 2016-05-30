@@ -1,0 +1,109 @@
+{
+  "TEMP_texelinfo": 9.31488,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        3.1
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 750,
+  "description": "Flak Tank- Damage over a very wide area. Only attacks air targets.",
+  "display_name": "Storm",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/veh/tank_T2_sheller",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle04"
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "max_health": 900,
+  "mesh_bounds": [
+    7,
+    7.5,
+    3.8
+  ],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/tank_flak_anim_tree.json",
+    "arrows": 5,
+    "filename": "/pa/units/land/tank_flak/tank_flak.papa"
+  },
+  "navigation": {
+    "acceleration": 100,
+    "brake": 100,
+    "group_preference": "back",
+    "move_speed": 10,
+    "turn_speed": 60,
+    "type": "land-small"
+  },
+  "nearby_target_tick_update_interval": 15,
+  "physics": {
+    "radius": 6
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "scrolling_uv": {
+    "scroll_rate": -3.0,
+    "uv_split": 0.899
+  },
+  "selection_icon": {
+    "diameter": 14.0
+  },
+  "tools": [
+    {
+      "aim_bone": "socket_aim",
+      "muzzle_bone": [
+        "socket_muzzle01"
+      ],
+      "spec_id": "/pa/units/vanilla/land/tank_flak/tank_flak_tool_weapon.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_AirDefense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild"
+  ]
+}

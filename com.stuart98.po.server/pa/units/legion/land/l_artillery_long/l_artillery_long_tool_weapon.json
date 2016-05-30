@@ -1,0 +1,24 @@
+{
+  "ammo_capacity": 375000,
+  "ammo_demand": 25000,
+  "ammo_id": "/pa/units/legion/land/l_artillery_long/l_artillery_long_ammo.json",
+  "ammo_per_shot": 375000,
+  "ammo_source": "energy",
+  "arc_type": "Both",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "max_firing_velocity": 2000,
+  "max_range": 550,
+  "min_firing_velocity": 100,
+  "pitch_range": 60,
+  "pitch_rate": 10,
+  "rate_of_fire": 0.07,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface",
+    "WL_Underwater"
+  ],
+  "yaw_range": 360,
+  "yaw_rate": 10
+}
