@@ -113,11 +113,10 @@
           "shape": "capsule"
         },
         {
-          "channel": "radar",
-          "layer": "orbital",
-          "radius": 300,
-          "shape": "sphere",
-          "uses_energy": true
+          "channel": "sight",
+          "layer": "celestial",
+          "radius": 1,
+          "shape": "sphere"
         }
       ]
     }
