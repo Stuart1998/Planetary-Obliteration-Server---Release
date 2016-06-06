@@ -17,8 +17,8 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_structure/base_structure.json",
-  "build_metal_cost": 3600,
-  "buildable_types": "Custom1 & ( Naval & Mobile & FactoryBuild )",
+  "build_metal_cost": 2000,
+  "buildable_types": "Custom1 & ( Naval & Mobile & FactoryBuild & Advanced)",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -82,7 +82,7 @@
       "type": "enabled"
     }
   ],
-  "max_health": 30000,
+  "max_health": 8000,
   "mesh_bounds": [
     70,
     48,

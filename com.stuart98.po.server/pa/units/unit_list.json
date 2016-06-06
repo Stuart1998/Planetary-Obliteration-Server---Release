@@ -138,7 +138,6 @@
     "/pa/units/vanilla/orbital/solar_array/solar_array.json",
     "/pa/units/vanilla/sea/attack_sub/attack_sub.json",
     "/pa/units/vanilla/sea/base_ship/base_ship.json",
-    "/pa/units/vanilla/sea/battleship/battleship.json",
     "/pa/units/vanilla/sea/destroyer/destroyer.json",
     "/pa/units/vanilla/sea/fabrication_ship_adv/fabrication_ship_adv.json",
     "/pa/units/vanilla/sea/frigate/frigate.json",
@@ -233,7 +232,7 @@
     "/pa/units/vanilla/orbital/titan_orbital/titan_orbital.json",
     "/pa/units/vanilla/sea/attack_sub/attack_sub.json",
     "/pa/units/vanilla/sea/base_ship/base_ship.json",
-    "/pa/units/vanilla/sea/battlecruiser/battlecruiser.json",
+    "/pa/units/vanilla/sea/battleship/battleship.json",
     "/pa/units/vanilla/sea/destroyer/destroyer.json",
     "/pa/units/vanilla/sea/drone_carrier/carrier/carrier.json",
     "/pa/units/vanilla/sea/drone_carrier/drone/drone.json",
@@ -364,6 +363,7 @@
     "/pa/units/legion/sea/l_hover_ship/l_hover_ship.json",
     "/pa/units/legion/land/l_bot_morty_adv/l_bot_morty_adv.json",
     "/pa/units/legion/land/l_flame_bot/l_flame_bot.json",
-    "/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo.json"
+    "/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo.json",
+    "/pa/units/legion/sea/l_battlecruiser/l_battlecruiser.json"
   ]
 }

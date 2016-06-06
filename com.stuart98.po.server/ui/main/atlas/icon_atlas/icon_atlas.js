@@ -126,7 +126,6 @@ $(document).ready(function () {
             'rocket_defense',
             'tank_attack',
             'tank_heavy_artillery',
-            'battlecruiser',
             'fabrication_sub',
             'sonar',
             'sonar_adv',

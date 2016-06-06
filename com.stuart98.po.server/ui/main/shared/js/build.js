@@ -131,7 +131,7 @@ var Build = (function() {
 
 				"/pa/units/vanilla/sea/fabrication_sub/fabrication_sub.json": ["seaadv", 18],
                 "/pa/units/vanilla/sea/drone_carrier/carrier/carrier.json": ["seaadv",23],
-                "/pa/units/vanilla/sea/battlecruiser/battlecruiser.json": ["seaadv", 19],
+                "/pa/units/vanilla/sea/battleship/battleship.json": ["seaadv", 19],
                 "/pa/units/vanilla/sea/missile_ship/missile_ship.json": ["seaadv", 20],
                 "/pa/units/vanilla/sea/nuclear_sub/nuclear_sub.json": ["seaadv", 21],
                 "/pa/units/vanilla/sea/frigate/frigate.json": ["seaadv", 22],
@@ -268,8 +268,8 @@ var Build = (function() {
 		"/pa/units/legion/air/l_air_bomb/l_air_bomb.json": [ "L_air", 23 ],
 
 		
-		"/pa/units/legion/sea/l_hover_ship/l_hover_ship.json": [ "L_seaadv", 18 ],
-		"/pa/units/legion/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json": [ "L_seaadv", 19 ],
+		"/pa/units/legion/sea/l_hover_ship/l_hover_ship.json": [ "L_seaadv", 19 ],
+		"/pa/units/legion/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json": [ "L_seaadv", 18 ],
 		"/pa/units/legion/sea/l_sea_tank/l_sea_tank.json": [ "L_seaadv", 20 ],
 		"/pa/units/legion/sea/l_battleship/l_battleship.json": [ "L_seaadv", 21 ],
 		"/pa/units/legion/sea/l_missile_ship/l_missile_ship.json": [ "L_seaadv", 22 ],
@@ -280,7 +280,7 @@ var Build = (function() {
 		"/pa/units/legion/sea/l_destroyer/l_destroyer.json": [ "L_sea", 20 ],
 		"/pa/units/legion/sea/l_attack_sub/l_attack_sub.json": [ "L_sea", 21 ],
 		"/pa/units/legion/sea/l_frigate/l_frigate.json": [ "L_sea", 22 ],
-		"/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo": [ "L_sea", 23 ],
+		"/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo.json": [ "L_sea", 23 ],
 
 		
 		"/pa/units/legion/orbital/l_orbital_battleship/l_orbital_battleship.json": [ "L_orbital", 13 ],

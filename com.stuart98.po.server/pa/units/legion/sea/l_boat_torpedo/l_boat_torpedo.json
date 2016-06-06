@@ -68,8 +68,8 @@
     3.8999999
   ],
   "model": {
-    "animtree": "/pa/units/sea/legion/l_boat_torpedo/l_boat_torpedo_anim_tree.json",
-    "filename": "/pa/units/sea/legion/l_boat_torpedo/l_boat_torpedo.papa"
+    "animtree": "/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo_anim_tree.json",
+    "filename": "/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo.papa"
   },
   "navigation": {
     "acceleration": 5,
@@ -108,7 +108,7 @@
     {
       "aim_bone": "pitch01",
       "muzzle_bone": "muzzle01",
-      "spec_id": "/pa/units/sea/legion/l_boat_torpedo/l_boat_torpedo_tool_weapon_bullet.json"
+      "spec_id": "/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo_tool_weapon_bullet.json"
     },
     {
       "aim_bone": "bone_root",
@@ -116,7 +116,7 @@
         "muzzle02a",
         "muzzle02b"
       ],
-      "spec_id": "/pa/units/sea/legion/l_boat_torpedo/l_boat_torpedo_tool_weapon_torpedo.json"
+      "spec_id": "/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo_tool_weapon_torpedo.json"
     }
   ],
   "unit_types": [
