@@ -271,7 +271,7 @@ var Build = (function() {
 		"/pa/units/legion/sea/l_hover_ship/l_hover_ship.json": [ "L_seaadv", 19 ],
 		"/pa/units/legion/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json": [ "L_seaadv", 18 ],
 		"/pa/units/legion/sea/l_sea_tank/l_sea_tank.json": [ "L_seaadv", 20 ],
-		"/pa/units/legion/sea/l_battleship/l_battleship.json": [ "L_seaadv", 21 ],
+		"/pa/units/legion/sea/l_battlecruiser/l_battlecruiser.json": [ "L_seaadv", 21 ],
 		"/pa/units/legion/sea/l_missile_ship/l_missile_ship.json": [ "L_seaadv", 22 ],
 		"/pa/units/legion/sea/l_fabrication_sub_combat_adv/l_fabrication_sub_combat_adv.json": [ "L_seaadv", 23 ],
 		

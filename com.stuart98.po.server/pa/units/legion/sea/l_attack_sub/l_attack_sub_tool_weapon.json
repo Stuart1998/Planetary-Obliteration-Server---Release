@@ -7,10 +7,8 @@
   "auto_attack": true,
   "base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
   "exclude_unit_types": "Hover",
-  "firing_arc_pitch": 60,
-  "firing_arc_yaw": 60,
   "max_range": 130,
-  "pitch_range": 10,
+  "pitch_range": 90,
   "pitch_rate": 180,
   "rate_of_fire": 2,
   "spawn_layers": "WL_Underwater",
@@ -20,6 +18,6 @@
     "WL_Underwater",
     "WL_Seafloor"
   ],
-  "yaw_range": 10,
+  "yaw_range": 180,
   "yaw_rate": 180
 }

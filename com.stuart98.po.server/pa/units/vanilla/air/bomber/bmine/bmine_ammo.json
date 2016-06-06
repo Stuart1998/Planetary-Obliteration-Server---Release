@@ -1,5 +1,8 @@
 {
   "ammo_type": "PBAOE",
+  "armor_damage_map": {
+    "AT_Air": 0.0
+  },
   "damage": 75,
   "damage_volume": {
     "initial_radius": 15.0

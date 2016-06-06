@@ -39,7 +39,7 @@
   },
   "spawn_layers": "WL_Air",
   "splash_damage": 0,
-  "splash_damages_allies": false,
+  "splash_damages_allies": true,
   "splash_radius": 0,
   "turn_rate": 0
 }

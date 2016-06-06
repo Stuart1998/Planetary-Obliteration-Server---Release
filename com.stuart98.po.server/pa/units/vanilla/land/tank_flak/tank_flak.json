@@ -89,7 +89,10 @@
     {
       "aim_bone": "socket_aim",
       "muzzle_bone": [
-        "socket_muzzle01"
+        "socket_muzzle01",
+        "socket_muzzle02",
+        "socket_muzzle03",
+        "socket_muzzle04"
       ],
       "spec_id": "/pa/units/vanilla/land/tank_flak/tank_flak_tool_weapon.json"
     }

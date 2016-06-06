@@ -1,4 +1,7 @@
 {
+  "armor_damage_map": {
+    "AT_Air": 0.0
+  },
   "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
   "damage": 250,
   "events": {
