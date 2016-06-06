@@ -247,8 +247,6 @@
     "/pa/units/legion/sea/l_sonar_adv/l_sonar_adv.json",
     "/pa/units/vanilla/sea/hover_ship/hover_ship.json",
     "/pa/units/vanilla/sea/naval_factory_adv/naval_factory_adv.json",
-    "/pa/units/vanilla/sea/torpedo_launcher/torpedo_launcher.json",
-    "/pa/units/vanilla/sea/torpedo_launcher_adv/torpedo_launcher_adv.json",
     "/pa/units/legion/air/l_air_factory/l_air_factory.json",
     "/pa/units/legion/air/l_air_factory_adv/l_air_factory_adv.json",
     "/pa/units/legion/air/l_air_scout_adv/l_air_scout_adv.json",
@@ -365,6 +363,7 @@
     "/pa/units/legion/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm.json",
     "/pa/units/legion/sea/l_hover_ship/l_hover_ship.json",
     "/pa/units/legion/land/l_bot_morty_adv/l_bot_morty_adv.json",
-    "/pa/units/legion/land/l_flame_bot/l_flame_bot.json"
+    "/pa/units/legion/land/l_flame_bot/l_flame_bot.json",
+    "/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo.json"
   ]
 }

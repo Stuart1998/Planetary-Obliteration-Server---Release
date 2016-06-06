@@ -280,6 +280,7 @@ var Build = (function() {
 		"/pa/units/legion/sea/l_destroyer/l_destroyer.json": [ "L_sea", 20 ],
 		"/pa/units/legion/sea/l_attack_sub/l_attack_sub.json": [ "L_sea", 21 ],
 		"/pa/units/legion/sea/l_frigate/l_frigate.json": [ "L_sea", 22 ],
+		"/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo": [ "L_sea", 23 ],
 
 		
 		"/pa/units/legion/orbital/l_orbital_battleship/l_orbital_battleship.json": [ "L_orbital", 13 ],

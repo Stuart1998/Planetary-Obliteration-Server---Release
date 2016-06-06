@@ -39,6 +39,18 @@
     "energy": 100000,
     "metal": 100000
   },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 5000,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
   "si_name": "avatar",
   "storage": {
     "energy": 100000,

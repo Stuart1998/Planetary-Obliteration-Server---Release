@@ -20,9 +20,9 @@
   "impact_decals": [
     "/pa/effects/specs/scorch_c_01.json"
   ],
-  "initial_velocity": 10.0,
+  "initial_velocity": 5.0,
   "lifetime": 5,
-  "max_velocity": 10,
+  "max_velocity": 5,
   "model": {
     "filename": "/pa/units/air/bomb_guided/bomb_guided.papa"
   },
