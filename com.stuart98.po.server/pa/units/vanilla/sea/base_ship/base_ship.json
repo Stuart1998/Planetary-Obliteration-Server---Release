@@ -84,11 +84,5 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_NoBuild"
   ],
-  "wreckage": {
-    "collision": [
-      "none"
-    ],
-    "remove_ground_cost_stamp": true
-  },
   "wreckage_health_frac": 1.0
 }

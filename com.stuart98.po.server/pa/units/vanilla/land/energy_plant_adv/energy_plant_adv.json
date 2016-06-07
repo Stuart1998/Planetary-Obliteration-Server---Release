@@ -277,7 +277,7 @@
     30
   ],
   "production": {
-    "energy": 12000
+    "energy": 10000
   },
   "recon": {
     "observer": {
