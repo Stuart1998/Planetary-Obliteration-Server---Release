@@ -11,7 +11,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/sea/base_ship/base_ship.json",
-  "build_metal_cost": 200,
+  "build_metal_cost": 220,
   "description": "Corvette - Fast. Attacks Naval, Land and Subs.",
   "display_name": "Catfish",
   "events": {
@@ -28,7 +28,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 400,
+  "max_health": 300,
   "mesh_bounds": [
     4.401,
     12.124,

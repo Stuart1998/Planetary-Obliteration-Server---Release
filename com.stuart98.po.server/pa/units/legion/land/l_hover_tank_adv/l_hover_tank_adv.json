@@ -243,6 +243,7 @@
   },
   "unit_types": [
     "UNITTYPE_Tank",
+    "UNITTYPE_Naval",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Artillery",

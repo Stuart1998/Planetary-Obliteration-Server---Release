@@ -16,8 +16,8 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_structure/base_structure.json",
-  "build_metal_cost": 4000,
-  "buildable_types": "(Bot | Tank) & Mobile & FactoryBuild & Basic",
+  "build_metal_cost": 2500,
+  "buildable_types": "( (Land & Mobile & (Tank | Bot) & Basic | (Tank | Bot) & Fabber & Advanced & Mobile) & FactoryBuild ) - Custom1",
   "command_caps": [
     "ORDER_FactoryBuild",
     "ORDER_Attack"
@@ -150,9 +150,9 @@
   "unit_types": [
     "UNITTYPE_Structure",
     "UNITTYPE_Factory",
-    "UNITTYPE_Advanced",
+    "UNITTYPE_Basic",
     "UNITTYPE_Artillery",
-    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_FabBuild",
     "UNITTYPE_Important"
   ],
   "wait_to_rolloff_time": 3.0

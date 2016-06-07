@@ -16,6 +16,6 @@
   "target_priorities": [
     "Fighter"
   ],
-  "yaw_range": 50,
+  "yaw_range": 10,
   "yaw_rate": 3600
 }

@@ -134,7 +134,6 @@
     "acceleration": 40,
     "aggressive_distance": 90,
     "brake": -1,
-    "group_preference": "front",
     "move_speed": 14,
     "turn_speed": 720,
     "type": "land-small"

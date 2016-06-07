@@ -116,6 +116,7 @@
   "selection_icon": {
     "diameter": 13.0
   },
+  "si_name": "hover_ship",
   "tools": [
     {
       "aim_bone": "turret00",

@@ -1,6 +1,6 @@
 {
-  "author": "disbeliever affair",
-  "build": "89755",
+  "author": "Stuart98",
+  "build": "94684",
   "category": [
     "units",
     "balance",
@@ -9,16 +9,16 @@
   "context": "server",
   "date": "2015/8/21",
   "companions": [
-    "bluntdistortionproductiondanger"
+    "com.stuart98.po.client.dev"
   ],
   "dependencies": [
-    "bluntdistortionproductiondanger"
+    "com.stuart98.po.client.dev"
   ],
-  "description": "Legion + New Units + New Balance + New Experience",
-  "display_name": "uptown affliction battery flush",
+  "description": "Legion + New Units + New Balance = New & Better Experience",
+  "display_name": "Planetary Obliteration: Development Version",
   "enabled": true,
-  "identifier": "uptownafflictionbatteryflush",
+  "identifier": "com.stuart98.po.server.dev",
   "priority": 95,
   "signature": "(not yet implemented)",
-  "version": "0.DEV6"
+  "version": "0.DEV.releaseOne"
 }

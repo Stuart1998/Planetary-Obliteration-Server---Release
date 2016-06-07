@@ -12,7 +12,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/sea/base_ship/base_ship.json",
-  "build_metal_cost": 3250,
+  "build_metal_cost": 4500,
   "description": "Hover Ship - Equipped with Heavy Cannons. Can Travel on any Surface. Attacks Land and Naval.",
   "display_name": "Jaeger",
   "events": {
@@ -22,12 +22,12 @@
       "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx"
     },
     "fired0": {
-      "audio_cue": "/SE/Weapons/sea/hover_fire",
+      "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
       "effect_scale": 5.0,
       "effect_spec": "/pa/effects/specs/big_gun_smoke.pfx socket_muzzle_main"
     },
     "fired1": {
-      "audio_cue": "/SE/Weapons/sea/hover_fire",
+      "audio_cue": "/SE/Weapons/sea/hover_small_fire",
       "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle_side_a_001 /pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle_side_b_001 /pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle_side_c_001"
     },
     "fired2": {
