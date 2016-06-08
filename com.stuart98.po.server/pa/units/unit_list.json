@@ -186,7 +186,7 @@
     "/pa/units/vanilla/land/bot_factory_adv/bot_factory_adv.json",
     "/pa/units/vanilla/land/bot_mortar/bot_mortar.json",
     "/pa/units/legion/land/l_bot_nanoswarm/l_bot_nanoswarm.json",
-    "/pa/units/vanilla/land/bot_orbital/bot_orbital.json",
+    "/pa/units/legion/land/l_bot_orbital/l_bot_orbital.json",
     "/pa/units/vanilla/land/bot_sniper/bot_sniper.json",
     "/pa/units/vanilla/land/bot_support_commander/bot_support_commander.json",
     "/pa/units/vanilla/land/bot_tactical_missile/bot_tactical_missile.json",

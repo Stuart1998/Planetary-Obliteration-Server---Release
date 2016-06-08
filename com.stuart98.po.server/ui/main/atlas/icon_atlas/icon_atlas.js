@@ -120,7 +120,7 @@ $(document).ready(function () {
             'bot_aa_adv',
             'bot_arty',
             'bot_mortar',
-            'bot_orbital',
+            'l_bot_orbital',
             'bot_ubercannon',
             'laser_defense_sniper',
             'rocket_defense',

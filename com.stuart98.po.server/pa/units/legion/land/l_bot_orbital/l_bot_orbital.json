@@ -45,11 +45,11 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/vanilla/land/bot_orbital/ao32_anim_idle.papa",
-      "walk": "/pa/units/vanilla/land/bot_orbital/ao32_anim_walk.papa"
+      "idle": "/pa/units/legion/land/l_bot_orbital/ao32_anim_idle.papa",
+      "walk": "/pa/units/legion/land/l_bot_orbital/ao32_anim_walk.papa"
     },
-    "animtree": "/pa/units/vanilla/land/bot_orbital/ao32_at.json",
-    "filename": "/pa/units/vanilla/land/bot_orbital/ao32.papa",
+    "animtree": "/pa/units/legion/land/l_bot_orbital/ao32_at.json",
+    "filename": "/pa/units/legion/land/l_bot_orbital/ao32.papa",
     "walk_speed": 3.5
   },
   "navigation": {
@@ -88,7 +88,7 @@
     {
       "aim_bone": "turret00",
       "muzzle_bone": "muzzle00",
-      "spec_id": "/pa/units/vanilla/land/bot_orbital/bot_orbital_tool_weapon.json"
+      "spec_id": "/pa/units/legion/land/l_bot_orbital/l_bot_orbital_tool_weapon.json"
     }
   ],
   "transportable": {
@@ -101,6 +101,7 @@
     "UNITTYPE_OrbitalDefense",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild"
+    "UNITTYPE_FactoryBuild",
+	"UNITTYPE_Custom1"
   ]
 }

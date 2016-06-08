@@ -107,7 +107,6 @@ var Build = (function() {
                 "/pa/units/vanilla/land/assault_bot/assault_bot.json": ["bot", 19],
 		"/pa/units/vanilla/land/bot_arty/bot_arty.json": ["bot", 13],
 		"/pa/units/vanilla/land/bot_mortar/bot_mortar.json": ["bot", 20],
-		"/pa/units/vanilla/land/bot_orbital/bot_orbital.json": ["bot", 14],
                 "/pa/units/vanilla/land/bot_grenadier/bot_grenadier.json": ["bot", 21],
                 "/pa/units/vanilla/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv.json": ["bot", 22],
                 "/pa/units/vanilla/land/bot_bomb/bot_bomb.json": ["bot", 23],
@@ -245,6 +244,7 @@ var Build = (function() {
 		"/pa/units/legion/land/l_necromancer/l_necromancer.json": [ "L_botadv", 23 ],
 		
 		"/pa/units/legion/land/l_bot_artillery/l_bot_artillery.json": [ "L_bot", 12 ],
+		"/pa/units/legion/land/l_bot_orbital/l_bot_orbital.json": ["L_bot", 13],
 		"/pa/units/legion/land/l_fabrication_bot/l_fabrication_bot.json": [ "L_bot", 18 ],
 		"/pa/units/legion/land/l_assault_bot/l_assault_bot.json": [ "L_bot", 19 ],
 		"/pa/units/legion/land/l_sniper_bot/l_sniper_bot.json": [ "L_bot", 20 ],
