@@ -1,8 +1,8 @@
 {
-  "ammo_capacity": 3,
+  "ammo_capacity": 3.33,
   "ammo_demand": 1,
   "ammo_id": "/pa/units/legion/land/l_air_defense_medium/l_air_defense_medium_ammo.json",
-  "ammo_per_shot": 3,
+  "ammo_per_shot": 3.33,
   "ammo_source": "time",
   "arc_type": "High",
   "auto_attack": true,
@@ -13,7 +13,7 @@
   "max_range": 180,
   "pitch_range": 180,
   "pitch_rate": 3600,
-  "rate_of_fire": 0.34,
+  "rate_of_fire": 0.3,
   "spread_fire": true,
   "target_layers": [
     "WL_Air",

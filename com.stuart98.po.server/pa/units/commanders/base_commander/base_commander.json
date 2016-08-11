@@ -100,7 +100,7 @@
     "sync_radius_to_extents": true
   },
   "production": {
-    "energy": 1000,
+    "energy": 1500,
     "metal": 30
   },
   "recon": {

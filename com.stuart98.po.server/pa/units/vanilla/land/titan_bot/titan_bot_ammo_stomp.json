@@ -17,5 +17,5 @@
   "full_damage_splash_radius": 10,
   "sim_fire_effect": "/pa/units/land/titan_bot/titan_bot_stomp_ent.json",
   "splash_damages_allies": false,
-  "splash_radius": 50
+  "splash_radius": 100
 }

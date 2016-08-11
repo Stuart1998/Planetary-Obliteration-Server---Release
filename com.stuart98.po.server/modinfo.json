@@ -4,13 +4,13 @@
   "category": [
     "units",
     "balance",
-	"titans"
+    "titans"
   ],
-  "context": "server",
-  "date": "2015/8/21",
   "companions": [
     "com.stuart98.po.client.dev"
   ],
+  "context": "server",
+  "date": "2015/8/21",
   "dependencies": [
     "com.stuart98.po.client.dev"
   ],
@@ -20,5 +20,5 @@
   "identifier": "com.stuart98.po.server.dev",
   "priority": 95,
   "signature": "(not yet implemented)",
-  "version": "0.DEV.releaseThree"
+  "version": "0.DEV.releaseFour"
 }
