@@ -85,6 +85,9 @@
   },
   "si_name": "metal_extractor_adv",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "storage": {
+    "metal": 1000
+  },
   "strategic_icon_priority": 5,
   "unit_types": [
     "UNITTYPE_Structure",

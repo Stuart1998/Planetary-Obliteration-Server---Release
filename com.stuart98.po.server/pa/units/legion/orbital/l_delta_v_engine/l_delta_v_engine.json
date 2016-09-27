@@ -14,7 +14,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_structure/base_structure.json",
-  "build_metal_cost": 50000,
+  "build_metal_cost": 70000,
   "build_restrictions": "Thrustable",
   "description": "Planet Engine - Used to Smash Celestial Bodies.",
   "display_name": "Diplomat",
@@ -374,7 +374,7 @@
     "filename": "/pa/units/legion/orbital/l_delta_v_engine/l_delta_v_engine.papa"
   },
   "orbital_thruster": {
-    "power": 1
+    "power": 2
   },
   "physics": {
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"

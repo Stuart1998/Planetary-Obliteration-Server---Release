@@ -165,6 +165,7 @@ $(document).ready(function () {
 			'l_sea_mine',
 			'l_flame_bot',
 			'l_boat_torpedo',
+			'tank_orbital',
         ]);
 
         self.sendIconList = function () {

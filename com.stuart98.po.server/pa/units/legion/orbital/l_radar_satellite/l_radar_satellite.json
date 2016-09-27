@@ -15,14 +15,14 @@
     }
   },
   "base_spec": "/pa/units/vanilla/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 800,
+  "build_metal_cost": 1200,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
     "ORDER_Assist"
   ],
   "consumption": {
-    "energy": 700
+    "energy": 900
   },
   "description": "Basic Radar Satellite - Detects Enemy Units Within a Medium-Sized Area.",
   "display_name": "Sputnik",
@@ -71,7 +71,7 @@
     }
   ],
   "gravwell_velocity_multiplier": 6.0,
-  "max_health": 1000,
+  "max_health": 1100,
   "mesh_bounds": [
     20,
     20,
@@ -98,35 +98,21 @@
         {
           "channel": "radar",
           "layer": "surface_and_air",
-          "radius": 600,
+          "radius": 750,
           "shape": "capsule",
           "uses_energy": true
         },
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 300,
+          "radius": 450,
           "shape": "capsule",
           "uses_energy": true
         },
         {
           "channel": "sight",
           "layer": "orbital",
-          "radius": 600,
-          "shape": "capsule",
-          "uses_energy": true
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 300,
-          "shape": "capsule",
-          "uses_energy": true
-        },
-        {
-          "channel": "radar",
-          "layer": "underwater",
-          "radius": 600,
+          "radius": 750,
           "shape": "capsule",
           "uses_energy": true
         }

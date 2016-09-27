@@ -4,6 +4,6 @@
   "damage": 100,
   "fx_beam_spec": "/pa/units/orbital/defense_satellite/defense_satellite_ammo_ground_beam.pfx",
   "fx_collision_spec": "/pa/units/orbital/defense_satellite/defense_satellite_ammo_ground_beam_hit.pfx",
-  "splash_damage": 0,
-  "splash_radius": 0
+  "splash_damage": 100,
+  "splash_radius": 1
 }

@@ -5,8 +5,8 @@
   ],
   "base_spec": "/pa/tools/engineer_build_arm_adv/engineer_build_arm_adv.json",
   "construction_demand": {
-    "energy": 1500,
-    "metal": 45
+    "energy": 3000,
+    "metal": 30
   },
   "firing_arc_pitch": 360,
   "firing_arc_yaw": 360,
@@ -14,7 +14,8 @@
   "pitch_range": 180,
   "pitch_rate": 360,
   "reclaim_layers": [
-    "WL_AnyLayer"
+    "WL_Orbital",
+    "WL_Air"
   ],
   "reclaim_types": [
     "Wreckage",

@@ -177,7 +177,7 @@
     "circle_max_time": 4,
     "circle_min_time": 2,
     "hover_time": -1.0,
-    "move_speed": 15,
+    "move_speed": 35,
     "turn_speed": 45,
     "type": "orbital"
   },

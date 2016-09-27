@@ -77,6 +77,9 @@
   },
   "si_name": "metal_extractor",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "storage": {
+    "metal": 250
+  },
   "unit_types": [
     "UNITTYPE_Structure",
     "UNITTYPE_Basic",

@@ -15,7 +15,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 4800,
+  "build_metal_cost": 2000,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -23,7 +23,7 @@
     "ORDER_Attack"
   ],
   "consumption": {
-    "energy": 9000
+    "energy": 1500
   },
   "description": "Armored Advanced Radar Satellite - Detects Units Within a Massive Area. Attacks Orbital.",
   "display_name": "Kosmos",
@@ -69,7 +69,7 @@
     }
   ],
   "gravwell_velocity_multiplier": 6.0,
-  "max_health": 2000,
+  "max_health": 3500,
   "mesh_bounds": [
     25,
     15,
@@ -94,35 +94,21 @@
         {
           "channel": "radar",
           "layer": "surface_and_air",
-          "radius": 1000,
+          "radius": 600,
           "shape": "capsule",
           "uses_energy": true
         },
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 600,
+          "radius": 350,
           "shape": "capsule",
           "uses_energy": true
         },
         {
           "channel": "sight",
           "layer": "orbital",
-          "radius": 1200,
-          "shape": "capsule",
-          "uses_energy": true
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 600,
-          "shape": "capsule",
-          "uses_energy": true
-        },
-        {
-          "channel": "radar",
-          "layer": "underwater",
-          "radius": 1000,
+          "radius": 800,
           "shape": "capsule",
           "uses_energy": true
         }

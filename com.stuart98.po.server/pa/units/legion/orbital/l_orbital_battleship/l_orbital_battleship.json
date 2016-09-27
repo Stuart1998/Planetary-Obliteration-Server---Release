@@ -10,7 +10,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 14000,
+  "build_metal_cost": 6000,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -68,7 +68,7 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_AnySurface",
-  "max_health": 5500,
+  "max_health": 6500,
   "mesh_bounds": [
     45,
     77,
@@ -84,7 +84,7 @@
     "brake": 80,
     "circle_max_time": 4,
     "circle_min_time": 2,
-    "move_speed": 20,
+    "move_speed": 25,
     "turn_accel": 20,
     "turn_speed": 30
   },
@@ -119,7 +119,7 @@
       "aim_bone": "turret001",
       "fire_event": "fired1",
       "muzzle_bone": "socket_muzzle001",
-      "projectiles_per_fire": 0,
+      "projectiles_per_fire": 1,
       "record_index": 0,
       "spec_id": "/pa/units/legion/orbital/l_orbital_battleship/l_orbital_battleship_tool_weapon.json"
     },

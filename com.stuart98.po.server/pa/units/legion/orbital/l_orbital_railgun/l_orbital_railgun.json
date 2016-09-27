@@ -83,9 +83,9 @@
     "brake": 10,
     "circle_max_time": 4,
     "circle_min_time": 2,
-    "move_speed": 30,
+    "move_speed": 40,
     "turn_in_place": true,
-    "turn_speed": 30
+    "turn_speed": 20
   },
   "physics": {
     "radius": 10

@@ -10,7 +10,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 2000,
+  "build_metal_cost": 1500,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -35,7 +35,7 @@
   },
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
-  "max_health": 350,
+  "max_health": 450,
   "mesh_bounds": [
     17,
     17,
@@ -56,7 +56,7 @@
     "hover_time": -1.0,
     "move_speed": 30,
     "turn_in_place": true,
-    "turn_speed": 30,
+    "turn_speed": 50,
     "type": "orbital"
   },
   "physics": {

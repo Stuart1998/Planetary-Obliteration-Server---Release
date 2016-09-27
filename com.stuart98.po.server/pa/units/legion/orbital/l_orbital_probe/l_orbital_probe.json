@@ -18,7 +18,7 @@
     "ORDER_Assist"
   ],
   "description": "Orbital Radar Probe - Fast. Small Vision Radius.",
-  "display_name": "Wraith",
+  "display_name": "Intrepid",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
@@ -133,13 +133,6 @@
           "channel": "sight",
           "layer": "orbital",
           "radius": 600,
-          "shape": "capsule",
-          "uses_energy": true
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 200,
           "shape": "capsule",
           "uses_energy": true
         }

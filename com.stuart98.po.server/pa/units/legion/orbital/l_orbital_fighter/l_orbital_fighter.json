@@ -48,7 +48,7 @@
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
   "guard_radius": 60,
-  "max_health": 100,
+  "max_health": 150,
   "mesh_bounds": [
     12,
     11,
@@ -62,14 +62,14 @@
     "filename": "/pa/units/legion/orbital/l_orbital_fighter/l_orbital_fighter.papa"
   },
   "navigation": {
-    "acceleration": 65,
+    "acceleration": 60,
     "aggressive_behavior": "point",
     "bank_factor": 1,
     "brake": 20,
     "circle_max_time": 4,
     "circle_min_time": 2,
-    "move_speed": 65,
-    "turn_speed": 200
+    "move_speed": 80,
+    "turn_speed": 100
   },
   "physics": {
     "radius": 5

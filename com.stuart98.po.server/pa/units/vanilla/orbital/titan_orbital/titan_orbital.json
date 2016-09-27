@@ -251,7 +251,7 @@
         "socket_muzzle03",
         "socket_muzzle04"
       ],
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "spec_id": "/pa/units/vanilla/orbital/titan_orbital/titan_orbital_tool_weapon_orbital.json"
     },
     {
@@ -263,7 +263,7 @@
         "socket_muzzle07",
         "socket_muzzle08"
       ],
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "spec_id": "/pa/units/vanilla/orbital/titan_orbital/titan_orbital_tool_weapon_orbital.json"
     }
   ],
