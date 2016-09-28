@@ -30,7 +30,7 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "Orbital Battleship - Rapid-Fire. Very durable. Heavy damage. Attacks everything.",
+  "description": "Orbital Battlecruiser - Rapid-Fire. Very durable. Heavy damage. Attacks everything.",
   "display_name": "Omega",
   "events": {
     "build_complete": {
@@ -160,7 +160,7 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
-  "max_health": 4000,
+  "max_health": 3500,
   "mesh_bounds": [
     25,
     57,
