@@ -34,8 +34,7 @@
     "ORDER_Patrol",
     "ORDER_Attack",
     "ORDER_Assist",
-    "ORDER_Use",
-    "ORDER_FireSecondaryWeapon"
+    "ORDER_Use"
   ],
   "description": "Heavy Siege Walker - Long Range. Volley-fires heavy shells.",
   "display_name": "Gladiator",

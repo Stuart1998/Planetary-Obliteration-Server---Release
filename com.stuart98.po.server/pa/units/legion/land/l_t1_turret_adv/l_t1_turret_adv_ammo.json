@@ -1,4 +1,7 @@
 {
+  "armor_damage_map": {
+    "AT_Air": 0.2
+  },
   "base_spec": "/pa/ammo/base_beam/base_beam.json",
   "collision_check": "target",
   "collision_response": "impact",
