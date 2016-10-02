@@ -108,9 +108,14 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 0,
-          "shape": "capsule",
-          "uses_energy": true
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 150,
+          "shape": "capsule"
         },
         {
           "channel": "radar",

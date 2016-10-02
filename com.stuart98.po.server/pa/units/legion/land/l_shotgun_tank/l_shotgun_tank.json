@@ -53,10 +53,10 @@
     "filename": "/pa/units/legion/land/l_shotgun_tank/l_shotgun_tank.papa"
   },
   "navigation": {
-    "acceleration": 75,
+    "acceleration": 30,
     "brake": -1,
     "group_preference": "front",
-    "move_speed": 8,
+    "move_speed": 12,
     "turn_speed": 180
   },
   "physics": {

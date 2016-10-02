@@ -14,11 +14,11 @@
   "dependencies": [
     "com.stuart98.po.client.dev"
   ],
-  "description": "Legion + New Units + New Balance = New & Better Experience",
+  "description": "Legion + New Units + New Balance = New & Better Expeience AI DOES NOT WORK",
   "display_name": "Planetary Obliteration: Development Version",
   "enabled": true,
   "identifier": "com.stuart98.po.server.dev",
   "priority": 95,
   "signature": "(not yet implemented)",
-  "version": "0.DEV.releaseEight"
+  "version": "0.DEV.releaseNine"
 }

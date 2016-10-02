@@ -8,6 +8,9 @@
   "model": {
     "filename": "/pa/units/sea/sea_mine/sea_mine.papa"
   },
+  "physics": {
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+  },
   "spawn_unit_on_death": "/pa/units/vanilla/air/bomber/bmine/bmine.json",
   "splash_damage": 0,
   "splash_radius": 0

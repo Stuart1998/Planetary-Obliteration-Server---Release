@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_structure/base_structure.json",
-  "build_metal_cost": 2500,
+  "build_metal_cost": 3500,
   "buildable_types": "( (Land & Mobile & (Tank | Bot) & Basic | (Tank | Bot) & Fabber & Advanced & Mobile) & FactoryBuild ) - Custom1",
   "command_caps": [
     "ORDER_FactoryBuild",
@@ -110,7 +110,7 @@
       "type": "energy"
     }
   ],
-  "max_health": 6000,
+  "max_health": 4000,
   "mesh_bounds": [
     50,
     50,
