@@ -143,6 +143,7 @@
     "UNITTYPE_Defense",
     "UNITTYPE_OrbitalDefense",
     "UNITTYPE_FabBuild",
+    "UNITTYPE_CmdBuild",
     "UNITTYPE_FabAdvBuild"
   ]
 }

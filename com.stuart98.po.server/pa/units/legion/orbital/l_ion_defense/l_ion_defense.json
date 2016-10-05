@@ -99,6 +99,7 @@
     "UNITTYPE_Basic",
     "UNITTYPE_Defense",
     "UNITTYPE_OrbitalDefense",
+    "UNITTYPE_CmdBuild",
     "UNITTYPE_FabBuild",
     "UNITTYPE_FabAdvBuild",
     "UNITTYPE_Custom1"

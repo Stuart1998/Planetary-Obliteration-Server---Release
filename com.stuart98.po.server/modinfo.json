@@ -1,5 +1,5 @@
 {
-  "author": "Stuart98",
+  "author": "Stuart98, (See credits.txt)",
   "build": "94684",
   "category": [
     "units",
@@ -10,15 +10,15 @@
     "com.stuart98.po.client.dev"
   ],
   "context": "server",
-  "date": "2016/9/01",
+  "date": "2016/10/05",
   "dependencies": [
     "com.stuart98.po.client.dev"
   ],
-  "description": "Legion + New Units + New Balance = New & Better Expeience AI DOES NOT WORK",
-  "display_name": "Planetary Obliteration: Development Version",
+  "description": "Legion + New Units + New Balance = New & Better Expeience. Work in progress, please report bugs and other feedback to the forum thread.",
+  "display_name": "Planetary Obliteration: Development Version (WIP)",
   "enabled": true,
   "identifier": "com.stuart98.po.server.dev",
   "priority": 95,
   "signature": "(not yet implemented)",
-  "version": "0.DEV.releaseNine"
+  "version": "0.DEV.releaseTen"
 }

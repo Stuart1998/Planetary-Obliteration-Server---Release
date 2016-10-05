@@ -1,0 +1,197 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
+            "value0": 1
+          }
+        ]
+      ],
+      "instance_count": -1,
+      "name": "Orbital Radar",
+      "priority": 100,
+      "task_type": "OrbitalRecon",
+      "to_build": "Orbital_Radar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
+            "value0": 1
+          },
+          {
+            "boolean": false,
+            "test_type": "ThisPlanetNeedsReconAssistance"
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetNeedsReconAssistance"
+          }
+        ]
+      ],
+      "instance_count": -1,
+      "name": "Orbital Radar Transfer To Planet",
+      "priority": 101,
+      "task_type": "TransferReconToPlanet",
+      "to_build": "Orbital_Radar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyOrbitalPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Fighter",
+            "value0": 1
+          },
+          {
+            "string0": "WL_Orbital",
+            "test_type": "CanAttackWithPoolUnits"
+          }
+        ]
+      ],
+      "instance_count": -1,
+      "name": "Orbital Fighter Attack Platoon",
+      "priority": 100,
+      "task_type": "OrbitalFighterAttack",
+      "to_build": "Orbital_Fighter_Attack"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyOrbitalPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Titan",
+            "value0": 1
+          },
+          {
+            "string0": "WL_Orbital",
+            "test_type": "CanAttackWithPoolUnits"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Titan",
+            "value0": 1
+          },
+          {
+            "string0": "WL_Orbital",
+            "test_type": "CanAttackWithPoolUnits"
+          }
+        ]
+      ],
+      "instance_count": -1,
+      "name": "Orbital Titan Attack",
+      "priority": 101,
+      "task_type": "OrbitalLaserAttack",
+      "to_build": "Orbital_Titan_Attack"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & LaserPlatform - Titan",
+            "value0": 1
+          },
+          {
+            "string0": "WL_AnySurface",
+            "test_type": "CanAttackWithPoolUnits"
+          }
+        ]
+      ],
+      "instance_count": -1,
+      "name": "Orbital Death Laser Attack Platoon",
+      "priority": 100,
+      "task_type": "OrbitalLaserAttack",
+      "to_build": "Orbital_Laser_Attack"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance"
+          },
+          {
+            "boolean": false,
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (Fighter | LaserPlatform)",
+            "value0": 1
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Orbital Transfer To Planet",
+      "priority": 99,
+      "task_type": "TransferOrbitalToPlanet",
+      "to_build": "Orbital_Offense_Transfer"
+    }
+  ]
+}
