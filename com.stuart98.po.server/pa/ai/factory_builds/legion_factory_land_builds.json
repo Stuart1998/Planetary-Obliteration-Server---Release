@@ -291,6 +291,70 @@
             "test_type": "AloneOnPlanet"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Custom4 & (Bot | Bot)"
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Bot & Basic & Custom4",
+            "unit_type_string1": "Bot & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout) | Bot & Basic & Custom4",
+            "value0": 0.45
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Bot & Basic & Custom4",
+            "unit_type_string1": "Bot & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout) | Bot & Basic & Custom4",
+            "value0": 0.45
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicBot",
+        "LegionOrbitalAdvancedCannon"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Legion - Basic Artillery Bot",
+      "priority": 97,
+      "to_build": "LegionBotBasicArtillery"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -512,6 +576,106 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "compare0": ">",
+            "string0": "Orbital",
+            "test_type": "PlanetThreat",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & OrbitalDefense",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & OrbitalDefense",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.25
+          }
+        ],
+        [
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "test_type": "BaseThreatRatio",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & OrbitalDefense",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.1
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicBot",
+        "LegionOrbitalAdvancedCannon"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Basic AO Bot",
+      "priority": 97,
+      "to_build": "LegionBotBasicAO"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
             "boolean": true,
             "test_type": "CanDeployLandFromBase"
           },
@@ -566,11 +730,137 @@
             "test_type": "AloneOnPlanet"
           },
           {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Air",
+            "test_type": "PlanetThreat",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.25
+          }
+        ],
+        [
+          {
+            "compare0": ">",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "test_type": "BaseThreatRatio",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.1
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicVehicle",
+        "LegionOrbitalAdvancedCannon",
+        "LegionFactoryBasicNaval"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Basic AA Hover",
+      "priority": 97,
+      "to_build": "LegionVehicleBasicHover"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
             "boolean": true,
             "test_type": "CanDeployLandFromBase"
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Custom4 & (Bot | Tank)"
+          }
+        ],
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout)",
+            "unit_type_string1": "Tank & Basic & Custom4",
+            "value0": 0.65
           }
         ],
         [
@@ -590,6 +880,13 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
             "value0": 0
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout)",
+            "unit_type_string1": "Tank & Basic & Custom4",
+            "value0": 0.65
           }
         ]
       ],
@@ -602,6 +899,70 @@
       "name": "Legion - Light Laser Tank",
       "priority": 97,
       "to_build": "LegionVehicleBasicLaser"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Custom4 & (Bot | Tank)"
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Basic & Custom4",
+            "unit_type_string1": "Tank & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout) | Tank & Basic & Custom4",
+            "value0": 0.45
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Basic & Custom4",
+            "unit_type_string1": "Tank & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout) | Tank & Basic & Custom4",
+            "value0": 0.45
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicVehicle",
+        "LegionOrbitalAdvancedCannon"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Legion - Light Shell Tank",
+      "priority": 97,
+      "to_build": "LegionVehicleBasicShell"
     },
     {
       "build_conditions": [
@@ -708,6 +1069,7 @@
       ],
       "builders": [
         "LegionFactoryBasicVehicle",
+        "LegionFactoryBasicNaval",
         "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
@@ -1486,7 +1848,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryAdvancedVehicle"
+        "LegionFactoryAdvancedVehicle",
+        "LegionFactoryAdvancedNaval"
       ],
       "instance_count": -1,
       "max_num_assisters": 15,

@@ -73,11 +73,12 @@
   ],
   "unit_types": [
     "UNITTYPE_Structure",
-    "UNITTYPE_Advanced",
+    "UNITTYPE_Basic",
     "UNITTYPE_Land",
     "UNITTYPE_AirDefense",
     "UNITTYPE_Defense",
     "UNITTYPE_FabBuild",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Custom4"
   ]
 }

@@ -31,7 +31,7 @@
         ]
       ],
       "builders": [
-        "AdvancedBotFabber",
+        "AnyUberAdvancedFabber",
         "UberSupportCommander"
       ],
       "instance_count": 1,
@@ -82,7 +82,8 @@
         ]
       ],
       "builders": [
-        "AdvancedVehicleFabber"
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
       ],
       "instance_count": 1,
       "max_num_assisters": 15,
@@ -132,7 +133,8 @@
         ]
       ],
       "builders": [
-        "AdvancedAirFabber"
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
       ],
       "instance_count": 1,
       "max_num_assisters": 15,

@@ -37,7 +37,7 @@
         ]
       ],
       "builders": [
-        "AnyUberBasicFabber"
+        "AnyUberFabber"
       ],
       "instance_count": 1,
       "name": "Basic Radar",
@@ -97,7 +97,7 @@
         ]
       ],
       "builders": [
-        "AnyUberBasicFabber"
+        "AnyUberFabber"
       ],
       "instance_count": 1,
       "name": "Basic Radar - Need for Ranged",
@@ -143,7 +143,7 @@
         ]
       ],
       "builders": [
-        "AnyUberBasicFabber"
+        "AnyUberFabber"
       ],
       "instance_count": 1,
       "name": "Basic Radar - Have none",
@@ -320,7 +320,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "unit_type_string0": "Naval & Structure & Recon & Basic",
             "value0": 1
           },
           {
@@ -331,7 +331,7 @@
             "compare0": "<",
             "string0": "Ally",
             "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "unit_type_string0": "Naval & Structure & Recon & Basic",
             "value0": 200,
             "value1": 1
           },
@@ -342,7 +342,7 @@
         ]
       ],
       "builders": [
-        "AnyUberBasicFabber"
+        "AnyUberFabber"
       ],
       "instance_count": 1,
       "name": "Basic Sonar",
@@ -374,7 +374,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "unit_type_string0": "Naval & Structure & Recon & Basic",
             "value0": 1
           },
           {
@@ -391,7 +391,7 @@
             "compare0": "<",
             "string0": "Ally",
             "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "unit_type_string0": "Naval & Structure & Recon & Basic",
             "value0": 200,
             "value1": 1
           },
@@ -402,7 +402,7 @@
         ]
       ],
       "builders": [
-        "AnyUberBasicFabber"
+        "AnyUberFabber"
       ],
       "instance_count": 1,
       "name": "Basic Sonar - Need for Ranged",
@@ -448,7 +448,7 @@
         ]
       ],
       "builders": [
-        "AnyUberBasicFabber"
+        "AnyUberFabber"
       ],
       "instance_count": 1,
       "name": "Basic Sonar - Have none",
@@ -474,7 +474,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "unit_type_string0": "Naval & Structure & Recon & Advanced",
             "value0": 1
           },
           {
@@ -485,7 +485,7 @@
             "compare0": "<",
             "string0": "Ally",
             "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "unit_type_string0": "Naval & Structure & Recon & Advanced",
             "value0": 350,
             "value1": 1
           },
@@ -523,7 +523,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "unit_type_string0": "Naval & Structure & Recon & Advanced",
             "value0": 1
           },
           {
@@ -540,7 +540,7 @@
             "compare0": "<",
             "string0": "Ally",
             "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "unit_type_string0": "Naval & Structure & Recon & Advanced",
             "value0": 350,
             "value1": 1
           },

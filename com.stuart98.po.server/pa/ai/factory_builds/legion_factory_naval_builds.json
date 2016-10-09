@@ -68,6 +68,38 @@
             "test_type": "CanDeployNavalFromBase"
           },
           {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Basic & Custom4",
+            "unit_type_string1": "(Naval & Basic & Offense - Custom4 | Construction | Sub | Scout) | Naval & Basic & Offense & Custom4",
+            "value0": 0.4
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Legion - Torpedo Boat",
+      "priority": 98,
+      "to_build": "LegionNavalBasicTorpBoat"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
             "compare0": ">",
             "string0": "Naval",
             "test_type": "PlanetThreat",
@@ -92,6 +124,41 @@
       "max_num_assisters": 10,
       "name": "Legion - Attack Sub",
       "priority": 97,
+      "to_build": "LegionNavalBasicSub"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Offense | Economy | FactoryBuild | CmdBuild"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Recon & Naval"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Legion Attack Sub - Smells Blood",
+      "priority": 300,
       "to_build": "LegionNavalBasicSub"
     },
     {
@@ -343,7 +410,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryAdvancedNaval"
+        "LegionFactoryAdvancedNaval",
+        "LegionFactoryAdvancedVehicle"
       ],
       "instance_count": -1,
       "max_num_assisters": 15,

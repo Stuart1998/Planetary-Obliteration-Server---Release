@@ -97,14 +97,14 @@
       "aim_bone": "turret00",
       "fire_event": "fired2",
       "muzzle_bone": "muzzle01",
-      "record_index": 1,
+      "record_index": 0,
       "spec_id": "/pa/units/vanilla/land/bot_arty/bot_arty_sidearm_weapon.json"
     },
     {
       "aim_bone": "turret00",
       "fire_event": "fired1",
       "muzzle_bone": "muzzle02",
-      "record_index": 0,
+      "record_index": 1,
       "spec_id": "/pa/units/vanilla/land/bot_arty/bot_arty_tool_weapon.json"
     }
   ],

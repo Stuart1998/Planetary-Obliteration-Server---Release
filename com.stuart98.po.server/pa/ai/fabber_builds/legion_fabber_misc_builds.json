@@ -29,8 +29,7 @@
         "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander",
-        "LegionOrbitalBasicFabber"
+        "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": -1,
       "name": "Legion - Fabber Assist",
@@ -104,8 +103,7 @@
         "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander",
-        "LegionOrbitalBasicFabber"
+        "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
@@ -146,7 +144,8 @@
         ]
       ],
       "builders": [
-        "LegionOrbitalBasicFabber"
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
@@ -194,8 +193,7 @@
         "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander",
-        "LegionOrbitalBasicFabber"
+        "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
@@ -237,8 +235,7 @@
         "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander",
-        "LegionOrbitalBasicFabber"
+        "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
       "name": "Legion - Teleporter",
@@ -282,8 +279,7 @@
         "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander",
-        "LegionOrbitalBasicFabber"
+        "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
       "name": "Legion - Teleporter - Not Alone",
