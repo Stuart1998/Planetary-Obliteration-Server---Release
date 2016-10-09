@@ -1262,6 +1262,46 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryAdvancedBot"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "name": "Legion - Advanced Flame Bot",
+      "priority": 199,
+      "to_build": "LegionBotAdvancedFlame"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "boolean": true,
@@ -1310,6 +1350,64 @@
       "name": "Legion - Advanced Artillery Bot",
       "priority": 199,
       "to_build": "LegionBotAdvancedArtillery"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.35
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryAdvancedBot"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "name": "Legion - Advanced Laser Bot",
+      "priority": 199,
+      "to_build": "LegionBotAdvancedLaser"
     },
     {
       "build_conditions": [
@@ -1701,6 +1799,50 @@
       "name": "Legion - Advanced Laser Tank",
       "priority": 199,
       "to_build": "LegionVehicleAdvancedLaser"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryAdvancedVehicle"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "name": "Legion - Advanced Heavy Tank",
+      "priority": 199,
+      "to_build": "LegionVehicleAdvancedHeavy"
     },
     {
       "build_conditions": [
