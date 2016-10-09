@@ -1,0 +1,184 @@
+/*legion theme skin*/
+.PO .section_content {
+    background: rgba(0,15,0,0.3) !important;
+    color: (white);
+}
+
+.PO .section_content_table {
+    border-image: url('coui://ui/mods/com.stuart98.po/img/img_panel_std.png') 29 53 53 29 fill;
+}
+
+.PO .game_roster {
+    border-image: url('coui://ui/mods/com.stuart98.po/img/img_panel_secondary.png') 33 46 46 33 fill;
+}
+
+.PO .section_content .section_header {
+    text-shadow: 0px 0px 15px rgba(0,255,0,.5); 
+}
+
+.PO .chat_container {
+    border: 1px solid rgba(0,130,0,0.4);
+}
+
+.PO .section .section_header, .spectator_section_header {
+    border-top: 1px solid rgba(0,130,0,0.35);
+    text-shadow: 0px 0px 10px rgba(0,255,0,0.5) !important;
+}
+
+.PO .div-system-picker {
+    background: rgba(0,60,0,1);
+    box-shadow: 0px 0px 10px rgba(0,255,0,0.2);
+    border:1px solid rgba(0,158,0,1);
+}
+
+.PO .nav-pills > li > a {
+    border:1px solid rgba(0,158,0,1) !important;
+    box-shadow: 0px 0px 10px rgba(0,255,0,0.3) !important;
+}
+
+.PO .nav-pills > li > a:hover {
+    background: rgba(0,255,0,0.85) !important;
+    border:1px solid rgba(0,158,0,1) !important;
+    box-shadow: 0px 0px 20px rgba(0,255,0,0.8) !important;
+}
+
+.PO .nav-pills > li.active > a, .PO .nav-pills > li.active > a:focus {
+    background: rgba(0,255,0,0.7) !important;
+    border:1px solid rgba(0,158,0,1) !important;
+    box-shadow: 0px 0px 20px rgba(0,255,0,0.5) !important;
+}
+
+.PO .container_embed.spectator {
+    border: 1px solid rgba(0,158,0,0.5);
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.8);
+    background: rgba(0,35,0,0.8);
+    color: white !important;
+}
+
+.PO .spectator-item-contents {
+    border: 1px solid rgba(0,158,0,0.5);
+    background: rgba(0,70,0,1);
+    box-shadow: inset 0px 0px 8px rgba(0,255,0, 0.4);
+}
+
+.PO .spectator-name {
+    background: url('coui://ui/mods/com.stuart98.po/img/players_list_panel/green/icon_visibility.png') left center no-repeat;
+}
+
+.PO .spectator-name.host {
+    color: rgb(0,255,0);
+    text-shadow: 0px 0px 20px rgba(0,255,0,0.8);
+}
+
+.PO .mods-class {
+    border: 1px solid rgba(0,158,0,0.5);
+    box-shadow: inset 0px 0px 15px rgba(0,15,0,0.8);
+    background: rgba(0,70,0,1);
+}
+
+.PO .army-header {
+    text-shadow: 0px 0px 10px rgba(0,255,0,0.5);
+}
+
+.PO .div-commander-picker-item.legioncommander .profile-commander-name {
+    border-top: 1px solid rgba(0,255,0,0.3) !important;
+}
+
+.PO .div-commander-picker-cont > .dropdown-menu-cont {
+    width: 622px !important;
+}
+
+.PO .div-color-picker {
+    background: rgba(0,20,0,1);
+    box-shadow: inset 0px 0px 10px rgba(0,90,0,0.5);
+    border: 1px solid rgba(0,120,0,0.6);
+    height: auto;
+}
+
+.PO .div-commander-picker {
+    background: rgba(0,20,0,1);
+    box-shadow: inset 0px 0px 10px rgba(0,90,0,0.5);
+    border: 1px solid rgba(0,120,0,0.6);
+    padding: 1px;
+}
+
+.PO .div-commander-picker-item {
+    background: rgba(0,50,70,0.5) !important;
+    border: 1px solid rgba(0,179,255,1) !important;
+}
+
+.PO .div-commander-picker-item.btn_std_ix:hover {
+    background: rgba(0,179,255,0.75) !important;
+    border: 1px solid rgba(0,179,255,0.1) !important;
+    box-shadow: 0px 0px 15px rgba(0,179,255,0.8) !important;
+}
+
+.PO .div-commander-picker-item.btn_std_ix:active {
+    background: rgba(0,179,255,1) !important;
+    border:1px solid rgba(0,179, 255, 1) !important;
+    box-shadow: 0px 0px 30px rgba(0,179,255,1) !important;
+}
+
+.PO .div-commander-picker-item.btn_std_ix {
+    color: rgb(200,255,255) !important;
+}
+
+.PO .btn_hero {
+    margin: 0px 0px 0px 0px !important;
+}
+
+.PO .slot-controls .btn {    
+    background: none !important;
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,0.5) !important;
+    border: 1px solid black !important;
+    color: white !important;    
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.PO .slot-controls .dropdown-menu .text {
+    text-shadow: 0px 0px 15px rgba(255,255,255,.2) !important;
+}
+
+.PO .slot-controls .dropdown-menu {    
+    background: rgba(70,70,70,1) !important;
+    border: 1px solid #262626 !important;
+}
+
+.PO .slot-controls .dropdown-menu > li > a {
+    border-top: 1px solid rgba(0,0,0,1) !important;
+    box-shadow: 0px 0px 10px rgba(255,255,255,.3) !important;
+}
+
+.PO .slot-controls .dropdown-menu > li > a:hover {
+    background: rgba(100,100,100,1) !important;
+    border: 1px solid rgba(50,50,50,0.5) !important;
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,.3) !important;
+}
+
+.PO .slot-controls .dropdown-menu > li > a:focus {
+    background: rgba(120,120,120,1) !important;
+    border: 1px solid rgba(50,50,50,0.5) !important;
+    outline: none !important;
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,.3) !important;
+}
+
+.PO .form-control-personality .btn-group .btn{
+    border: 1px solid #262626 !important;
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,.3) !important;
+    background: none !important;
+}
+
+.PO .form-control-personality .dropdown-menu .text {
+    text-shadow: 0px 0px 15px rgba(255,255,255,.2) !important;
+}
+
+.PO .armies-wrapper {
+    color: white;
+}
+
+.PO:not(.lobby-system-preview) .armies-wrapper {
+    background: rgba(0,100,0,0.5);
+    border: 1px solid rgba(0,158,0,0.25);
+    box-shadow: inset 0px 0px 30px rgba(0,30,0,0.5);
+}

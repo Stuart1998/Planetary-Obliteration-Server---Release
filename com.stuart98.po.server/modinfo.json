@@ -19,6 +19,11 @@
   "enabled": true,
   "identifier": "com.stuart98.po.server.dev",
   "priority": 95,
+  "scenes": {
+    "new_game": [
+      "coui://ui/mods/com.stuart98.po/new_game.js"
+    ]
+  },
   "signature": "(not yet implemented)",
-  "version": "0.DEV.releaseEleven"
+  "version": "0.DEV.releaseFourteen"
 }
