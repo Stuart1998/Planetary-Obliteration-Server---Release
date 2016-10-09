@@ -5,11 +5,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -20,7 +15,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & AirDefense",
+            "unit_type_string0": "(Structure & Basic & AirDefense) - Custom4",
             "value0": 1
           },
           {
@@ -36,11 +31,6 @@
         ],
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -51,7 +41,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & AirDefense",
+            "unit_type_string0": "(Structure & Basic & AirDefense) - Custom4",
             "value0": 1
           },
           {
@@ -93,7 +83,7 @@
             "compare_type": "<",
             "count": 1,
             "range": 100,
-            "unit_type_string": "Structure & Basic & AirDefense"
+            "unit_type_string": "(Structure & Basic & AirDefense) - Custom4"
           }
         ]
       },
@@ -106,10 +96,166 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "string0": "Tutorial",
             "test_type": "HasPersonalityTag"
           },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Custom4 & AirDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 3
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Air"
+          },
+          {
+            "string0": "BasicMediumAirDefense",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Custom4 & AirDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Air"
+          },
+          {
+            "string0": "BasicMediumAirDefense",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyUberFabber",
+        "UberSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Medium Air Defense",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & Basic & Custom4 & AirDefense"
+          }
+        ]
+      },
+      "priority": 255,
+      "to_build": "BasicMediumAirDefense"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Custom4 & AirDefense",
+            "value0": 4
+          },
+          {
+            "boolean": false,
+            "string0": "Tutorial",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "value0": 1
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 3
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Air"
+          },
+          {
+            "string0": "BasicMediumAirDefense",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyUberFabber",
+        "UberSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Medium Air Defense - Threat",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 2,
+            "range": 75,
+            "unit_type_string": "Structure & Basic & Custom4 & AirDefense"
+          }
+        ]
+      },
+      "priority": 379,
+      "to_build": "BasicMediumAirDefense"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -141,11 +287,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -217,11 +358,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -242,11 +378,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -301,11 +432,6 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -374,11 +500,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -409,11 +530,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -478,11 +594,6 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -555,11 +666,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -585,11 +691,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -648,11 +749,6 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -718,11 +814,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -733,7 +824,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Artillery",
+            "unit_type_string0": "(Structure & Basic & Artillery) - Custom4",
             "value0": 2
           },
           {
@@ -785,7 +876,7 @@
             "compare_type": "<",
             "count": 2,
             "range": 75,
-            "unit_type_string": "Structure & Basic & Artillery"
+            "unit_type_string": "(Structure & Basic & Artillery) - Custom4"
           }
         ]
       },
@@ -793,14 +884,82 @@
       "to_build": "BasicArtillery"
     },
     {
-      "base_sort": "FromPerimeter",
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "string0": "Tutorial",
             "test_type": "HasPersonalityTag"
           },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Custom4 & Artillery",
+            "value0": 2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "string0": "Enemy",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "value0": 350,
+            "value1": 3
+          },
+          {
+            "string0": "MiniUnitCannon",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Unit Artillery",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        },
+        "unit_count_rules": [
+          {
+            "alliance": "Enemy",
+            "compare_type": ">=",
+            "count": 3,
+            "range": 260,
+            "unit_type_string": "Structure"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 2,
+            "range": 75,
+            "unit_type_string": "Structure & Basic & Custom4 & Artillery"
+          }
+        ]
+      },
+      "priority": 245,
+      "to_build": "MiniUnitCannon"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -832,11 +991,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -896,11 +1050,6 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -973,17 +1122,12 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "unit_type_string0": "(Structure & Advanced & SurfaceDefense) - Custom4",
             "value0": 4
           },
           {
@@ -1004,17 +1148,12 @@
         ],
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "unit_type_string0": "(Structure & Advanced & SurfaceDefense) - Custom4",
             "value0": 4
           },
           {
@@ -1056,7 +1195,7 @@
             "compare_type": "<",
             "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & Advanced & SurfaceDefense"
+            "unit_type_string": "(Structure & Advanced & SurfaceDefense) - Custom4"
           }
         ]
       },
@@ -1068,17 +1207,12 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "unit_type_string0": "(Structure & Advanced & SurfaceDefense) - Custom4",
             "value0": 4
           },
           {
@@ -1127,7 +1261,7 @@
             "compare_type": "<",
             "count": 2,
             "range": 75,
-            "unit_type_string": "Structure & Advanced & SurfaceDefense"
+            "unit_type_string": "(Structure & Advanced & SurfaceDefense) - Custom4"
           }
         ]
       },
@@ -1138,11 +1272,6 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1183,17 +1312,12 @@
           }
         ]
       },
-      "priority": 0,
+      "priority": 260,
       "to_build": "Wall"
     },
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1222,11 +1346,6 @@
         ],
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -1253,11 +1372,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1311,11 +1425,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -1343,11 +1452,6 @@
         ],
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -1374,11 +1478,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1432,11 +1531,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "string0": "AntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
           },
@@ -1459,11 +1553,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "string0": "AntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
@@ -1488,7 +1577,7 @@
         ]
       ],
       "builders": [
-        "AnyUberAdvancedFabber",
+        "AnyUberFabber",
         "UberSupportCommander"
       ],
       "instance_count": 1,
@@ -1521,11 +1610,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "string0": "AntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
           },
@@ -1555,11 +1639,6 @@
         ],
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "string0": "AntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
           },
@@ -1585,11 +1664,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "string0": "AntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
@@ -1619,11 +1693,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "string0": "AntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
@@ -1651,7 +1720,7 @@
         ]
       ],
       "builders": [
-        "AnyUberAdvancedFabber",
+        "AnyUberFabber",
         "UberSupportCommander"
       ],
       "instance_count": 1,
@@ -1681,6 +1750,157 @@
       "priority": 386,
       "shared_instance_count": "AntiNukeSilo",
       "to_build": "AntiNukeSilo"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & Custom4 & SurfaceDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 3
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced"
+          },
+          {
+            "string0": "AdvancedSniperLandDefense",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & Custom4 & SurfaceDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced"
+          },
+          {
+            "string0": "AdvancedSniperLandDefense",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Advanced Sniper Land Defense",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & Advanced & Custom4 & SurfaceDefense"
+          }
+        ]
+      },
+      "priority": 255,
+      "to_build": "AdvancedSniperLandDefense"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & Custom4 & SurfaceDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "value0": 1
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 3
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced"
+          },
+          {
+            "string0": "AdvancedSniperLandDefense",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Advanced Sniper Land Defense - Threat",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 2,
+            "range": 75,
+            "unit_type_string": "Structure & Advanced & Custom4 & SurfaceDefense"
+          }
+        ]
+      },
+      "priority": 379,
+      "to_build": "AdvancedSniperLandDefense"
     }
   ]
 }

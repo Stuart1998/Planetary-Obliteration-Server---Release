@@ -25,7 +25,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 600,
+  "build_metal_cost": 550,
   "description": "Light Artillery - Mobile Artillery Artillery Tank. Fires light shells at a low arc. Effective vs armies, ineffective vs structures.",
   "display_name": "Thumper",
   "events": {
@@ -58,7 +58,7 @@
     "acceleration": 2,
     "brake": 2,
     "group_preference": "back",
-    "move_speed": 12,
+    "move_speed": 13,
     "turn_speed": 40,
     "type": "land-small"
   },

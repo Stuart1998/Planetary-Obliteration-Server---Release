@@ -76,12 +76,12 @@ var Build = (function() {
 
                 "/pa/units/vanilla/land/tank_nuke/tank_nuke.json": ["vehicleadv", 12],
                 "/pa/units/vanilla/sea/hover_ship/hover_ship.json": ["vehicleadv",13],
-                "/pa/units/vanilla/land/tank_orbital/tank_orbital.json": ["vehicleadv", 14],
+                "/pa/units/vanilla/land/tank_orbital/tank_orbital.json": ["vehicleadv", 23],
                 "/pa/units/vanilla/land/fabrication_vehicle_adv/fabrication_vehicle_adv.json": ["vehicleadv", 18],
                 "/pa/units/vanilla/land/tank_laser_adv/tank_laser_adv.json": ["vehicleadv", 19],
                 "/pa/units/vanilla/land/tank_armor/tank_armor.json": ["vehicleadv", 20],
-                "/pa/units/vanilla/land/tank_heavy_mortar/tank_heavy_mortar.json": ["vehicleadv", 22],
-                "/pa/units/vanilla/land/tank_flak/tank_flak.json": ["vehicleadv", 23],
+                "/pa/units/vanilla/land/tank_heavy_mortar/tank_heavy_mortar.json": ["vehicleadv", 21],
+                "/pa/units/vanilla/land/tank_flak/tank_flak.json": ["vehicleadv", 22],
                 
                 "/pa/units/vanilla/land/fabrication_vehicle/fabrication_vehicle.json": ["vehicle", 18],
                 "/pa/units/vanilla/land/tank_light_laser/tank_light_laser.json": ["vehicle", 12],
@@ -113,12 +113,12 @@ var Build = (function() {
                 "/pa/units/vanilla/land/bot_tesla/bot_tesla.json": ["bot", 12],
 
 
-                "/pa/units/vanilla/air/support_platform/support_platform.json": ["airadv", 12],
+                "/pa/units/vanilla/air/support_platform/support_platform.json": ["airadv", 23],
                 "/pa/units/vanilla/air/fabrication_aircraft_adv/fabrication_aircraft_adv.json": ["airadv", 18],
                 "/pa/units/vanilla/air/fighter_adv/fighter_adv.json": ["airadv", 19],
-                "/pa/units/vanilla/air/gunship/gunship.json": ["airadv", 21],
-                "/pa/units/vanilla/air/bomber_adv/bomber_adv.json": ["airadv", 22],
-                "/pa/units/vanilla/air/bomber_heavy/bomber_heavy.json": ["airadv", 23],
+                "/pa/units/vanilla/air/gunship/gunship.json": ["airadv", 20],
+                "/pa/units/vanilla/air/bomber_adv/bomber_adv.json": ["airadv", 21],
+                "/pa/units/vanilla/air/bomber_heavy/bomber_heavy.json": ["airadv", 22],
  
                 "/pa/units/vanilla/air/fabrication_aircraft/fabrication_aircraft.json": ["air", 18],
                 "/pa/units/vanilla/air/fighter/fighter.json": ["air", 19],
@@ -148,11 +148,11 @@ var Build = (function() {
                 "/pa/units/vanilla/orbital/mining_platform/mining_platform.json": ["orbital_structure", 13],
                 "/pa/units/vanilla/orbital/solar_array/solar_array.json": ["orbital_structure", 14],
                 "/pa/units/vanilla/orbital/orbital_factory/orbital_factory.json": ["orbital_structure", 15],
-                "/pa/units/vanilla/orbital/radar_satellite_adv/radar_satellite_adv.json": ["orbital_structure", 16],
                 
                 "/pa/units/vanilla/orbital/orbital_battleship/orbital_battleship.json": ["orbital", 12],
                 "/pa/units/vanilla/orbital/orbital_laser/orbital_laser.json": ["orbital", 13],
                 "/pa/units/vanilla/orbital/orbital_railgun/orbital_railgun.json": ["orbital", 14],
+                "/pa/units/vanilla/orbital/radar_satellite_adv/radar_satellite_adv.json": ["orbital", 15],
                 "/pa/units/vanilla/orbital/orbital_fabrication_bot/orbital_fabrication_bot.json": ["orbital", 18],
                 "/pa/units/vanilla/orbital/orbital_fighter/orbital_fighter.json": ["orbital", 19],
                 "/pa/units/vanilla/orbital/radar_satellite/radar_satellite.json": ["orbital", 20],
@@ -283,16 +283,15 @@ var Build = (function() {
 		"/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo.json": [ "L_sea", 23 ],
 
 		
-		"/pa/units/legion/orbital/l_orbital_battleship/l_orbital_battleship.json": [ "L_orbital", 13 ],
-		"/pa/units/legion/orbital/l_solar_array/l_solar_array.json": [ "L_orbital", 14 ],
-		"/pa/units/legion/orbital/l_orbital_railgun/l_orbital_railgun.json": [ "L_orbital", 15 ],
-		"/pa/units/legion/orbital/l_orbital_laser/l_orbital_laser.json": [ "L_orbital", 16 ],
-		"/pa/units/legion/orbital/l_radar_satellite_adv/l_radar_satellite_adv.json": [ "L_orbital", 17 ],
+		"/pa/units/legion/orbital/l_orbital_battleship/l_orbital_battleship.json": [ "L_orbital", 12 ],
+		"/pa/units/legion/orbital/l_orbital_railgun/l_orbital_railgun.json": [ "L_orbital", 14 ],
+		"/pa/units/legion/orbital/l_orbital_laser/l_orbital_laser.json": [ "L_orbital", 13 ],
+		"/pa/units/legion/orbital/l_radar_satellite_adv/l_radar_satellite_adv.json": [ "L_orbital", 15 ],
 		"/pa/units/legion/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot.json": [ "L_orbital", 18 ],
 		"/pa/units/legion/orbital/l_orbital_fighter/l_orbital_fighter.json": [ "L_orbital", 19 ],
-		"/pa/units/legion/orbital/l_orbital_probe/l_orbital_probe.json": [ "L_orbital", 20 ],
+		"/pa/units/legion/orbital/l_orbital_probe/l_orbital_probe.json": [ "L_orbital", 22 ],
 		"/pa/units/legion/orbital/l_orbital_lander/l_orbital_lander.json": [ "L_orbital", 21 ],
-		"/pa/units/legion/orbital/l_radar_satellite/l_radar_satellite.json": [ "L_orbital", 22 ],
+		"/pa/units/legion/orbital/l_radar_satellite/l_radar_satellite.json": [ "L_orbital", 20 ],
 		
 		"/pa/units/legion/orbital/l_orbital_dropper/l_orbital_dropper.json": [ "L_orbital_structure", 18 ],
 		"/pa/units/legion/orbital/l_mining_platform/l_mining_platform.json": [ "L_orbital_structure", 19 ],

@@ -70,7 +70,7 @@
       "spec_id": "/pa/units/legion/land/l_bot_aa_adv/l_bot_aa_adv.json"
     },
     "LegionBotAdvancedArtillery": {
-      "spec_id": "/pa/units/legion/land/l_bot_mortar_adv/l_bot_mortar_adv.json"
+      "spec_id": "/pa/units/legion/land/l_bot_morty_adv/l_bot_morty_adv.json"
     },
     "LegionBotAdvancedAssault": {
       "spec_id": "/pa/units/legion/land/l_riot_bot/l_riot_bot.json"
@@ -82,16 +82,13 @@
       "spec_id": "/pa/units/legion/land/l_fabrication_bot_adv/l_fabrication_bot_adv.json"
     },
     "LegionBotAdvancedFlame": {
-      "spec_id": "/pa/units/legion/land/l_bot_flame/l_bot_flame.json"
+      "spec_id": "/pa/units/legion/land/l_flame_bot/l_flame_bot.json"
     },
     "LegionBotAdvancedLaser": {
       "spec_id": "/pa/units/legion/land/l_bot_heavy/l_bot_heavy.json"
     },
     "LegionBotAdvancedSupportCommander": {
       "spec_id": "/pa/units/legion/land/l_bot_support_commander/l_bot_support_commander.json"
-    },
-    "LegionBotAdvancedTactical": {
-      "spec_id": "/pa/units/legion/land/l_bot_artillery_adv/l_bot_artillery_adv.json"
     },
     "LegionBotBasicAA": {
       "spec_id": "/pa/units/legion/land/l_bot_aa/l_bot_aa.json"
@@ -150,9 +147,6 @@
     "LegionDefenseAdvancedNukeSilo": {
       "spec_id": "/pa/units/legion/land/l_nuke_launcher/l_nuke_launcher.json"
     },
-    "LegionDefenseAdvancedShield": {
-      "spec_id": "/pa/units/legion/land/l_shield_gen/l_shield_gen.json"
-    },
     "LegionDefenseAdvancedTactical": {
       "spec_id": "/pa/units/legion/land/l_rocket_barrage/l_rocket_barrage.json"
     },
@@ -181,7 +175,7 @@
       "spec_id": "/pa/units/legion/land/l_swarm_hive/l_swarm_hive.json"
     },
     "LegionDefenseFlameLand": {
-      "spec_id": "/pa/units/legion/land/l_flame_turret/l_flame_turret"
+      "spec_id": "/pa/units/legion/land/l_flame_turret/l_flame_turret.json"
     },
     "LegionDefenseMediumAir": {
       "spec_id": "/pa/units/legion/land/l_air_defense_medium/l_air_defense_medium.json"

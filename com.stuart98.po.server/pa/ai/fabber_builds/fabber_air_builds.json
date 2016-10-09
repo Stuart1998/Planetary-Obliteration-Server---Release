@@ -4,11 +4,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "HaveEcoForAdvanced"
           },
@@ -33,11 +28,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "HaveEcoForAdvanced"
           },
           {
@@ -59,11 +49,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "HaveEcoForAdvanced"
@@ -95,11 +80,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "UnableToExpand"
           },
           {
@@ -123,11 +103,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -180,11 +155,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "HaveEcoForAdvanced"
           },
@@ -227,11 +197,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "HaveEcoForAdvanced"
@@ -298,11 +263,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "HaveEcoForAdvanced"
           },
           {
@@ -325,11 +285,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "UnableToExpand"
@@ -356,11 +311,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -411,11 +361,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "HaveEcoForAdvanced"

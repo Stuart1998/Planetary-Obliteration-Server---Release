@@ -25,7 +25,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 450,
+  "build_metal_cost": 400,
   "description": "Fast Amphibious Attack Tank - Equipped with Torpedoes and a Light Cannon.",
   "display_name": "Stoke",
   "events": {
@@ -44,7 +44,7 @@
   },
   "guard_layer": "WL_AnySurface",
   "guard_radius": 10,
-  "max_health": 400,
+  "max_health": 500,
   "mesh_bounds": [
     5,
     5,
@@ -58,7 +58,7 @@
   "navigation": {
     "acceleration": 40,
     "brake": 40,
-    "move_speed": 13,
+    "move_speed": 11,
     "turn_speed": 100,
     "type": "amphibious"
   },

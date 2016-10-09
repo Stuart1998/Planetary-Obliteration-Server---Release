@@ -4,11 +4,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "compare0": "<",
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Scout",
@@ -32,11 +27,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
@@ -72,11 +62,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
@@ -108,11 +93,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
@@ -148,11 +128,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
@@ -186,11 +161,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
@@ -216,11 +186,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
@@ -256,11 +221,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
@@ -292,11 +252,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
@@ -332,11 +287,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
@@ -370,11 +320,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
@@ -402,11 +347,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
@@ -423,11 +363,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
@@ -457,11 +392,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
@@ -478,11 +408,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
@@ -513,11 +438,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
@@ -534,11 +454,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
@@ -569,11 +484,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
@@ -590,11 +500,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
@@ -625,11 +530,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
@@ -646,11 +546,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
@@ -681,11 +576,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
@@ -702,11 +592,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
@@ -737,11 +622,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
@@ -758,11 +638,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
@@ -793,11 +668,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
@@ -814,11 +684,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
@@ -849,11 +714,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
@@ -870,11 +730,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
@@ -905,11 +760,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
@@ -926,11 +776,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
@@ -961,11 +806,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
@@ -982,11 +822,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemyAirPresenceOnPlanet"

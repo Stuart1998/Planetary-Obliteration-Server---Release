@@ -25,7 +25,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 900,
+  "build_metal_cost": 750,
   "description": "Heavy Artillery Unit - Equipped with advanced mobile artillery. High damage, but ineffective against mobile targets.",
   "display_name": "Sheller",
   "events": {
@@ -43,7 +43,7 @@
   },
   "guard_layer": "WL_AnySurface",
   "influence_radius": 400,
-  "max_health": 250,
+  "max_health": 450,
   "mesh_bounds": [
     7,
     7.5,

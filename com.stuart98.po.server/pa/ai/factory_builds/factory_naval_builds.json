@@ -4,11 +4,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -40,11 +35,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -69,11 +59,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -113,11 +98,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -135,18 +115,77 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Frigate",
+      "name": "Sea Scout - AA",
       "priority": 97,
-      "to_build": "Frigate"
+      "to_build": "SeaScout"
     },
     {
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
+            "boolean": false,
+            "test_type": "BaseThreatened"
           },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Naval & Scout",
+            "value0": 200
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveFullPlanetIntel"
+          }
+        ],
+        [
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Scout",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveFullPlanetIntel"
+          }
+        ]
+      ],
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "instance_count": 1,
+      "name": "Sea Scout - Intel",
+      "priority": 98,
+      "shared_instance_count": "SeaScout",
+      "to_build": "SeaScout"
+    },
+    {
+      "build_conditions": [
+        [
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -179,11 +218,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -209,11 +243,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -238,11 +267,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"

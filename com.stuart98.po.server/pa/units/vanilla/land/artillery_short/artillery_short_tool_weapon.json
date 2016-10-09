@@ -6,7 +6,6 @@
   "ammo_source": "time",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
-  "firing_standard_deviation": 0.25,
   "max_range": 260,
   "physics": {
     "add_to_spatial_db": false,

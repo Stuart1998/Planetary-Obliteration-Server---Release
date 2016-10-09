@@ -101,7 +101,6 @@
     "UNITTYPE_FabAdvBuild",
     "UNITTYPE_CombatFabAdvBuild",
     "UNITTYPE_CombatFabBuild",
-    "UNITTYPE_FabOrbBuild",
     "UNITTYPE_Custom1"
   ],
   "useable": {

@@ -1,7 +1,7 @@
 {
   "unit_map": {
     "AdvancedAABot": {
-      "spec_id": "/pa/units/vanilla/bot_aa_adv/bot_aa_adv.json"
+      "spec_id": "/pa/units/vanilla/land/bot_aa_adv/bot_aa_adv.json"
     },
     "AdvancedAOVehicle": {
       "spec_id": "/pa/units/vanilla/land/tank_orbital/tank_orbital.json"
@@ -123,6 +123,9 @@
     "AnyUberBotFactory": {
       "unit_types": "(Factory & Bot) - Custom1 - Custom2 - Custom3 - Custom4"
     },
+    "AnyUberFabber": {
+      "unit_types": "((Fabber | Debug) - Orbital) - Custom1 -Custom2 - Custom3 - Custom4"
+    },
     "AnyUberNavalFactory": {
       "unit_types": "(Factory & Naval) - Custom1 - Custom2 - Custom3 - Custom4"
     },
@@ -208,7 +211,7 @@
       "spec_id": "/pa/units/vanilla/orbital/radar_satellite/radar_satellite.json"
     },
     "BasicRocketBot": {
-      "spec_id": "/pa/units/vanilla/land/bot_artillery/bot_artillery.json"
+      "spec_id": "/pa/units/vanilla/land/bot_arty/bot_arty.json"
     },
     "BasicSonar": {
       "spec_id": "/pa/units/vanilla/sea/sonar/sonar.json"
@@ -230,9 +233,6 @@
     },
     "ControlModule": {
       "spec_id": "/pa/units/vanilla/land/control_module/control_module.json"
-    },
-    "DeepSpaceRadar": {
-      "spec_id": "/pa/units/vanilla/orbital/deep_space_radar/deep_space_radar.json"
     },
     "DefenseSatellite": {
       "spec_id": "/pa/units/vanilla/orbital/defense_satellite/defense_satellite.json"

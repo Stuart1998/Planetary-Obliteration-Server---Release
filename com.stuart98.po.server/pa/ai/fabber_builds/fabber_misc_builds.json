@@ -4,20 +4,10 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "compare0": ">",
             "test_type": "CurrentMetalEfficiency",
@@ -51,11 +41,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -74,11 +59,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -102,11 +82,6 @@
         ],
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -129,8 +104,7 @@
         "UberCommander",
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber",
-        "UberSupportCommander",
-        "OrbitalFabber"
+        "UberSupportCommander"
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
@@ -154,11 +128,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -176,7 +145,7 @@
         ]
       ],
       "builders": [
-        "OrbitalFabber"
+        "AnyUberAdvancedFabber"
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
@@ -199,11 +168,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -229,8 +193,7 @@
         "UberCommander",
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber",
-        "UberSupportCommander",
-        "OrbitalFabber"
+        "UberSupportCommander"
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
@@ -254,11 +217,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -277,8 +235,7 @@
         "UberCommander",
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber",
-        "UberSupportCommander",
-        "OrbitalFabber"
+        "UberSupportCommander"
       ],
       "instance_count": 1,
       "name": "Teleporter",
@@ -299,11 +256,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -327,8 +279,7 @@
         "UberCommander",
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber",
-        "UberSupportCommander",
-        "OrbitalFabber"
+        "UberSupportCommander"
       ],
       "instance_count": 1,
       "name": "Teleporter - Not Alone",
@@ -349,11 +300,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "PlanetWithoutFabberWithTeleporter"

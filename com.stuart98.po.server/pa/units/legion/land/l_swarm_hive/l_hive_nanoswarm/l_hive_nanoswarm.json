@@ -62,7 +62,7 @@
   },
   "physics": {
     "allow_pushing": true,
-    "radius": 0
+    "radius": 1
   },
   "recon": {
     "observer": {

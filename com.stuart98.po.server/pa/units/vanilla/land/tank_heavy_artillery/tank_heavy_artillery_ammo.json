@@ -15,7 +15,7 @@
   "model": {
     "filename": "/pa/units/air/bomb/bomb.papa"
   },
-  "splash_damage": 35,
+  "splash_damage": 80,
   "splash_damages_allies": true,
-  "splash_radius": 12
+  "splash_radius": 7.5
 }

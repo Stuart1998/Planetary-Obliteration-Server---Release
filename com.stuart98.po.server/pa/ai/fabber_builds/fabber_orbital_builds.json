@@ -4,11 +4,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -39,11 +34,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -95,11 +85,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "WantCommanderOffPlanet"
           },
           {
@@ -134,11 +119,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "UnableToExpand"
@@ -179,11 +159,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -244,11 +219,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -291,11 +261,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -321,11 +286,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "PlanetIsGasGiant"
@@ -356,11 +316,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -411,11 +366,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "EnemyPresenceOnPlanet"
@@ -486,11 +436,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "compare0": "<",
             "test_type": "PotentialMetalEfficiency",
             "value0": 1
@@ -502,42 +447,7 @@
         ],
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "DesireMetal"
-          },
-          {
-            "string0": "OrbitalExtractor",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": "<",
-            "test_type": "PotentialEnergyEfficiency",
-            "value0": 1
-          },
-          {
-            "string0": "OrbitalExtractor",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "test_type": "DesireEnergy"
           },
           {
             "string0": "OrbitalExtractor",
@@ -562,10 +472,41 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
+            "compare0": "<",
+            "test_type": "PotentialEnergyEfficiency",
+            "value0": 1
           },
+          {
+            "string0": "SolarArray",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "string0": "SolarArray",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 3,
+      "name": "Solar Array",
+      "placement_rules": {
+        "buffer": 15
+      },
+      "priority": 360,
+      "to_build": "SolarArray"
+    },
+    {
+      "build_conditions": [
+        [
           {
             "boolean": true,
             "test_type": "PlanetWithoutPresence"
@@ -603,11 +544,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "PlanetOrGasGiantWithoutPresence"
           },
           {
@@ -629,11 +565,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "SafePlanetOrGasGiantWithoutPresence"

@@ -156,10 +156,10 @@
     "filename": "/pa/units/land/tank_nuke/tank_nuke.papa"
   },
   "navigation": {
-    "acceleration": 5,
-    "brake": 5,
+    "acceleration": 16,
+    "brake": 16,
     "group_preference": "front",
-    "move_speed": 12,
+    "move_speed": 16,
     "turn_accel": 15,
     "turn_speed": 30,
     "type": "amphibious"

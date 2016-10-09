@@ -4,11 +4,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
@@ -25,11 +20,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
@@ -57,11 +47,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyOrbitalPresenceOnPlanet"
           },
           {
@@ -87,11 +72,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemyOrbitalPresenceOnPlanet"
           },
           {
@@ -106,11 +86,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
@@ -138,11 +113,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
@@ -166,11 +136,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "OtherPlanetNeedsOrbitalUnitAssistance"

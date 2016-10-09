@@ -109,13 +109,6 @@
           "radius": 300,
           "shape": "capsule",
           "uses_energy": true
-        },
-        {
-          "channel": "sight",
-          "layer": "orbital",
-          "radius": 600,
-          "shape": "capsule",
-          "uses_energy": true
         }
       ]
     }

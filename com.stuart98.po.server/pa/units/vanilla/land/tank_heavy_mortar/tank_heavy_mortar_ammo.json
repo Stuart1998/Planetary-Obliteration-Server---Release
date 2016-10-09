@@ -5,7 +5,7 @@
   "initial_velocity": 200.0,
   "lifetime": 10,
   "max_velocity": 200.0,
-  "splash_damage": 200,
+  "splash_damage": 250,
   "splash_damages_allies": true,
   "splash_radius": 15
 }

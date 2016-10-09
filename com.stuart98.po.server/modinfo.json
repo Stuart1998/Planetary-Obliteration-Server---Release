@@ -10,7 +10,7 @@
     "com.stuart98.po.client.dev"
   ],
   "context": "server",
-  "date": "2016/10/05",
+  "date": "2016/10/08",
   "dependencies": [
     "com.stuart98.po.client.dev"
   ],
@@ -20,5 +20,5 @@
   "identifier": "com.stuart98.po.server.dev",
   "priority": 95,
   "signature": "(not yet implemented)",
-  "version": "0.DEV.releaseTen"
+  "version": "0.DEV.releaseEleven"
 }
