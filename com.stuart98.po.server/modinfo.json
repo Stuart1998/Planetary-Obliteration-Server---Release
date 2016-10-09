@@ -15,8 +15,9 @@
     "com.stuart98.po.client.dev"
   ],
   "description": "Legion + New Units + New Balance = New & Better Expeience. Work in progress, please report bugs and other feedback to the forum thread.",
-  "display_name": "Planetary Obliteration: Development Version (WIP)",
+  "display_name": "Planetary Obliteration Alpha (WIP)",
   "enabled": true,
+  "forum": "https://forums.uberent.com/threads/wip-server-planetary-obliteration.71781/",
   "identifier": "com.stuart98.po.server.dev",
   "priority": 95,
   "scenes": {
@@ -25,5 +26,5 @@
     ]
   },
   "signature": "(not yet implemented)",
-  "version": "0.DEV.releaseFifteen"
+  "version": "0.Alpha.One"
 }

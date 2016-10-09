@@ -435,7 +435,7 @@
             "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Recon & Structure - Orbital) | (Recon & Orbital - Structure)",
-            "value0": 1
+            "value0": 2
           },
           {
             "string0": "BasicSonar",

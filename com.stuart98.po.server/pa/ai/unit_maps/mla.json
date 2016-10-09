@@ -124,7 +124,7 @@
       "unit_types": "(Factory & Bot) - Custom1 - Custom2 - Custom3 - Custom4"
     },
     "AnyUberFabber": {
-      "unit_types": "((Fabber | Debug) - Orbital) - Custom1 -Custom2 - Custom3 - Custom4"
+      "unit_types": "((Fabber | Debug) - Orbital) - Custom1"
     },
     "AnyUberNavalFactory": {
       "unit_types": "(Factory & Naval) - Custom1 - Custom2 - Custom3 - Custom4"
