@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 1500,
+  "build_metal_cost": 1200,
   "description": "Heavy Tank: Heavy anti-land and anti-ship AoE cannons, amphibious. Long reload time. Slow.",
   "display_name": "Obliterator",
   "events": {

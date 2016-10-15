@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 350,
+  "build_metal_cost": 400,
   "description": "Flame tank - Short ranged, heavy armored vehicle.",
   "display_name": "Inferno",
   "events": {
@@ -45,7 +45,7 @@
     }
   },
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 1200,
+  "max_health": 1300,
   "mesh_bounds": [
     5.5,
     6,
