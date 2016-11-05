@@ -28,8 +28,8 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "Advanced Manufacturing - Builds Advanced Naval Ships.",
-  "display_name": "Advanced Ship Foundry",
+  "description": "Specialist Manufacturing - Builds Specialized Warships.",
+  "display_name": "Specialist Warship Foundry",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

@@ -1,0 +1,13 @@
+{
+  "ammo_type": "PBAOE",
+  "armor_damage_map": {
+    "AT_Air": 0.0
+  },
+  "damage": 400,
+  "damage_volume": {
+    "initial_radius": 7.5
+  },
+  "splash_damage": 400,
+  "splash_damages_allies": true,
+  "splash_radius": 7.5
+}

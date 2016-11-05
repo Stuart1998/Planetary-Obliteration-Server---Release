@@ -20,7 +20,7 @@
   "lifetime": 2.5,
   "max_velocity": 155.0,
   "model": {
-    "filename": "/pa/units/vanilla/air/missile/missile.papa"
+    "filename": "/pa/units/air/missile/missile.papa"
   },
   "physics": {
     "add_to_spatial_db": false,

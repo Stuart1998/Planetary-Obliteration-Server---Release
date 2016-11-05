@@ -21,7 +21,8 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Factory",
-      "effect_scale": 0.75
+      "effect_scale": 0.75,
+      "effect_spec": "/pa/effects/specs/metal_explosion.pfx"
     }
   },
   "feature_requirements": [

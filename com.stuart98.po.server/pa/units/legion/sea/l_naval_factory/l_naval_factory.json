@@ -28,8 +28,8 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "Basic Manufacturing - Builds Naval Ships.",
-  "display_name": "Ship Foundry",
+  "description": "Generalist Manufacturing - Builds Generalist Warships.",
+  "display_name": "Generalist Warship Foundry",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

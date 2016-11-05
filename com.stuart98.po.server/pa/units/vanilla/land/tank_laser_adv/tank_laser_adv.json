@@ -91,15 +91,10 @@
     {
       "aim_bone": "socket_aim",
       "muzzle_bone": [
-        "socket_leftMuzzle"
-      ],
-      "spec_id": "/pa/units/vanilla/land/tank_laser_adv/tank_laser_adv_tool_weapon.json"
-    },
-    {
-      "aim_bone": "socket_aim",
-      "muzzle_bone": [
+        "socket_leftMuzzle",
         "socket_rightMuzzle"
       ],
+      "projectiles_per_fire": 2,
       "spec_id": "/pa/units/vanilla/land/tank_laser_adv/tank_laser_adv_tool_weapon.json"
     }
   ],

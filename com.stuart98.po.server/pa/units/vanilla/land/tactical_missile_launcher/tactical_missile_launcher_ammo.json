@@ -10,6 +10,14 @@
     }
   },
   "flight_type": "Staged",
+  "fx_trail": {
+    "filename": "/pa/units/air/missile_tactical/missile_tactical_trail_catapult.pfx",
+    "offset": [
+      0,
+      4.6,
+      0
+    ]
+  },
   "influence_radius": 400,
   "initial_velocity": 80.0,
   "lifetime": 15,

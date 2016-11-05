@@ -13,14 +13,15 @@
   "consumption": {
     "energy": 0
   },
-  "description": "Extracts Mass - can only be placed on metal deposits.",
-  "display_name": "Mass Extractor",
+  "description": "Processes Metal - can only be placed on metal deposits.",
+  "display_name": "Metal Processor",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/metal"
     },
     "died": {
-      "effect_scale": 0.75
+      "effect_scale": 0.75,
+      "effect_spec": "/pa/effects/specs/metal_explosion.pfx"
     }
   },
   "feature_requirements": [

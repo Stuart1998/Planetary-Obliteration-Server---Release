@@ -31,8 +31,8 @@
       "/pa/effects/specs/scorch_c_01.json"
     ]
   },
-  "description": "Basic Manufacturing - Builds Legion Armor.",
-  "display_name": "Armour Foundry",
+  "description": "Generalist Manufacturing - Builds Generalist Armor.",
+  "display_name": "Generalist Armour Foundry",
   "factory_cooldown_time": 4,
   "fx_offsets": [
     {

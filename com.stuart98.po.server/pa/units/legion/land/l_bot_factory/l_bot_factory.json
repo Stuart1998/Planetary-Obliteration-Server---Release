@@ -31,8 +31,8 @@
       "/pa/effects/specs/scorch_c_01.json"
     ]
   },
-  "description": "Basic Manufacturing - Builds Legion Walkers.",
-  "display_name": "Walker Foundry",
+  "description": "Generalist Manufacturing - Builds Generalist Walkers.",
+  "display_name": "Generalist Walker Foundry",
   "factory_cooldown_time": 3,
   "fx_offsets": [
     {

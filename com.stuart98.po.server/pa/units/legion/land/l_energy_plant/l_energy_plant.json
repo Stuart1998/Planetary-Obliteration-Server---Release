@@ -9,7 +9,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_structure/base_structure.json",
-  "build_metal_cost": 300,
+  "build_metal_cost": 250,
   "description": "Basic Economy - Generates Power.",
   "display_name": "Power Catalyst",
   "events": {
@@ -17,7 +17,9 @@
       "audio_cue": "/SE/Build_Complete/energy"
     },
     "died": {
-      "effect_scale": 0.5
+      "audio_cue": "/SE/Death/Factory",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/power_explosion.pfx"
     }
   },
   "fx_offsets": [
@@ -31,7 +33,7 @@
       "type": "idle"
     }
   ],
-  "max_health": 750,
+  "max_health": 600,
   "mesh_bounds": [
     9.426,
     9.426,

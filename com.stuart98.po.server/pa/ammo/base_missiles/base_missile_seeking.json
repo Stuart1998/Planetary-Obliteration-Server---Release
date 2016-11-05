@@ -20,7 +20,7 @@
   "initial_velocity": 95.0,
   "max_velocity": 125.0,
   "model": {
-    "filename": "/pa/units/vanilla/air/missile/missile.papa"
+    "filename": "/pa/units/air/missile/missile.papa"
   },
   "splash_damage": 0,
   "splash_radius": 0,

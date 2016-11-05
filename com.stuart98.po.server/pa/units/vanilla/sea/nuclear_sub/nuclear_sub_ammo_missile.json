@@ -2,13 +2,18 @@
   "base_spec": "/pa/ammo/base_missiles/base_missile_tactical.json",
   "cruise_height": 60,
   "damage": 120,
+  "events": {
+    "died": {
+      "effect_spec": "/pa/units/vanilla/sea/nuclear_sub/missile_hit.pfx"
+    }
+  },
   "flight_type": "Staged",
   "fx_trail": {
-    "filename": "/pa/effects/specs/rocket_proj_trail.pfx",
+    "filename": "/pa/units/air/missile_tactical/missile_tactical_trail_sub.pfx",
     "offset": [
-      0.0,
-      5.5,
-      0.0
+      0,
+      2,
+      0
     ]
   },
   "influence_radius": 400,

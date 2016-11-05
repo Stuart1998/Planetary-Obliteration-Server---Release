@@ -24,7 +24,7 @@
   "max_velocity": 125.0,
   "model": {
     "arrows": 3,
-    "filename": "/pa/units/vanilla/air/missile/missile.papa"
+    "filename": "/pa/units/air/missile/missile.papa"
   },
   "physics": {
     "add_to_spatial_db": false,

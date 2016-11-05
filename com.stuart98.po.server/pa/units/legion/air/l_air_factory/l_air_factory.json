@@ -30,8 +30,8 @@
       "/pa/effects/specs/scorch_c_01.json"
     ]
   },
-  "description": "Basic Manufacturing - Builds Legion Air Units.",
-  "display_name": "Flyer Foundry",
+  "description": "Generalist Manufacturing - Builds Generalist Flyers.",
+  "display_name": "Generalist Flyer Foundry",
   "factory_cooldown_time": 2,
   "fx_offsets": [
     {

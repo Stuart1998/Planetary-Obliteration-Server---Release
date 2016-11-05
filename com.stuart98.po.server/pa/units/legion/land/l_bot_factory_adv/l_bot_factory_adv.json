@@ -26,8 +26,8 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Advanced Manufacturing - Builds Advanced Legion Walkers.",
-  "display_name": "Advanced Walker Foundry",
+  "description": "Specialist Manufacturing - Builds Specialized Walkers.",
+  "display_name": "Specialist Walker Foundry",
   "events": {
     "died": {
       "effect_scale": 1.5

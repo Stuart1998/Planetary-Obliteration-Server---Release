@@ -21,8 +21,8 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Factory",
-      "effect_scale": 1.0,
-      "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
+      "effect_scale": 1.8,
+      "effect_spec": "/pa/effects/specs/power_explosion.pfx"
     }
   },
   "fx_offsets": [

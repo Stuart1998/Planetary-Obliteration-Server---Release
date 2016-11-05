@@ -31,8 +31,8 @@
       "/pa/effects/specs/scorch_c_01.json"
     ]
   },
-  "description": "Advanced Manufacturing - Builds Advanced Legion Armor.",
-  "display_name": "Advanced Armor Foundry",
+  "description": "Specialist Manufacturing - Builds Specialized Armor.",
+  "display_name": "Specialist Armor Foundry",
   "events": {
     "died": {
       "effect_scale": 1.5
