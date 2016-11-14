@@ -16,11 +16,6 @@
   },
   "base_spec": "/pa/units/vanilla/orbital/base_orbital/base_orbital.json",
   "build_metal_cost": 80,
-  "command_caps": [
-    "ORDER_Move",
-    "ORDER_Patrol",
-    "ORDER_Assist"
-  ],
   "description": "Suicide Drone - Explodes into orbital units. Fast, small amount of vision.",
   "display_name": "Hermes",
   "events": {

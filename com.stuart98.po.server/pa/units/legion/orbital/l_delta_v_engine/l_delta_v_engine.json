@@ -17,7 +17,7 @@
   "build_metal_cost": 70000,
   "build_restrictions": "Thrustable",
   "description": "Planet Engine - Used to Smash Celestial Bodies.",
-  "display_name": "Diplomat",
+  "display_name": "Scone",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/delta_v"

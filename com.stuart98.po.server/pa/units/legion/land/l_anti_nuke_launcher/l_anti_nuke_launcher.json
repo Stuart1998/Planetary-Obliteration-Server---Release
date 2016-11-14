@@ -121,12 +121,12 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_build_arm.json"
+      "spec_id": "/pa/units/legion/land/l_anti_nuke_launcher/l_anti_nuke_launcher_build_arm.json"
     },
     {
       "aim_bone": "bone_root",
       "muzzle_bone": "bone_root",
-      "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_tool_weapon.json"
+      "spec_id": "/pa/units/legion/land/l_anti_nuke_launcher/l_anti_nuke_launcher_tool_weapon.json"
     }
   ],
   "unit_types": [

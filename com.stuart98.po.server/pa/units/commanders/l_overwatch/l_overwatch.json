@@ -87,12 +87,14 @@
     },
     {
       "aim_bone": "turret",
+      "ammo_weapon": true,
       "muzzle_bone": "muzzle",
       "primary_weapon": true,
       "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_weapon.json"
     },
     {
       "aim_bone": "turret",
+      "ammo_weapon": true,
       "muzzle_bone": "muzzle",
       "secondary_weapon": true,
       "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"

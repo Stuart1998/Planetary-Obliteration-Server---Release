@@ -119,12 +119,14 @@
     },
     {
       "aim_bone": "bone_turret",
+      "aim_weapon": true,
       "muzzle_bone": "socket_muzzle",
       "primary_weapon": true,
       "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_weapon_laser.json"
     },
     {
       "aim_bone": "bone_turret",
+      "aim_weapon": true,
       "muzzle_bone": "socket_muzzle",
       "secondary_weapon": true,
       "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"

@@ -54,7 +54,7 @@
   "fx_offsets": [
     {
       "bone": "socket_muzzle",
-      "filename": "/pa/effects/specs/fab_combat_spray.pfx",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
       "offset": [
         0,
         0,
@@ -142,7 +142,7 @@
     "size": 1
   },
   "unit_types": [
-    "UNITTYPE_Offense",
+    "UNITTYPE_Fabber",
     "UNITTYPE_Construction",
     "UNITTYPE_Naval",
     "UNITTYPE_Mobile",

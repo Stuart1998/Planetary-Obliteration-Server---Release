@@ -7,12 +7,12 @@
       "effect_spec": "/pa/effects/specs/default_proj_flak_explosion.pfx"
     }
   },
-  "full_damage_splash_radius": 2,
+  "full_damage_splash_radius": 10,
   "initial_velocity": 150.0,
   "lifetime": 6.0,
   "max_velocity": 150.0,
   "splash_damage": 150,
   "splash_damages_allies": true,
-  "splash_radius": 15,
+  "splash_radius": 25,
   "turn_rate": 600.0
 }

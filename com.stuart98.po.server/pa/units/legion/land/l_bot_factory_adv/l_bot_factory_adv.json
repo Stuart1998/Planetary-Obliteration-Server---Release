@@ -36,7 +36,7 @@
   "factory_cooldown_time": 3,
   "fx_offsets": [
     {
-      "bone": "lathe001",
+      "bone": "laser01",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
       "orientation": [
         0,
@@ -46,7 +46,7 @@
       "type": "build"
     },
     {
-      "bone": "lathe002",
+      "bone": "laser02",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
       "orientation": [
         0,
@@ -56,7 +56,7 @@
       "type": "build"
     },
     {
-      "bone": "lathe003",
+      "bone": "laser3",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
       "orientation": [
         0,
@@ -66,7 +66,7 @@
       "type": "build"
     },
     {
-      "bone": "lathe004",
+      "bone": "laser4",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
       "orientation": [
         0,
@@ -74,46 +74,6 @@
         0
       ],
       "type": "build"
-    },
-    {
-      "bone": "lathe005",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "lathe006",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "bone_root",
-      "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "offset": [
-        -21.8,
-        -10,
-        29
-      ],
-      "type": "enabled"
-    },
-    {
-      "bone": "bone_root",
-      "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "offset": [
-        -21.8,
-        10,
-        29
-      ],
-      "type": "enabled"
     }
   ],
   "headlights": [
@@ -245,8 +205,8 @@
     "skirt_decal": "/pa/effects/specs/skirt_bot_adv.json"
   },
   "placement_size": [
-    68,
-    68
+    50,
+    65
   ],
   "recon": {
     "observer": {
