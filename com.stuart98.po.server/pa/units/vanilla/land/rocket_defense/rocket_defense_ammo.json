@@ -17,7 +17,7 @@
     ]
   },
   "initial_velocity": 75.0,
-  "lifetime": 30,
+  "lifetime": 3,
   "max_velocity": 90.0,
   "model": {
     "arrows": 3,

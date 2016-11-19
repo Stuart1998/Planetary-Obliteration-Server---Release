@@ -12,8 +12,11 @@
   "pitch_rate": 720,
   "rate_of_fire": 2.0,
   "target_layers": [
+    "WL_LandHorizontal",
     "WL_Air",
-    "WL_AnyHorizontalGroundOrWaterSurface"
+    "WL_WaterSurface",
+    "WL_Seafloor",
+    "WL_Underwater"
   ],
   "target_priorities": [
     "(Mobile & AirDefense)",
