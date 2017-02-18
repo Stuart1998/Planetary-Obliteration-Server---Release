@@ -41,11 +41,11 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/spark_fire",
-      "effect_spec": "/pa/effects/specs/tesla_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/tesla_muzzle_flash.pfx socket_leftMuzzle"
+      "effect_spec": "/pa/units/vanilla/land/bot_tesla/spark_muzzle_flash.pfx socket_rightMuzzle /pa/units/vanilla/land/bot_tesla/spark_muzzle_flash.pfx socket_leftMuzzle"
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 400,
+  "max_health": 425,
   "mesh_bounds": [
     5,
     5,

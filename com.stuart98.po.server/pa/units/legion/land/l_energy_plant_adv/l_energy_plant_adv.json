@@ -137,23 +137,12 @@
     17
   ],
   "model": [
-    {
-      "animations": {
-        "idle": "/pa/units/legion/land/l_energy_plant_adv/l_energy_plant_adv_idle.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-      "filename": "/pa/units/legion/land/l_energy_plant_adv/l_energy_plant_adv.papa",
-      "layer": "WL_LandHorizontal",
-      "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
+    "animations": {
+      "idle": "/pa/units/legion/land/l_energy_plant_adv/l_energy_plant_adv_idle.papa"
     },
-    {
-      "animations": {
-        "idle": "/pa/units/legion/land/l_energy_plant_adv/l_energy_plant_adv_idle.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-      "filename": "/pa/units/legion/land/l_energy_plant_adv/sea/l_energy_plant_adv.papa",
-      "layer": "WL_WaterSurface"
-    }
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+    "filename": "/pa/units/legion/land/l_energy_plant_adv/l_energy_plant_adv.papa",
+    "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
   ],
   "production": {
     "energy": 16000

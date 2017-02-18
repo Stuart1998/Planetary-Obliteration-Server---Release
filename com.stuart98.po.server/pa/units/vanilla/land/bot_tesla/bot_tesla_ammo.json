@@ -1,16 +1,16 @@
 {
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
-  "damage": 6,
+  "damage": 7,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_bullet",
       "effect_scale": 0.7,
-      "effect_spec": "/pa/units/legion/land/l_sniper_bot/beam_hit.pfx"
+      "effect_spec": "/pa/units/vanilla/land/bot_tesla/spark_hit.pfx"
     }
   },
   "full_damage_splash_radius": 0,
   "fx_trail": {
-    "filename": "/pa/units/legion/land/l_sniper_bot/beam_trail.pfx",
+    "filename": "/pa/units/vanilla/land/bot_tesla/spark_trail.pfx",
     "offset": [
       0.0,
       1.0,
@@ -29,6 +29,6 @@
     "gravity_scalar": 10,
     "radius": 1
   },
-  "splash_damage": 6,
+  "splash_damage": 7,
   "splash_radius": 0.5
 }

@@ -29,7 +29,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 165,
+  "build_metal_cost": 170,
   "description": "Fast Attack Tank - Light, high damage hover vehicle with low range and excellent speed at a low cost.",
   "display_name": "Striker",
   "events": {
@@ -155,7 +155,7 @@
       ]
     }
   ],
-  "max_health": 425,
+  "max_health": 400,
   "mesh_bounds": [
     6.468,
     7.765,
