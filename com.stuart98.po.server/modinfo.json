@@ -8,12 +8,12 @@
   ],
   "companions": [
     "com.stuart98.po.client2.dev",
-	"com.stuart98.po.client.dev"
+	"com.stuart98.po.client1.dev"
   ],
   "context": "server",
   "date": "2017/02/18",
   "dependencies": [
-    "com.stuart98.po.client.dev",
+    "com.stuart98.po.client1.dev",
 	"com.stuart98.po.client2.dev"
   ],
   "description": "Legion + New Units + New Balance = New & Better Expeience. Work in progress, please report bugs and other feedback to the forum thread.",
@@ -28,5 +28,5 @@
     ]
   },
   "signature": "(not yet implemented)",
-  "version": "0.Alpha.Eight.2"
+  "version": "0.Alpha.Eight.3"
 }
