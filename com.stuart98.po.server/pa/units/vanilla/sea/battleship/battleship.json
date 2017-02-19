@@ -29,22 +29,22 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle03 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle01"
+      "effect_spec": "/pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle02 /pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle03 /pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle01"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle05 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle06 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle04"
+      "effect_spec": "/pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle05 /pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle06 /pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle04"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle08 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle09 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle07"
+      "effect_spec": "/pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle08 /pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle09 /pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle07"
     },
     "fired3": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle11 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle12 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle10"
+      "effect_spec": "/pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle11 /pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle12 /pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx socket_muzzle10"
     }
   },
   "fx_offsets": [

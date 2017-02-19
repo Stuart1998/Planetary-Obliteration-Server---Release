@@ -5,7 +5,7 @@
   "base_spec": "/pa/tools/base_artillery_turret_unit/base_artillery_turret_unit.json",
   "firing_standard_deviation": 3.0,
   "idle_aim_delay": 3,
-  "max_range": 120,
+  "max_range": 125,
   "pitch_range": 90,
   "pitch_rate": 20,
   "rate_of_fire": 0.2,

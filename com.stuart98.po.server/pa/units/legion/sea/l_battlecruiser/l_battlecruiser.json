@@ -29,12 +29,12 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx muzzleA02 /pa/effects/specs/tank_muzzle_flash.pfx muzzleB02"
+      "effect_spec": "/pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx muzzleA02 /pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx muzzleB02"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx muzzleA03 /pa/effects/specs/tank_muzzle_flash.pfx muzzleB03"
+      "effect_spec": "/pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx muzzleA03 /pa/units/vanilla/land/bot_skirmish/ground_smoke.pfx muzzleB03"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire",

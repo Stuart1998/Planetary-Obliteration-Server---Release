@@ -106,5 +106,6 @@
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
-  ]
+  ],
+  "wreckage_health_frac": 0.0
 }

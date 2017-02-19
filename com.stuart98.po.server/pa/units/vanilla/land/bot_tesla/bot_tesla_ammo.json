@@ -1,34 +1,11 @@
 {
-  "base_spec": "/pa/ammo/base_shell/base_shell.json",
+  "base_spec": "/pa/ammo/base_beam/base_beam.json",
+  "collision_check": "target",
+  "collision_response": "impact",
   "damage": 7,
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/shell_bullet",
-      "effect_scale": 0.7,
-      "effect_spec": "/pa/units/vanilla/land/bot_tesla/spark_hit.pfx"
-    }
-  },
   "full_damage_splash_radius": 0,
-  "fx_trail": {
-    "filename": "/pa/units/vanilla/land/bot_tesla/spark_trail.pfx",
-    "offset": [
-      0.0,
-      1.0,
-      0.0
-    ]
-  },
-  "initial_velocity": 500.0,
-  "lifetime": 0.28,
-  "max_velocity": 500.0,
-  "model": {
-    "filename": ""
-  },
-  "physics": {
-    "add_to_spatial_db": true,
-    "allow_underground": true,
-    "gravity_scalar": 10,
-    "radius": 1
-  },
+  "fx_beam_spec": "/pa/units/vanilla/land/bot_tesla/spark_trail.pfx",
+  "fx_collision_spec": "/pa/units/vanilla/land/bot_tesla/spark_hit.pfx",
   "splash_damage": 7,
   "splash_radius": 0.5
 }

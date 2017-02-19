@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-  "damage": 100,
+  "damage": 115,
   "flight_type": "Ballistic",
   "full_damage_splash_radius": 2,
   "fx_trail": {
@@ -17,7 +17,7 @@
   "model": {
     "filename": "/pa/units/air/shell/shell.papa"
   },
-  "splash_damage": 67,
+  "splash_damage": 75,
   "splash_damages_allies": true,
   "splash_radius": 8
 }
