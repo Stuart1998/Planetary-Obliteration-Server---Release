@@ -21,7 +21,7 @@
   "max_velocity": 130,
   "min_velocity": 60,
   "model": {
-    "filename": ""
+    "filename": "/pa/units/air/shell/shell.papa"
   },
   "physics": {
     "add_to_spatial_db": false,

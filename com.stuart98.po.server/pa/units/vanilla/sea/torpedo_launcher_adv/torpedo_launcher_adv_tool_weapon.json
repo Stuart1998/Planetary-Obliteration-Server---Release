@@ -15,7 +15,7 @@
   "max_range": 350,
   "pitch_range": 180,
   "pitch_rate": 360,
-  "rate_of_fire": 3,
+  "rate_of_fire": 1,
   "spawn_layers": "WL_Underwater",
   "spread_fire": true,
   "target_layers": [

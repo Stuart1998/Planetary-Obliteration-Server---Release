@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_bot/base_bot.json",
-  "build_metal_cost": 900,
+  "build_metal_cost": 700,
   "description": "Sniper - Long-range. High damage. Slow rate of fire. Intercepts missiles. Attacks land, air and sea targets.",
   "display_name": "Gil-E",
   "events": {

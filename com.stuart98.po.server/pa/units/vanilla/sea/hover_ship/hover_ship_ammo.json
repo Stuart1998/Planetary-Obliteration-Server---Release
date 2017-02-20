@@ -8,10 +8,10 @@
   },
   "full_damage_splash_radius": 2,
   "fx_trail": {
-    "filename": "/pa/units/sea/battleship/battleship_shell_proj_trail.pfx",
+    "filename": "/pa/units/vanilla/land/tank_light_laser/tank_light_laser_proj.pfx",
     "offset": [
       0.0,
-      0.7,
+      0.0,
       0.0
     ]
   },

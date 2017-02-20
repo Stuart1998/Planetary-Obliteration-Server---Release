@@ -9,7 +9,7 @@
     }
   },
   "initial_velocity": 70.0,
-  "lifetime": 5,
+  "lifetime": 6,
   "max_velocity": 50,
   "model": {
     "filename": "/pa/units/sea/torpedo/torpedo.papa"

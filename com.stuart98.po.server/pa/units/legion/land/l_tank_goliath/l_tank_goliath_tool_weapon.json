@@ -1,5 +1,9 @@
 {
+  "ammo_capacity": 5,
+  "ammo_demand": 1,
   "ammo_id": "/pa/units/legion/land/l_tank_goliath/l_tank_goliath_ammo.json",
+  "ammo_per_shot": 5,
+  "ammo_source": "time",
   "arc_type": "ARC_Low",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_artillery_turret_unit/base_artillery_turret_unit.json",
