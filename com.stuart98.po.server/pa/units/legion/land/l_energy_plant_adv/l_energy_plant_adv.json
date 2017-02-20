@@ -1,5 +1,5 @@
 {
-  "TEMP_texelinfo": 32.6108,
+  "TEMP_texelinfo": 27.2827,
   "area_build_separation": 2,
   "area_build_type": "Line",
   "atrophy_cool_down": 15,
@@ -26,115 +26,21 @@
   },
   "fx_offsets": [
     {
-      "bone": "ring01",
-      "filename": "/pa/units/legion/land/l_energy_plant_adv/black_hole.pfx",
+      "bone": "bone_ring001",
+      "filename": "/pa/units/land/l_energy_plant_adv/black_hole.pfx",
       "offset": [
         0,
         0,
         0
       ],
-      "type": "idle"
-    }
-  ],
-  "headlights": [
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2,
-      "near_height": 4.4,
-      "near_width": 4.4,
-      "offset": [
-        7.25,
-        7.25,
-        8
-      ],
-      "orientation": [
-        35.25,
-        -30,
-        125.25
-      ]
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2,
-      "near_height": 4.4,
-      "near_width": 4.4,
-      "offset": [
-        7.25,
-        -7.25,
-        8
-      ],
-      "orientation": [
-        30,
-        30,
-        17
-      ]
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2,
-      "near_height": 4.4,
-      "near_width": 4.4,
-      "offset": [
-        -7.25,
-        -7.25,
-        8
-      ],
-      "orientation": [
-        -35.25,
-        30,
-        -54.75
-      ]
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2,
-      "near_height": 4.4,
-      "near_width": 4.4,
-      "offset": [
-        -7.25,
-        7.25,
-        8
-      ],
-      "orientation": [
-        -35.25,
-        -30,
-        -125.25
-      ]
+      "type": "energy"
     }
   ],
   "max_health": 3250,
   "mesh_bounds": [
-    30,
-    30,
-    17
+    28,
+    28,
+    25
   ],
   "model": {
     "animations": {
@@ -160,7 +66,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 55
+    "diameter": 40
   },
   "si_name": "energy_plant_adv",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
