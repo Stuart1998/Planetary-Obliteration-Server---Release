@@ -1,6 +1,6 @@
 {
   "ammo_capacity": 11,
-  "ammo_demand": 0,
+  "ammo_demand": 1,
   "ammo_id": "/pa/units/vanilla/land/bot_aa_adv/bot_aa_adv_ammo.json",
   "ammo_per_shot": 2,
   "ammo_source": "time",

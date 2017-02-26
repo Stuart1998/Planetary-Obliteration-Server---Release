@@ -13,7 +13,7 @@
   "burn_damage": 0,
   "burn_radius": 0,
   "cruise_height": 20,
-  "damage": 15,
+  "damage": 10,
   "damage_volume": {
     "burnable_remove_radius": 0.0,
     "delay": 0,
@@ -28,7 +28,7 @@
     }
   },
   "flight_type": "Staged",
-  "full_damage_splash_radius": 40,
+  "full_damage_splash_radius": 50,
   "fx_trail": {
     "filename": "/pa/effects/specs/shell_proj_trail.pfx",
     "offset": [
@@ -48,7 +48,7 @@
     "radius": 1
   },
   "splash_damage": 7.5,
-  "splash_radius": 80,
+  "splash_radius": 90,
   "stages": [
     {
       "ignores_LOS": true,

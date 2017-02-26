@@ -31,7 +31,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 30000,
+  "build_metal_cost": 22000,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
