@@ -14,7 +14,7 @@
     "radius": 1
   },
   "pitch_range": 89.9,
-  "pitch_rate": 5,
+  "pitch_rate": 20,
   "rate_of_fire": 0.34,
   "target_layers": [
     "WL_Air",
@@ -23,5 +23,5 @@
     "WL_WaterSurface"
   ],
   "yaw_range": 180,
-  "yaw_rate": 15
+  "yaw_rate": 30
 }

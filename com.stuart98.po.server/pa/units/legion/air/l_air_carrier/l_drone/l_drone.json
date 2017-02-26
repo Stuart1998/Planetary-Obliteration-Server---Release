@@ -32,8 +32,8 @@
     }
   ],
   "guard_layer": "WL_AnySurface",
-  "guard_radius": 200,
-  "max_health": 30,
+  "guard_radius": 250,
+  "max_health": 60,
   "mesh_bounds": [
     4,
     4,
@@ -92,5 +92,6 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Air",
     "UNITTYPE_Basic"
-  ]
+  ],
+  "wreckage_health_frac": 0.0
 }

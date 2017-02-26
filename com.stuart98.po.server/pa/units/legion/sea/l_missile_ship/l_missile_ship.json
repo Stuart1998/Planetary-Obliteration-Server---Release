@@ -30,7 +30,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 4500,
+  "max_health": 3000,
   "mesh_bounds": [
     7,
     32,
@@ -93,24 +93,6 @@
       "projectiles_per_fire": 2,
       "record_index": 1,
       "spec_id": "/pa/units/legion/sea/l_missile_ship/l_missile_ship_light_tool_weapon.json"
-    },
-    {
-      "aim_bone": "pitch001",
-      "muzzle_bone": [
-        "muzzle001",
-        "muzzle002"
-      ],
-      "projectiles_per_fire": 2,
-      "spec_id": "/pa/units/legion/sea/l_missile_ship/l_missile_ship_beam_tool_weapon.json"
-    },
-    {
-      "aim_bone": "pitch003",
-      "muzzle_bone": [
-        "muzzle003",
-        "muzzle004"
-      ],
-      "projectiles_per_fire": 2,
-      "spec_id": "/pa/units/legion/sea/l_missile_ship/l_missile_ship_beam_tool_weapon.json"
     },
     {
       "aim_bone": "rocket002",

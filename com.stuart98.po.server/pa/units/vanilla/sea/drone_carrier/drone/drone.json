@@ -42,8 +42,8 @@
     }
   ],
   "guard_layer": "WL_AnyLayer",
-  "guard_radius": 200,
-  "max_health": 150,
+  "guard_radius": 250,
+  "max_health": 70,
   "mesh_bounds": [
     4,
     4,
@@ -68,7 +68,6 @@
     "type": "air",
     "vertical_speed": 200
   },
-  "passive_health_regen": -5,
   "physics": {
     "gravity_scalar": 1,
     "push_class": 2,
@@ -94,6 +93,11 @@
       "aim_bone": "bone_root",
       "record_index": 0,
       "spec_id": "/pa/units/vanilla/sea/drone_carrier/drone/drone_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "record_index": 0,
+      "spec_id": "/pa/units/vanilla/sea/drone_carrier/drone/drone_death_tool_weapon.json"
     }
   ],
   "unit_types": [
@@ -101,5 +105,6 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Air",
     "UNITTYPE_Basic"
-  ]
+  ],
+  "wreckage_health_frac": 0.0
 }

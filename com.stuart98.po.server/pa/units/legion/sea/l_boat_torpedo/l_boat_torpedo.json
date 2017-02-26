@@ -61,7 +61,7 @@
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius": 200,
-  "max_health": 1000,
+  "max_health": 800,
   "mesh_bounds": [
     4.8,
     10.200001,
@@ -74,7 +74,7 @@
   "navigation": {
     "acceleration": 5,
     "brake": 12,
-    "move_speed": 20,
+    "move_speed": 18,
     "park_stamp_cost": 10,
     "park_stamp_type": "box",
     "turn_speed": 60,

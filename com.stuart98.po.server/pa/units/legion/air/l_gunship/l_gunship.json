@@ -13,7 +13,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 650,
+  "build_metal_cost": 700,
   "description": "Gunship - Heavily Armored. Equipped with Seeking Missiles and a Light Machine Gun.",
   "display_name": "Lockheed",
   "events": {
@@ -92,7 +92,7 @@
     }
   ],
   "guard_layer": "WL_Anysurface",
-  "max_health": 650,
+  "max_health": 750,
   "mesh_bounds": [
     8.5,
     11.5,
