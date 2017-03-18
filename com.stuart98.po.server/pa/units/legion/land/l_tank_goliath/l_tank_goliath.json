@@ -83,8 +83,8 @@
     "filename": "/pa/units/legion/land/l_tank_goliath/l_tank_goliath.papa"
   },
   "navigation": {
-    "acceleration": 1.5,
-    "brake": 1.5,
+    "acceleration": 10,
+    "brake": 10,
     "dodge_multiplier": 1,
     "dodge_radius": 10,
     "move_speed": 10,

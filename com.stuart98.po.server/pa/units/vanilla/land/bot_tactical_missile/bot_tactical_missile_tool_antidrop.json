@@ -4,8 +4,8 @@
     "/pa/units/vanilla/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
     "/pa/units/vanilla/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
     "/pa/units/vanilla/sea/missile_ship/missile_ship_ammo.json",
-	"/pa/units/legion/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json",
-	"/pa/units/legion/sea/l_missile_ship/l_missile_ship_rocket_ammo.json"
+    "/pa/units/legion/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json",
+    "/pa/units/legion/sea/l_missile_ship/l_missile_ship_rocket_ammo.json"
   ],
   "auto_attack": true,
   "auto_task_type": "anti_entity",

@@ -64,7 +64,7 @@
       ]
     }
   ],
-  "max_health": 450,
+  "max_health": 425,
   "mesh_bounds": [
     4.4469,
     5.3999996,
@@ -76,8 +76,8 @@
     "filename": "/pa/units/legion/land/l_tank_shank/l_tank_shank.papa"
   },
   "navigation": {
-    "acceleration": 60,
-    "brake": 60,
+    "acceleration": 30,
+    "brake": 30,
     "move_speed": 16,
     "turn_speed": 80
   },

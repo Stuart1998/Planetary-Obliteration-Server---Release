@@ -81,8 +81,8 @@
     "filename": "/pa/units/land/tank_light_laser/tank_light_laser.papa"
   },
   "navigation": {
-    "acceleration": 2,
-    "brake": 2,
+    "acceleration": 30,
+    "brake": 30,
     "move_speed": 14,
     "turn_speed": 90,
     "type": "land-small"

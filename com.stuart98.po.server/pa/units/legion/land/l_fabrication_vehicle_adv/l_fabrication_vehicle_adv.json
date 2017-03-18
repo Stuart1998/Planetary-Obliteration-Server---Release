@@ -82,7 +82,7 @@
     "acceleration": 40,
     "brake": 40,
     "group_preference": "back",
-    "move_speed": 8,
+    "move_speed": 9,
     "turn_speed": 360
   },
   "physics": {

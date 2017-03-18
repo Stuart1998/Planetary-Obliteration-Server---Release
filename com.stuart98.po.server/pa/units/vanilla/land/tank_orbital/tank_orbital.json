@@ -116,8 +116,8 @@
     "filename": "/pa/units/vanilla/land/tank_orbital/Vao13.papa"
   },
   "navigation": {
-    "acceleration": 2,
-    "brake": 2,
+    "acceleration": 16,
+    "brake": 16,
     "move_speed": 12,
     "turn_speed": 90,
     "type": "land-small"

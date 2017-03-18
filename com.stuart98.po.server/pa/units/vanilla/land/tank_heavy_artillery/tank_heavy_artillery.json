@@ -55,8 +55,8 @@
     "filename": "/pa/units/vanilla/land/tank_heavy_artillery/tank_heavy_artillery2.papa"
   },
   "navigation": {
-    "acceleration": 2,
-    "brake": 2,
+    "acceleration": 15,
+    "brake": 15,
     "group_preference": "back",
     "move_speed": 13,
     "turn_speed": 40,

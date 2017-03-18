@@ -70,8 +70,8 @@
     "filename": "/pa/units/legion/land/l_tank_laser_adv/l_tank_laser_adv.papa"
   },
   "navigation": {
-    "acceleration": 100,
-    "brake": 100,
+    "acceleration": 15,
+    "brake": 15,
     "move_speed": 11,
     "turn_speed": 55
   },

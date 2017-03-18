@@ -15,7 +15,8 @@
     "Air & Bomber",
     "Air & Gunship",
     "Air & Transport",
-    "Air & Mobile"
+    "Air & Mobile",
+	"Mobile - Air"
   ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 180,

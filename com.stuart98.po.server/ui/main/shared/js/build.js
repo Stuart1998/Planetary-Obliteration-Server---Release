@@ -136,11 +136,10 @@ var Build = (function() {
                 "/pa/units/vanilla/sea/frigate/frigate.json": ["seaadv", 22],
 		 
                 "/pa/units/vanilla/sea/fabrication_ship_adv/fabrication_ship_adv.json": ["sea",18],
-                "/pa/units/vanilla/sea/boat_torpedo/boat_torpedo.json": ["sea", 20],
-                "/pa/units/vanilla/sea/destroyer/destroyer.json": ["sea", 21],
-                "/pa/units/vanilla/sea/attack_sub/attack_sub.json": ["sea", 22],
+                "/pa/units/vanilla/sea/destroyer/destroyer.json": ["sea", 20],
+                "/pa/units/vanilla/sea/attack_sub/attack_sub.json": ["sea", 21],
                 "/pa/units/vanilla/sea/sea_scout/sea_scout.json": ["sea", 19],
-                "/pa/units/vanilla/sea/fabrication_barge/fabrication_barge.json": ["sea",23],
+                "/pa/units/vanilla/sea/fabrication_barge/fabrication_barge.json": ["sea",22],
 
 
                 "/pa/units/vanilla/orbital/titan_orbital/titan_orbital.json": ["orbital_structure", 6],

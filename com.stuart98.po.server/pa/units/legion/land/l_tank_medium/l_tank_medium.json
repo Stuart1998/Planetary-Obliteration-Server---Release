@@ -59,8 +59,8 @@
     "filename": "/pa/units/legion/land/l_tank_medium/l_tank_medium.papa"
   },
   "navigation": {
-    "acceleration": 100,
-    "brake": 100,
+    "acceleration": 30,
+    "brake": 30,
     "move_speed": 16,
     "turn_speed": 90,
     "type": "land-small"

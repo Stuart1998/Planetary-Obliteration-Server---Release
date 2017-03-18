@@ -5,7 +5,7 @@
     "filename": "/pa/effects/specs/wave.pfx"
   },
   "initial_velocity": 65.0,
-  "lifetime": 3,
+  "lifetime": 5,
   "max_velocity": 75.0,
   "splash_damage": 100,
   "splash_radius": 5

@@ -72,8 +72,8 @@
     "filename": "/pa/units/legion/land/l_tank_swarm/l_tank_swarm.papa"
   },
   "navigation": {
-    "acceleration": 100,
-    "brake": 100,
+    "acceleration": 20,
+    "brake": 20,
     "group_preference": "back",
     "move_speed": 12,
     "turn_speed": 60

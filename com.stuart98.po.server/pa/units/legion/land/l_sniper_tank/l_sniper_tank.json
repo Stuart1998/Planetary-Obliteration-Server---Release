@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 1200,
+  "build_metal_cost": 900,
   "description": "Sniper - Equipped with a High-Damage Beam Cannon. Attacks Land and Naval.",
   "display_name": "Deathmark",
   "events": {
@@ -75,7 +75,7 @@
       ]
     }
   ],
-  "max_health": 250,
+  "max_health": 450,
   "mesh_bounds": [
     6.985,
     12.365,
@@ -87,9 +87,9 @@
     "filename": "/pa/units/legion/land/l_sniper_tank/l_sniper_tank.papa"
   },
   "navigation": {
-    "acceleration": 100,
-    "brake": 100,
-    "move_speed": 8,
+    "acceleration": 10,
+    "brake": 10,
+    "move_speed": 12,
     "turn_speed": 90
   },
   "physics": {

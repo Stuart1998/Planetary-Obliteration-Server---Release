@@ -110,6 +110,7 @@
   "selection_icon": {
     "diameter": 18
   },
+  "si_name": "bot_arty",
   "tools": [
     {
       "aim_bone": "bone_pitch01",

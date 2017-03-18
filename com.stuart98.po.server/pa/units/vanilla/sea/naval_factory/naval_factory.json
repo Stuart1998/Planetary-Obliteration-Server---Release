@@ -38,7 +38,7 @@
       "audio_cue": "/SE/Death/Sea_large"
     }
   },
-  "factory_cooldown_time": 8,
+  "factory_cooldown_time": 5,
   "fx_offsets": [
     {
       "bone": "socket_muzzle01",

@@ -7,5 +7,5 @@
   "max_velocity": 150.0,
   "splash_damage": 40,
   "splash_damages_allies": true,
-  "splash_radius": 7
+  "splash_radius": 10
 }

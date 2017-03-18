@@ -5,9 +5,9 @@
   },
   "damage": 400,
   "damage_volume": {
-    "initial_radius": 7.5
+    "initial_radius": 10
   },
   "splash_damage": 400,
   "splash_damages_allies": true,
-  "splash_radius": 7.5
+  "splash_radius": 10
 }

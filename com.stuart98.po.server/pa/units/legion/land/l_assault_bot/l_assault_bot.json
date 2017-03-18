@@ -20,7 +20,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_bot/base_bot.json",
-  "build_metal_cost": 145,
+  "build_metal_cost": 120,
   "description": "Assault Walker - Attacks Land and Naval.",
   "display_name": "Peacekeeper",
   "events": {
@@ -30,7 +30,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 320,
+  "max_health": 355,
   "mesh_bounds": [
     4,
     2.5,

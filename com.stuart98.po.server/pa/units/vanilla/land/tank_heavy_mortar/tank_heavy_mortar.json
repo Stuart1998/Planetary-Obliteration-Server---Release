@@ -55,8 +55,8 @@
     "filename": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar.papa"
   },
   "navigation": {
-    "acceleration": 2,
-    "brake": 2,
+    "acceleration": 15,
+    "brake": 15,
     "group_preference": "back",
     "move_speed": 12.5,
     "turn_speed": 35,

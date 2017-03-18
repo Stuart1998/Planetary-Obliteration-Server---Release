@@ -78,8 +78,8 @@
     "filename": "/pa/units/legion/land/l_fabrication_vehicle_combat/l_fabrication_vehicle_combat.papa"
   },
   "navigation": {
-    "acceleration": 180,
-    "brake": 120,
+    "acceleration": 40,
+    "brake": 40,
     "group_preference": "back",
     "move_speed": 16,
     "turn_speed": 360
