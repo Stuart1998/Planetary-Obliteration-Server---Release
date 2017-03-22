@@ -45,48 +45,127 @@
   },
   "fx_offsets": [
     {
-      "bone": "hover",
-      "filename": "/pa/effects/specs/hover.pfx",
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
       "offset": [
+        -2.86,
+        -1.9,
+        0.96
+      ],
+      "orientation": [
         0,
-        -2,
-        0
+        0,
+        -202.5
       ],
       "type": "idle"
     },
     {
-      "bone": "hover",
-      "filename": "/pa/effects/specs/hover.pfx",
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
       "offset": [
-        1.6,
-        2,
-        0
+        2.86,
+        -1.9,
+        0.96
+      ],
+      "orientation": [
+        0,
+        0,
+        22.5
       ],
       "type": "idle"
     },
     {
-      "bone": "hover",
-      "filename": "/pa/effects/specs/hover.pfx",
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
       "offset": [
-        -1.6,
-        2,
-        0
+        2.13,
+        2.14,
+        2.22
+      ],
+      "orientation": [
+        0,
+        0,
+        -15
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
+      "offset": [
+        -2.13,
+        2.14,
+        2.22
+      ],
+      "orientation": [
+        0,
+        0,
+        195
       ],
       "type": "idle"
     }
   ],
   "guard_layer": "WL_Air",
+  "headlights": [
+    {
+      "color": [
+        0.9,
+        0.92,
+        1.0
+      ],
+      "far_distance": 20.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1.2,
+      "near_height": 2.0,
+      "near_width": 2.0,
+      "offset": [
+        1.8,
+        -2,
+        1.0
+      ],
+      "orientation": [
+        0.0,
+        65.0,
+        0.0
+      ]
+    },
+    {
+      "color": [
+        0.9,
+        0.92,
+        1.0
+      ],
+      "far_distance": 20.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1.2,
+      "near_height": 2.0,
+      "near_width": 2.0,
+      "offset": [
+        -1.8,
+        -2,
+        1.0
+      ],
+      "orientation": [
+        0.0,
+        65.0,
+        0.0
+      ]
+    }
+  ],
   "max_health": 350,
   "mesh_bounds": [
-    4,
-    5.6,
-    3.8
+    4.93769,
+    6.4,
+    2.6835
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/legion/land/l_hover_laser/l_hover_laser_anim_idle.papa"
+      "hover": "/pa/units/legion/land/l_hover_laser/l_hover_laser_anim_hover.papa",
+      "recoil": "/pa/units/legion/land/l_hover_laser/l_hover_laser_anim_cylinder.papa"
     },
-    "animtree": "/pa/anim/one_turret_idle.json",
+    "animtree": "/pa/anim/hover_laser_anim_tree.json",
     "filename": "/pa/units/legion/land/l_hover_laser/l_hover_laser.papa"
   },
   "navigation": {
@@ -114,12 +193,12 @@
     }
   },
   "selection_icon": {
-    "diameter": 13.0
+    "diameter": 12.0
   },
   "tools": [
     {
-      "aim_bone": "turret00",
-      "muzzle_bone": "muzzle00",
+      "aim_bone": "socket_aim",
+      "muzzle_bone": "bone_muzzle",
       "spec_id": "/pa/units/legion/land/l_hover_laser/l_hover_laser_tool_weapon.json"
     }
   ],

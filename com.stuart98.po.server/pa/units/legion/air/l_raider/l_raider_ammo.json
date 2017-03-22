@@ -2,9 +2,9 @@
   "base_spec": "/pa/ammo/base_beam/base_beam.json",
   "collision_check": "target",
   "collision_response": "impact",
-  "damage": 7,
+  "damage": 3.5,
   "fx_beam_spec": "/pa/units/legion/air/l_fighter/beam_trail.pfx",
   "fx_collision_spec": "/pa/units/legion/air/l_fighter/beam_hit.pfx",
-  "splash_damage": 7,
+  "splash_damage": 3.5,
   "splash_radius": 0.5
 }

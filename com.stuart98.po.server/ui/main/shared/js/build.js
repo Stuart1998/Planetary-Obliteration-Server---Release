@@ -254,10 +254,11 @@ var Build = (function() {
 		
 		"/pa/units/legion/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv.json": [ "L_airadv", 18 ],
 		"/pa/units/legion/air/l_fighter_adv/l_fighter_adv.json": [ "L_airadv", 19 ],
-		"/pa/units/legion/air/l_gunship/l_gunship.json": [ "L_airadv", 20 ],
-		"/pa/units/legion/air/l_air_carrier/l_air_carrier.json": [ "L_airadv", 21 ],
-		"/pa/units/legion/air/l_air_scout_adv/l_air_scout_adv.json": [ "L_airadv", 22 ],
-		"/pa/units/legion/air/l_firestarter/l_firestarter.json": [ "L_airadv", 23 ],
+		"/pa/units/legion/air/l_firestarter/l_firestarter.json": [ "L_airadv", 20 ],
+		"/pa/units/legion/air/l_gunship/l_gunship.json": [ "L_airadv", 21 ],
+		"/pa/units/legion/air/l_air_carrier/l_air_carrier.json": [ "L_airadv", 22 ],
+		"/pa/units/legion/air/l_air_scout_adv/l_air_scout_adv.json": [ "L_airadv", 23 ],
+		
 		
 		"/pa/units/legion/air/l_fabrication_aircraft/l_fabrication_aircraft.json": [ "L_air", 18 ],
 		"/pa/units/legion/air/l_fighter/l_fighter.json": [ "L_air", 19 ],

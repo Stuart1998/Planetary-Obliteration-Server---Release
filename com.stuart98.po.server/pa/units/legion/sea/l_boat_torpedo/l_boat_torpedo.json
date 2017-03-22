@@ -97,7 +97,7 @@
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 100,
+          "radius": 60,
           "shape": "capsule"
         }
       ]

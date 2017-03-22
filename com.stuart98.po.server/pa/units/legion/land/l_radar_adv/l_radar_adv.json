@@ -14,7 +14,7 @@
   "consumption": {
     "energy": 7250
   },
-  "description": "Advanced Radar - Detects Enemy Units Inside a Large Area.",
+  "description": "Advanced Camera - Provides vision of enemies over a large area.",
   "display_name": "Overseer",
   "energy_efficiency_requirement": 0.9,
   "events": {

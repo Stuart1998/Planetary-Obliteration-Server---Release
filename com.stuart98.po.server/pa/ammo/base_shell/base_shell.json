@@ -20,7 +20,7 @@
   "lifetime": 4,
   "max_velocity": 70.0,
   "model": {
-    "filename": "/pa/units/vanilla/air/shell/shell.papa"
+    "filename": "/pa/units/air/shell/shell.papa"
   },
   "splash_damage": 0,
   "splash_radius": 1

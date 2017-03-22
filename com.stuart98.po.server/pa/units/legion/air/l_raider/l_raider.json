@@ -133,6 +133,7 @@
         "right_muzzle",
         "left_muzzle"
       ],
+      "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/legion/air/l_raider/l_raider_tool_weapon.json"
     }

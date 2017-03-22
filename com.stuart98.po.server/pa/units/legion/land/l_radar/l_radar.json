@@ -14,8 +14,8 @@
   "consumption": {
     "energy": 1200
   },
-  "description": "Basic Radar - Detects Nearby Enemy Units.",
-  "display_name": "Radar",
+  "description": "Basic Radar - Detects the presence of enemy units in a large area.",
+  "display_name": "Scanner",
   "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {

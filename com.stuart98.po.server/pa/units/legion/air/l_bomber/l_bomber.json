@@ -79,7 +79,7 @@
     "dodge_radius": 0,
     "hover_time": -1.0,
     "move_speed": 65,
-    "turn_speed": 55,
+    "turn_speed": 75,
     "type": "air",
     "vertical_speed": 40,
     "wobble_factor": 0.05,

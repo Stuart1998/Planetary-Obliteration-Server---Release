@@ -76,7 +76,7 @@
   "navigation": {
     "acceleration": 2,
     "brake": 2,
-    "move_speed": 11,
+    "move_speed": 10,
     "park_stamp_cost": 10,
     "park_stamp_type": "sphere",
     "turn_speed": 90

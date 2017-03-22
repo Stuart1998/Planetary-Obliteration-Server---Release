@@ -127,13 +127,16 @@
     },
     {
       "aim_bone": "bone_turret",
+      "aim_weapon": true,
       "muzzle_bone": "socket_rightMuzzle",
       "secondary_weapon": true,
       "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"
     },
     {
       "aim_bone": "bone_turret",
+      "aim_weapon": true,
       "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true,
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/commanders/l_rockteeth/gatling_gun_tool_weapon.json"
     }

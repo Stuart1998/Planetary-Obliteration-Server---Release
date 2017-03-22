@@ -14,8 +14,8 @@
   "consumption": {
     "energy": 6000
   },
-  "description": "Advanced Radar - Detects nearby enemy land, sea, and air units.",
-  "display_name": "Advanced Radar",
+  "description": "Advanced Camera - Provides vision of enemies over a large area.",
+  "display_name": "Oracle",
   "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {

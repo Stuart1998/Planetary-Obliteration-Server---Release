@@ -23,8 +23,8 @@
     "ORDER_Use",
     "ORDER_FireSecondaryWeapon"
   ],
-  "description": "Flame Deployment Bomber - Relic of the First Nomad War. Incinerates Rebel Enemies without Mercy.",
-  "display_name": "Salamander",
+  "description": "Flame Deployment Bomber - Heavy damage over an area. Well armoured. Can deploy light flamethrower turret.",
+  "display_name": "Perdition",
   "events": {
     "died": {
       "effect_scale": 0.85,

@@ -23,7 +23,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 90,
+  "build_metal_cost": 180,
   "description": "Suicide Bomb Plane - attacks air only.",
   "display_name": "Nova",
   "fx_offsets": [
@@ -73,7 +73,21 @@
   "tools": [
     {
       "aim_bone": "bone_root",
+      "primary_weapon": true,
       "spec_id": "/pa/units/legion/air/l_air_bomb/l_air_bomb_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "secondary_weapon": true,
+      "show_range": false,
+      "spec_id": "/pa/units/legion/air/l_air_bomb/l_air_bomb_deploy_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired0",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/legion/air/l_air_bomb/l_air_bomb_tracer_tool_weapon.json"
     }
   ],
   "unit_types": [

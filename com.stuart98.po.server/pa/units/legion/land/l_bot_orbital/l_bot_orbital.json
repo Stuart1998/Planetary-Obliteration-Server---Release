@@ -33,6 +33,10 @@
     "died": {
       "audio_cue": "/SE/Death/Bot",
       "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/base/base_fire_laser",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle00"
     }
   },
   "guard_layer": "WL_Orbital",

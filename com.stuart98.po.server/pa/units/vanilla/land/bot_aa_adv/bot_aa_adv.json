@@ -47,7 +47,7 @@
     }
   },
   "guard_layer": "WL_Air",
-  "max_health": 210,
+  "max_health": 380,
   "mesh_bounds": [
     4,
     2,

@@ -2,7 +2,7 @@
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
   "burn_damage": 200,
   "burn_radius": 80,
-  "damage": 500,
+  "damage": 200,
   "damage_volume": {
     "burnable_remove_radius": 60,
     "delay": 3,
@@ -29,6 +29,7 @@
   "lifetime": 5,
   "max_velocity": 60,
   "model": null,
-  "splash_damage": 500,
+  "splash_damage": 200,
+  "splash_damages_allies": false,
   "splash_radius": 80
 }

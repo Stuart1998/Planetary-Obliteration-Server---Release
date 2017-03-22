@@ -1,0 +1,29 @@
+{
+  "base_spec": "/pa/ammo/base_ammo/base_ammo.json",
+  "damage": 0,
+  "events": {
+    "died": {
+      "audio_cue": null,
+      "effect_spec": null
+    }
+  },
+  "full_damage_splash_radius": 0,
+  "fx_trail": {
+    "filename": null,
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "initial_velocity": 60,
+  "lifetime": 5,
+  "max_velocity": 60,
+  "model": {
+    "filename": ""
+  },
+  "spawn_unit_on_death": "/pa/units/legion/air/l_air_carrier/l_drone/l_drone.json",
+  "splash_damage": 0,
+  "splash_damages_allies": false,
+  "splash_radius": 0
+}
