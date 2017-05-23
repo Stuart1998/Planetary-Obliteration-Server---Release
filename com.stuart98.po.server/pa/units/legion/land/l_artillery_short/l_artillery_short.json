@@ -8,12 +8,12 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_structure/base_structure.json",
-  "build_metal_cost": 900,
+  "build_metal_cost": 800,
   "command_caps": [
     "ORDER_Attack"
   ],
   "description": "Medium Anti-Ship & Anti-Land Railgun - Requires Energy to Fire.",
-  "display_name": "Theodor",
+  "display_name": "Immolator",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"

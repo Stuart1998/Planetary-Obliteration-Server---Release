@@ -18,7 +18,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_structure/base_structure.json",
-  "build_metal_cost": 2000,
+  "build_metal_cost": 2750,
   "buildable_projectiles": [
     "/pa/units/legion/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo.json"
   ],

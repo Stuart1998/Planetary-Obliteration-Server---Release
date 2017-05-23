@@ -8,9 +8,11 @@
   "rate_of_fire": 0.1,
   "spread_fire": true,
   "target_layers": [
-    "WL_Air",
     "WL_LandHorizontal",
-    "WL_WaterSurface"
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor",
+    "WL_Air"
   ],
   "yaw_range": 180,
   "yaw_rate": 180

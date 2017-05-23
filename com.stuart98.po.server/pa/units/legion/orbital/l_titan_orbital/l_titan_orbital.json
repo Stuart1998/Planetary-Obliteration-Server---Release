@@ -22,7 +22,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 28000,
+  "build_metal_cost": 32000,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -217,14 +217,7 @@
           "layer": "orbital",
           "radius": 600,
           "shape": "sphere"
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 200,
-          "shape": "capsule"
         }
-      ]
     }
   },
   "selection_icon": {

@@ -14,7 +14,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/sea/base_ship/base_ship.json",
-  "build_metal_cost": 2700,
+  "build_metal_cost": 2800,
   "description": "Battlecruiser - Long range advanced anti-ship, and anti-land cannon and anti-everything heavy laser.",
   "display_name": "Hydra",
   "events": {
@@ -48,7 +48,7 @@
     }
   ],
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 3600,
+  "max_health": 3800,
   "mesh_bounds": [
     9,
     40,

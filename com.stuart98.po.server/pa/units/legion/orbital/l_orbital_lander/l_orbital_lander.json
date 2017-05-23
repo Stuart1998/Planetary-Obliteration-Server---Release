@@ -20,7 +20,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 200,
+  "build_metal_cost": 300,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -119,7 +119,7 @@
     }
   ],
   "gravwell_velocity_multiplier": 5.0,
-  "max_health": 150,
+  "max_health": 200,
   "mesh_bounds": [
     30,
     20,
@@ -135,11 +135,11 @@
     "filename": "/pa/units/legion/orbital/l_orbital_lander/l_orbital_lander.papa"
   },
   "navigation": {
-    "acceleration": 25,
-    "brake": 25,
-    "move_speed": 25,
+    "acceleration": 40,
+    "brake": 40,
+    "move_speed": 40,
     "turn_speed": 360,
-    "vertical_speed": 200
+    "vertical_speed": 400
   },
   "physics": {
     "radius": 8
