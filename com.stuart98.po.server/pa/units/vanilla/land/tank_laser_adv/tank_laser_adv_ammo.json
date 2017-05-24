@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
-  "damage": 300,
+  "damage": 250,
   "full_damage_splash_radius": 1,
   "initial_velocity": 140.0,
   "lifetime": 2,
@@ -12,7 +12,7 @@
     "radius": 1,
     "type": "Projectile"
   },
-  "splash_damage": 300,
-  "splash_damages_allies": false,
+  "splash_damage": 250,
+  "splash_damages_allies": true,
   "splash_radius": 3
 }

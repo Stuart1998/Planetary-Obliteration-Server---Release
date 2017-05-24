@@ -128,7 +128,7 @@
   },
   "navigation": {
     "acceleration": 75,
-    "bank_factor": 2,
+    "bank_factor": 30,
     "brake": 75,
     "inter_planetary_type": "system",
     "move_speed": 75,
