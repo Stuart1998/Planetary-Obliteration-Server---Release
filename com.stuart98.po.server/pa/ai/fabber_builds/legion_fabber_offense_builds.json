@@ -4,6 +4,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -48,6 +53,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -101,6 +111,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "compare0": "<",
             "test_type": "UnitCountOnPlanet",
@@ -197,13 +212,18 @@
       "placement_rules": {
         "buffer": 2
       },
-      "priority": 360,
+      "priority": 0,
       "shared_instance_count": "UnitCannon",
       "to_build": "LegionOrbitalAdvancedCannon"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -270,6 +290,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "PlanetHasUseablePlanetWeapon"

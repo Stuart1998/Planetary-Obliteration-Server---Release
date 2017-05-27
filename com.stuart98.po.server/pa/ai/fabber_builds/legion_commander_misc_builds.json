@@ -5,6 +5,11 @@
         [
           {
             "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
             "test_type": "WantCommanderOffPlanetByTeleporter"
           },
           {

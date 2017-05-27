@@ -1,1906 +1,2566 @@
 {
   "build_list": [
     {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">=",
-            "test_type": "DistFromMainBase",
-            "value0": 150
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & Basic & AirDefense) - Custom4",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & MetalProduction",
-            "value0": 2
-          },
-          {
-            "string0": "BasicAirDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<=",
-            "test_type": "DistFromNearestEnemyThreat",
-            "value0": 200
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & Basic & AirDefense) - Custom4",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & MetalProduction",
-            "value0": 2
-          },
-          {
-            "string0": "BasicAirDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyUberBasicFabber"
-      ],
+      "name": "Slinger - Mex",
+      "to_build": "BasicAirDefense",
       "instance_count": 1,
-      "name": "Basic Air Defense - Mex",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 35,
-          "value": 5
-        },
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & MetalProduction"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 100,
-            "unit_type_string": "(Structure & Basic & AirDefense) - Custom4"
-          }
-        ]
-      },
-      "priority": 261,
       "shared_instance_count": "BasicAirDefense",
-      "to_build": "BasicAirDefense"
-    },
-    {
+      "priority": 261,
       "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Custom4 & AirDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air"
-          },
-          {
-            "string0": "BasicMediumAirDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Custom4 & AirDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
-            "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air"
-          },
-          {
-            "string0": "BasicMediumAirDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyUberFabber",
-        "UberSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Medium Air Defense",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & Basic & Custom4 & AirDefense"
-          }
-        ]
-      },
-      "priority": 255,
-      "to_build": "BasicMediumAirDefense"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Custom4 & AirDefense",
-            "value0": 4
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": ">",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air"
-          },
-          {
-            "string0": "BasicMediumAirDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyUberFabber",
-        "UberSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Medium Air Defense - Threat",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Basic & Custom4 & AirDefense"
-          }
-        ]
-      },
-      "priority": 379,
-      "to_build": "BasicMediumAirDefense"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">=",
-            "test_type": "DistFromMainBase",
-            "value0": 150
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & MetalProduction",
-            "value0": 2
-          },
-          {
-            "string0": "BasicLandDefenseSingle",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<=",
-            "test_type": "DistFromNearestEnemyThreat",
-            "value0": 200
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & MetalProduction",
-            "value0": 2
-          },
-          {
-            "string0": "BasicLandDefenseSingle",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
       "builders": [
         "AnyUberBasicFabber"
       ],
-      "instance_count": 1,
-      "name": "Basic Land Defense Single - Mex",
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 150
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromNearestEnemyThreat",
+            "compare0": "<=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
+          }
+        ]
+      ],
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 35,
-          "value": 5
-        },
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & MetalProduction",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & MetalProduction"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 100,
-            "unit_type_string": "Structure & Basic & SurfaceDefense"
+            "count": 1
           }
-        ]
-      },
-      "priority": 261,
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 35,
+          "value": 5
+        }
+      }
+    },
+    {
+      "name": "Needler - Mex",
+      "to_build": "BasicLandDefenseSingle",
+      "instance_count": 1,
       "shared_instance_count": "BasicLandDefense",
-      "to_build": "BasicLandDefenseSingle"
-    },
-    {
+      "priority": 261,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 150
+          },
+          {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & AirDefense",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
             "value0": 2
           },
           {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "string0": "BasicAirDefense",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefenseSingle"
           }
         ],
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & AirDefense",
-            "value0": 2
+            "test_type": "DistFromNearestEnemyThreat",
+            "compare0": "<=",
+            "value0": 200
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "string0": "BasicAirDefense",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefenseSingle"
           }
         ]
       ],
-      "builders": [
-        "AnyUberBasicFabber"
-      ],
-      "instance_count": 1,
-      "name": "Basic Air Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & MetalProduction",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & Basic & AirDefense"
+            "range": 100,
+            "count": 1
           }
-        ]
-      },
-      "priority": 85,
-      "shared_instance_count": "BasicAirDefense",
-      "to_build": "BasicAirDefense"
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 35,
+          "value": 5
+        }
+      }
     },
     {
+      "name": "Vortex - Mex",
+      "to_build": "BasicNavalDefense",
+      "instance_count": 1,
+      "priority": 261,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Factory",
+            "boolean": true
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 150
+          },
+          {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & AirDefense",
-            "value0": 4
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": ">",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
           },
           {
-            "string0": "BasicAirDefense",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromNearestEnemyThreat",
+            "compare0": "<=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalDefense"
           }
         ]
       ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & MetalProduction",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
+          }
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 35,
+          "value": 5
+        }
+      }
+    },
+    {
+      "name": "Slinger",
+      "to_build": "BasicAirDefense",
+      "instance_count": 1,
+      "shared_instance_count": "BasicAirDefense",
+      "priority": 85,
+      "base_sort": "FromPerimeter",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber"
       ],
-      "instance_count": 1,
-      "name": "Basic Air Defense - Threat",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Basic & AirDefense"
-          }
-        ]
-      },
-      "priority": 262,
-      "shared_instance_count": "BasicAirDefense",
-      "to_build": "BasicAirDefense"
-    },
-    {
-      "base_sort": "FromPerimeter",
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
             "value0": 2
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": false,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "BasicLandDefenseSingle",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
           }
         ],
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
             "value0": 2
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "boolean": false,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "BasicLandDefenseSingle",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
           }
         ]
       ],
-      "builders": [
-        "AnyUberBasicFabber"
-      ],
-      "instance_count": 1,
-      "name": "Basic Land Defense Single",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & Basic & SurfaceDefense"
+            "count": 1
           }
         ]
-      },
-      "priority": 85,
-      "shared_instance_count": "BasicLandDefense",
-      "to_build": "BasicLandDefenseSingle"
+      }
     },
     {
+      "name": "Slinger - Threat",
+      "to_build": "BasicAirDefense",
+      "instance_count": 1,
+      "shared_instance_count": "BasicAirDefense",
+      "priority": 262,
       "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": ">",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": false,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "BasicLandDefenseSingle",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
       "builders": [
         "UberCommander"
       ],
-      "instance_count": 1,
-      "name": "Basic Land Defense Single - Threat",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Basic & SurfaceDefense"
-          }
-        ]
-      },
-      "priority": 262,
-      "shared_instance_count": "BasicLandDefense",
-      "to_build": "BasicLandDefenseSingle"
-    },
-    {
-      "base_sort": "FromPerimeter",
       "build_conditions": [
         [
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
           },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "value0": 2
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "string0": "BasicLandDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
             "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "value0": 2
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
-            "value0": 1
-          },
-          {
-            "string0": "BasicLandDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyUberBasicFabber"
-      ],
-      "instance_count": 1,
-      "name": "Basic Land Defense",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & Basic & SurfaceDefense"
-          }
-        ]
-      },
-      "priority": 85,
-      "to_build": "BasicLandDefense"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
             "value0": 4
           },
           {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": ">",
-            "string0": "Land",
-            "string1": "AntiSurface",
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "string0": "BasicLandDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyUberBasicFabber"
-      ],
-      "instance_count": 1,
-      "name": "Basic Land Defense - Threat",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Basic & SurfaceDefense"
-          }
-        ]
-      },
-      "priority": 262,
-      "to_build": "BasicLandDefense"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & Basic & Artillery) - Custom4",
-            "value0": 2
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "string0": "Enemy",
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Structure",
-            "value0": 350,
-            "value1": 3
-          },
-          {
-            "string0": "BasicArtillery",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyUberBasicFabber"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 2,
-      "name": "Basic Artillery",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        },
-        "unit_count_rules": [
-          {
-            "alliance": "Enemy",
-            "compare_type": ">=",
-            "count": 3,
-            "range": 260,
-            "unit_type_string": "Structure"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "(Structure & Basic & Artillery) - Custom4"
-          }
-        ]
-      },
-      "priority": 245,
-      "to_build": "BasicArtillery"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Custom4 & Artillery",
-            "value0": 2
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "string0": "Enemy",
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Structure",
-            "value0": 350,
-            "value1": 3
-          },
-          {
-            "string0": "MiniUnitCannon",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyUberBasicFabber"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 2,
-      "name": "Unit Artillery",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        },
-        "unit_count_rules": [
-          {
-            "alliance": "Enemy",
-            "compare_type": ">=",
-            "count": 3,
-            "range": 260,
-            "unit_type_string": "Structure"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Basic & Custom4 & Artillery"
-          }
-        ]
-      },
-      "priority": 245,
-      "to_build": "MiniUnitCannon"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & AirDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air & Advanced"
-          },
-          {
-            "string0": "AdvancedAirDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & AirDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
-            "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air & Advanced"
-          },
-          {
-            "string0": "AdvancedAirDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyUberAdvancedFabber",
-        "UberSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Advanced Air Defense",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & Advanced & AirDefense"
-          }
-        ]
-      },
-      "priority": 255,
-      "to_build": "AdvancedAirDefense"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & AirDefense",
-            "value0": 4
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": ">",
             "string0": "Air",
             "string1": "AntiAir",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air & Advanced"
-          },
-          {
-            "string0": "AdvancedAirDefense",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
           }
         ]
       ],
-      "builders": [
-        "AnyUberAdvancedFabber",
-        "UberSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Advanced Air Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 2,
             "range": 75,
-            "unit_type_string": "Structure & Advanced & AirDefense"
+            "count": 2
           }
         ]
-      },
-      "priority": 379,
-      "to_build": "AdvancedAirDefense"
+      }
     },
     {
+      "name": "Chastener",
+      "to_build": "BasicMediumAirDefense",
+      "instance_count": 1,
+      "shared_instance_count": "BasicAirDefense",
+      "priority": 85,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & Advanced & SurfaceDefense) - Custom4",
-            "value0": 4
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 2
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "AdvancedLandDefense",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
           }
         ],
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & Advanced & SurfaceDefense) - Custom4",
-            "value0": 4
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 2
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "AdvancedLandDefense",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
           }
         ]
       ],
-      "builders": [
-        "AnyUberAdvancedFabber",
-        "UberSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Advanced Land Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "(Structure & Advanced & SurfaceDefense) - Custom4"
+            "count": 1
           }
         ]
-      },
-      "priority": 255,
-      "to_build": "AdvancedLandDefense"
+      }
     },
     {
+      "name": "Chastener - Threat",
+      "to_build": "BasicMediumAirDefense",
+      "instance_count": 1,
+      "shared_instance_count": "BasicAirDefense",
+      "priority": 262,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & Advanced & SurfaceDefense) - Custom4",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">",
-            "string0": "Land",
-            "string1": "AntiSurface",
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "AdvancedLandDefense",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
           }
         ]
       ],
-      "builders": [
-        "AnyUberAdvancedFabber",
-        "UberSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Advanced Land Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 2,
             "range": 75,
-            "unit_type_string": "(Structure & Advanced & SurfaceDefense) - Custom4"
+            "count": 2
           }
         ]
-      },
-      "priority": 379,
-      "to_build": "AdvancedLandDefense"
+      }
     },
     {
+      "name": "Needler",
+      "to_build": "BasicLandDefenseSingle",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "priority": 85,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefenseSingle"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefenseSingle"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Needler - Threat",
+      "to_build": "BasicLandDefenseSingle",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "priority": 262,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "UberCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefenseSingle"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rapier",
+      "to_build": "BasicLandDefense",
+      "instance_count": 1,
+      "priority": 85,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rapier - Threat",
+      "to_build": "BasicLandDefense",
+      "instance_count": 1,
+      "priority": 262,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vortex",
+      "to_build": "BasicNavalDefense",
+      "instance_count": 1,
+      "priority": 85,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Factory",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vortex - Threat",
+      "to_build": "BasicNavalDefense",
+      "instance_count": 1,
+      "priority": 262,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Factory",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pelter",
+      "to_build": "BasicArtillery",
+      "instance_count": 1,
+      "shared_instance_count": "BasicArtillery",
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 245,
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Artillery",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "string0": "Enemy",
+            "value0": 350,
+            "compare0": ">=",
+            "value1": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicArtillery"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure",
+            "alliance": "Enemy",
+            "compare_type": ">=",
+            "range": 260,
+            "count": 3
+          },
+          {
+            "unit_type_string": "Structure & Basic & Artillery",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Lobber",
+      "to_build": "MiniUnitCannon",
+      "instance_count": 1,
+      "shared_instance_count": "BasicArtillery",
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 245,
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Artillery",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "string0": "Enemy",
+            "value0": 430,
+            "compare0": ">=",
+            "value1": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "MiniUnitCannon"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure",
+            "alliance": "Enemy",
+            "compare_type": ">=",
+            "range": 340,
+            "count": 3
+          },
+          {
+            "unit_type_string": "Structure & Basic & Artillery",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Tornado",
+      "to_build": "AdvancedAirDefense",
+      "instance_count": 1,
+      "priority": 255,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Air & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Air & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tornado - Threat",
+      "to_build": "AdvancedAirDefense",
+      "instance_count": 1,
+      "priority": 379,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Air & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Queller",
+      "to_build": "AdvancedLandDefense",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedLandDefense",
+      "priority": 255,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedLandDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Queller - Threat",
+      "to_build": "AdvancedLandDefense",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedLandDefense",
+      "priority": 379,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shatterer",
+      "to_build": "AdvancedSniperLandDefense",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedLandDefense",
+      "priority": 255,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedLandDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedSniperLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shatterer - Threat",
+      "to_build": "AdvancedSniperLandDefense",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedLandDefense",
+      "priority": 379,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedSniperLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Maelstrom",
+      "to_build": "AdvancedNavalDefense",
+      "instance_count": 1,
+      "priority": 85,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & Naval & Defense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & (Naval | Sub) & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & Naval & Defense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & (Naval | Sub) & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Maelstrom - Threat",
+      "to_build": "AdvancedNavalDefense",
+      "instance_count": 1,
+      "priority": 262,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & Naval & Defense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & (Naval | Sub) & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & Naval & Defense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & (Naval | Sub) & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wall",
+      "to_build": "Wall",
+      "instance_count": 1,
+      "priority": 0,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Defense",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "string0": "Wall",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Wall"
           }
         ]
       ],
-      "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
-      "instance_count": 1,
-      "name": "Wall",
       "placement_rules": {
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & Defense - AirDefense",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 8,
-            "unit_type_string": "Structure & Defense - AirDefense"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Wall",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 4,
             "range": 20,
-            "unit_type_string": "Structure & Wall"
+            "count": 4
           }
         ]
-      },
-      "priority": 260,
-      "to_build": "Wall"
+      }
     },
     {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "SystemThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 3
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "value0": 0
-          },
-          {
-            "string0": "Umbrella",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "SystemThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 3
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "value0": 0
-          },
-          {
-            "string0": "Umbrella",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "SystemThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 3
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
-            "value0": 0
-          },
-          {
-            "string0": "Umbrella",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
-      "instance_count": 1,
       "name": "Umbrella",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 150,
-            "unit_type_string": "(Structure & OrbitalDefense) - Orbital"
-          }
-        ]
-      },
+      "to_build": "Umbrella",
+      "instance_count": 1,
       "priority": 378,
-      "to_build": "Umbrella"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "BaseThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 1
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "value0": 0
-          },
-          {
-            "string0": "Umbrella",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "BaseThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 1
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "value0": 0
-          },
-          {
-            "string0": "Umbrella",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "BaseThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 1
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
-            "value0": 0
-          },
-          {
-            "string0": "Umbrella",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
       "builders": [
+        "UberCommander",
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
-      "instance_count": 1,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "(Structure & OrbitalDefense) - Orbital",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Umbrella - Rush",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 150,
-            "unit_type_string": "(Structure & OrbitalDefense) - Orbital"
-          }
-        ]
-      },
+      "to_build": "Umbrella",
+      "instance_count": 1,
       "priority": 386,
-      "to_build": "Umbrella"
-    },
-    {
+      "builders": [
+        "UberCommander",
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
             "compare0": ">",
-            "string0": "Nuke",
-            "string1": "AntiNuke",
-            "test_type": "SystemToPlanetThreatRatio",
-            "value0": 1.75
+            "value0": 0
           },
           {
-            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "value0": 3
+            "compare0": ">",
+            "value0": 0
           },
           {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
           }
         ],
         [
           {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
-            "compare0": ">",
-            "string0": "Nuke",
-            "string1": "AntiNuke",
-            "test_type": "SystemToPlanetThreatRatio",
-            "value0": 1.75
+            "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
             "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
             "value0": 0
           },
           {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
           }
         ]
       ],
-      "builders": [
-        "AnyUberFabber",
-        "UberSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Anti Nuke Silo",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 3,
-            "range": 150,
-            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)"
-          },
-          {
+            "unit_type_string": "(Structure & OrbitalDefense) - Orbital",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 150,
-            "unit_type_string": "Structure & NukeDefense"
+            "count": 1
           }
         ]
-      },
+      }
+    },
+    {
+      "name": "Preserver",
+      "to_build": "AntiNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "AntiNukeSilo",
       "priority": 380,
-      "shared_instance_count": "AntiNukeSilo",
-      "to_build": "AntiNukeSilo"
-    },
-    {
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
       "build_conditions": [
         [
           {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
-            "compare0": ">",
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
             "string1": "AntiNuke",
-            "test_type": "SystemToPlanetThreatRatio",
+            "compare0": ">",
             "value0": 1.75
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & NukeDefense",
-            "value0": 1
-          },
-          {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
           }
         ],
         [
           {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
-            "boolean": true,
-            "test_type": "HaveHadANukeEvent"
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
           },
           {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "value0": 3
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & NukeDefense",
-            "value0": 1
-          },
-          {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "compare0": ">",
+            "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
             "string1": "AntiNuke",
-            "test_type": "SystemToPlanetThreatRatio",
+            "compare0": ">",
             "value0": 1.75
           },
           {
-            "compare0": ">",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
             "value0": 0
           },
           {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & NukeDefense",
-            "value0": 1
-          },
-          {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveHadANukeEvent"
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & NukeDefense",
-            "value0": 1
-          },
-          {
-            "string0": "AntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
           }
         ]
       ],
-      "builders": [
-        "AnyUberFabber",
-        "UberSupportCommander"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 12,
-      "min_num_assisters": 5,
-      "name": "Anti Nuke Silo - Rush",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 3,
             "range": 150,
-            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)"
+            "count": 3
           },
           {
+            "unit_type_string": "Structure & NukeDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 150,
-            "unit_type_string": "Structure & NukeDefense"
+            "count": 1
           }
         ]
-      },
+      }
+    },
+    {
+      "name": "Preserver - Rush",
+      "to_build": "AntiNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "AntiNukeSilo",
       "priority": 386,
-      "shared_instance_count": "AntiNukeSilo",
-      "to_build": "AntiNukeSilo"
-    },
-    {
-      "base_sort": "FromPerimeter",
+      "min_num_assisters": 5,
+      "max_num_assisters": 12,
+      "builders": [
+        "AnyUberAdvancedFabber",
+        "UberSupportCommander"
+      ],
       "build_conditions": [
         [
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
-            "compare0": "<",
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & Custom4 & SurfaceDefense",
-            "value0": 4
-          },
-          {
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "value0": 3
           },
           {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
           },
           {
-            "string0": "AdvancedSniperLandDefense",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
           }
         ],
         [
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
-            "compare0": "<",
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & Custom4 & SurfaceDefense",
-            "value0": 4
-          },
-          {
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
-            "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "AdvancedSniperLandDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyUberAdvancedFabber",
-        "UberSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Advanced Sniper Land Defense",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & Advanced & Custom4 & SurfaceDefense"
-          }
-        ]
-      },
-      "priority": 255,
-      "to_build": "AdvancedSniperLandDefense"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & Custom4 & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "value0": 3
           },
           {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
           },
           {
-            "string0": "AdvancedSniperLandDefense",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
           }
         ]
       ],
-      "builders": [
-        "AnyUberAdvancedFabber",
-        "UberSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Advanced Sniper Land Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "range": 150,
+            "count": 3
           },
           {
+            "unit_type_string": "Structure & NukeDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Advanced & Custom4 & SurfaceDefense"
+            "range": 150,
+            "count": 1
           }
         ]
-      },
-      "priority": 379,
-      "to_build": "AdvancedSniperLandDefense"
+      }
     }
   ]
 }

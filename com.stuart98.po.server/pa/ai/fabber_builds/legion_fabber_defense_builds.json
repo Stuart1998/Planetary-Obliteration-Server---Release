@@ -5,6 +5,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -15,7 +20,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & Basic & AirDefense) - Custom4",
+            "unit_type_string0": "Structure & Basic & AirDefense",
             "value0": 1
           },
           {
@@ -31,6 +36,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -41,7 +51,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & Basic & AirDefense) - Custom4",
+            "unit_type_string0": "Structure & Basic & AirDefense",
             "value0": 1
           },
           {
@@ -60,7 +70,7 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Air Defense - Mex",
+      "name": "Legion - Shredder - Mex",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -96,164 +106,10 @@
       "build_conditions": [
         [
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
+            "boolean": true,
+            "string0": "Vanilla",
             "test_type": "HasPersonalityTag"
           },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Custom4 & AirDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air"
-          },
-          {
-            "string0": "BasicMediumAirDefense",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Custom4 & AirDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
-            "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air"
-          },
-          {
-            "string0": "LegionDefenseMediumAir",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
-      "instance_count": 1,
-      "name": "Medium Air Defense",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & Basic & Custom4 & AirDefense"
-          }
-        ]
-      },
-      "priority": 255,
-      "to_build": "LegionDefenseMediumAir"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Custom4 & AirDefense",
-            "value0": 4
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": ">",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air"
-          },
-          {
-            "string0": "LegionDefenseMediumAir",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
-      "instance_count": 1,
-      "name": "Medium Air Defense - Threat",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Basic & Custom4 & AirDefense"
-          }
-        ]
-      },
-      "priority": 379,
-      "to_build": "LegionDefenseMediumAir"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -280,6 +136,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -310,7 +171,7 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense Single - Mex",
+      "name": "Legion - Jackal - Mex",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -346,6 +207,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -366,6 +232,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -391,7 +262,7 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Air Defense",
+      "name": "Legion - Shredder",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -420,6 +291,11 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -453,7 +329,7 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Air Defense - Threat",
+      "name": "Legion - Shredder - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -483,6 +359,162 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "value0": 2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 3
+          },
+          {
+            "string0": "LegionDefenseMediumAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "value0": 2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "value0": 1
+          },
+          {
+            "string0": "LegionDefenseMediumAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Gladfly",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & Basic & AirDefense"
+          }
+        ]
+      },
+      "priority": 85,
+      "shared_instance_count": "BasicAirDefense",
+      "to_build": "LegionDefenseMediumAir"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "value0": 1
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 3
+          },
+          {
+            "string0": "LegionDefenseMediumAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Gladfly - Threat",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 2,
+            "range": 75,
+            "unit_type_string": "Structure & Basic & AirDefense"
+          }
+        ]
+      },
+      "priority": 262,
+      "shared_instance_count": "BasicAirDefense",
+      "to_build": "LegionDefenseMediumAir"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -508,6 +540,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -538,7 +575,7 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense Single",
+      "name": "Legion - Jackal",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -567,6 +604,11 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -604,7 +646,7 @@
         "LegionCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense Single - Threat",
+      "name": "Legion - Jackal - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -634,6 +676,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -654,6 +701,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -679,7 +731,7 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense",
+      "name": "Legion - Scarab",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -707,6 +759,11 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -739,7 +796,7 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense - Threat",
+      "name": "Legion - Scarab - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -767,6 +824,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -790,7 +852,7 @@
             "value1": 3
           },
           {
-            "string0": "LegionDefenseBasicSwarm",
+            "string0": "LegionDefenseBasicArtillery",
             "test_type": "CanFindPlaceToBuild"
           }
         ]
@@ -801,7 +863,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Basic Artillery",
+      "name": "Legion - Theodor",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -829,80 +891,17 @@
         ]
       },
       "priority": 245,
-      "to_build": "LegionDefenseBasicSwarm"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Artillery",
-            "value0": 2
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "string0": "Enemy",
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Structure",
-            "value0": 350,
-            "value1": 3
-          },
-          {
-            "string0": "LegionDefenseMediumAir",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 2,
-      "name": "Legion - Basic Artillery",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        },
-        "unit_count_rules": [
-          {
-            "alliance": "Enemy",
-            "compare_type": ">=",
-            "count": 3,
-            "range": 260,
-            "unit_type_string": "Structure"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Basic & Artillery"
-          }
-        ]
-      },
-      "priority": 245,
-      "to_build": "LegionDefenseMediumAir"
+      "to_build": "LegionDefenseBasicArtillery"
     },
     {
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -929,6 +928,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -960,7 +964,7 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Air Defense",
+      "name": "Legion - Archer",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -988,6 +992,11 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1026,7 +1035,7 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Air Defense - Threat",
+      "name": "Legion - Archer - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1055,6 +1064,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -1080,6 +1094,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1111,7 +1130,7 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Land Defense",
+      "name": "Legion - Decimator",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -1140,222 +1159,10 @@
       "build_conditions": [
         [
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Flame & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
             "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Flame"
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
-          {
-            "string0": "LegionDefenseFlameLand",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Flame & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
-            "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Flame"
-          },
-          {
-            "string0": "LegionDefenseFlameLand",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberFlame",
-        "LegionBotFlameSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Flame Land Defense II",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & Flame & SurfaceDefense"
-          }
-        ]
-      },
-      "priority": 255,
-      "to_build": "LegionDefenseFlameLand"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Flame & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Flame"
-          },
-          {
-            "string0": "LegionDefenseFlameTactical",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberFlame",
-        "LegionBotFlameSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Flame Land Defense - Threat",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Flame & SurfaceDefense"
-          }
-        ]
-      },
-      "priority": 379,
-      "to_build": "LegionDefenseFlameTactical"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Flame & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Flame"
-          },
-          {
-            "string0": "LegionDefenseFlameLand",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberFlame",
-        "LegionBotFlameSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Flame Land Defense II - Threat",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Flame & SurfaceDefense"
-          }
-        ]
-      },
-      "priority": 379,
-      "to_build": "LegionDefenseFlameLand"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1382,6 +1189,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1413,7 +1225,7 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Land Defense II",
+      "name": "Legion - Apocalypse Apparatus",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -1441,6 +1253,106 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 3
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced"
+          },
+          {
+            "string0": "LegionDefenseAdvancedLand",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced"
+          },
+          {
+            "string0": "LegionDefenseAdvancedLand",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Arsonist",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & Advanced & SurfaceDefense"
+          }
+        ]
+      },
+      "priority": 255,
+      "to_build": "LegionDefenseAdvancedLand"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1479,7 +1391,7 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Land Defense - Threat",
+      "name": "Legion - Decimator - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1507,6 +1419,11 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1545,7 +1462,7 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Land Defense II - Threat",
+      "name": "Legion - Apocalypse Apparatus - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1573,6 +1490,82 @@
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "value0": 1
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 3
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced"
+          },
+          {
+            "string0": "LegionDefenseAdvancedLand",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Arsonist - Threat",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 2,
+            "range": 75,
+            "unit_type_string": "Structure & Advanced & SurfaceDefense"
+          }
+        ]
+      },
+      "priority": 379,
+      "to_build": "LegionDefenseAdvancedLand"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1613,12 +1606,17 @@
           }
         ]
       },
-      "priority": 260,
+      "priority": 0,
       "to_build": "LegionStructureBasicWall"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1647,6 +1645,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -1673,6 +1676,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1705,7 +1713,7 @@
         "AnyLegionFabberAdvanced"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Orbital Defense",
+      "name": "Legion - Tola",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1726,6 +1734,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -1753,6 +1766,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -1779,6 +1797,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1811,7 +1834,7 @@
         "AnyLegionFabberAdvanced"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Orbital Defense - Rush",
+      "name": "Legion - Tola - Rush",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1831,6 +1854,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "string0": "LegionDefenseAdvancedAntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
@@ -1855,6 +1883,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "string0": "LegionDefenseAdvancedAntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
           },
@@ -1878,10 +1911,12 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabber"
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Anti Nuke Silo",
+      "name": "Legion - Iron Dome",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1910,6 +1945,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "string0": "LegionDefenseAdvancedAntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
           },
@@ -1939,6 +1979,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "string0": "LegionDefenseAdvancedAntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
           },
@@ -1964,6 +2009,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "string0": "LegionDefenseAdvancedAntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
@@ -1993,6 +2043,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "string0": "LegionDefenseAdvancedAntiNukeSilo",
             "test_type": "CanAffordPotentialDrain"
@@ -2020,13 +2075,14 @@
         ]
       ],
       "builders": [
+        "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
       "max_num_assisters": 12,
       "min_num_assisters": 5,
-      "name": "Legion - Anti Nuke Silo - Rush",
+      "name": "Legion - Iron Dome - Rush",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",

@@ -4,6 +4,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "compare0": "<=",
             "string0": "Orbital",
             "test_type": "BaseThreat",
@@ -37,6 +42,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "compare0": "<=",
             "string0": "Orbital",
             "test_type": "BaseThreat",
@@ -62,6 +72,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "compare0": "<=",
             "string0": "Orbital",
@@ -112,6 +127,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "PlanetIsGasGiant"
           },
@@ -141,13 +161,18 @@
         "LegionFactoryAdvancedOrbital"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Radar Sattelite",
+      "name": "Legion - Sputnik",
       "priority": 100,
       "to_build": "LegionOrbitalBasicRadar"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "PlanetIsGasGiant"
@@ -172,13 +197,18 @@
         "LegionFactoryAdvancedOrbital"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Radar Sattelite - Pri",
+      "name": "Legion - Sputnik - Pri",
       "priority": 102,
       "to_build": "LegionOrbitalBasicRadar"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -204,7 +234,7 @@
       ],
       "cross_planet_shared_count": true,
       "instance_count": 1,
-      "name": "Legion - Basic Radar Sattelite - Other planet",
+      "name": "Legion - Sputnik - Other planet",
       "priority": 199,
       "shared_instance_count": "ReconAssistance",
       "to_build": "LegionOrbitalBasicRadar"
@@ -212,6 +242,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -235,13 +270,18 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
-      "name": "Legion - Orbital Fighter",
+      "name": "Legion - Viper",
       "priority": 100,
       "to_build": "LegionOrbitalBasicFighter"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -260,6 +300,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -276,6 +321,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -294,13 +344,18 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Orbital Fighter - Threat",
+      "name": "Legion - Viper - Threat",
       "priority": 200,
       "to_build": "LegionOrbitalBasicFighter"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -321,13 +376,18 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
-      "name": "Legion - Orbital Lander",
+      "name": "Legion - Chariot",
       "priority": 0,
       "to_build": "LegionOrbitalBasicTransport"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -353,7 +413,7 @@
       ],
       "cross_planet_shared_count": true,
       "instance_count": 1,
-      "name": "Legion - Probe - Other planet",
+      "name": "Legion - Spectre - Other planet",
       "priority": 200,
       "shared_instance_count": "ReconAssistance",
       "to_build": "LegionOrbitalBasicScout"
@@ -362,8 +422,9 @@
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "PlanetIsGasGiant"
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
           {
             "boolean": false,
@@ -388,13 +449,18 @@
         "LegionFactoryAdvancedOrbital"
       ],
       "instance_count": 1,
-      "name": "Legion - Orbital Death Laser",
+      "name": "Legion - Black Knight",
       "priority": 195,
       "to_build": "LegionOrbitalAdvancedLaser"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "PlanetIsGasGiant"
@@ -414,6 +480,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "PlanetIsGasGiant"
@@ -442,7 +513,7 @@
       ],
       "cross_planet_shared_count": true,
       "instance_count": 1,
-      "name": "Legion - Advanced Radar Sattelite",
+      "name": "Legion - Kosmos",
       "priority": 196,
       "shared_instance_count": "ReconAssistance",
       "to_build": "LegionOrbitalAdvancedRadar"
@@ -450,6 +521,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -472,13 +548,18 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
-      "name": "Legion - Orbital Railgun",
+      "name": "Legion - Paladin",
       "priority": 195,
       "to_build": "LegionOrbitalAdvancedSniper"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -497,6 +578,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -513,6 +599,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -531,13 +622,18 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Orbital Railgun - Threat",
+      "name": "Legion - Paladin - Threat",
       "priority": 205,
       "to_build": "LegionOrbitalAdvancedSniper"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -561,7 +657,7 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
-      "name": "Legion - Orbital Battleship",
+      "name": "Legion - Imperator",
       "priority": 195,
       "to_build": "LegionOrbitalAdvancedBattleship"
     }

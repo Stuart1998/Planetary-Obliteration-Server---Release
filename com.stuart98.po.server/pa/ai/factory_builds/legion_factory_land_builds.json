@@ -4,6 +4,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -19,6 +24,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -42,6 +52,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -57,6 +72,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -80,6 +100,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -96,15 +121,16 @@
             "value0": 200
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
             "boolean": false,
             "test_type": "HaveFullPlanetIntel"
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -122,10 +148,6 @@
             "value0": 1
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
             "boolean": false,
             "test_type": "HaveFullPlanetIntel"
           }
@@ -135,7 +157,7 @@
         "LegionFactoryBasicBot"
       ],
       "instance_count": 1,
-      "name": "Legion - Land Scout - Intel",
+      "name": "Legion - Investigator - Intel",
       "priority": 98,
       "shared_instance_count": "LandScout",
       "to_build": "LegionBotBasicScout"
@@ -144,15 +166,16 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
           },
           {
             "compare0": "<",
@@ -163,6 +186,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -193,7 +221,7 @@
         "LegionFactoryBasicBot"
       ],
       "instance_count": 1,
-      "name": "Legion - Land Scout",
+      "name": "Legion - Investigator",
       "priority": 97,
       "shared_instance_count": "LandScout",
       "to_build": "LegionBotBasicScout"
@@ -201,6 +229,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -210,6 +243,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -229,6 +267,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -252,6 +295,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -279,7 +327,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Assault Bot",
+      "name": "Legion - Peacekeeper",
       "priority": 97,
       "to_build": "LegionBotBasicAssault"
     },
@@ -287,69 +335,10 @@
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
             "boolean": true,
-            "test_type": "CanDeployLandFromBase"
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Custom4 & (Bot | Bot)"
-          },
-          {
-            "compare0": "<=",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Bot & Basic & Custom4",
-            "unit_type_string1": "Bot & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout) | Bot & Basic & Custom4",
-            "value0": 0.45
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": true,
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "value0": 0
-          },
-          {
-            "compare0": "<=",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Bot & Basic & Custom4",
-            "unit_type_string1": "Bot & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout) | Bot & Basic & Custom4",
-            "value0": 0.45
-          }
-        ]
-      ],
-      "builders": [
-        "LegionFactoryBasicBot",
-        "LegionOrbitalAdvancedCannon"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "name": "Legion - Basic Artillery Bot",
-      "priority": 97,
-      "to_build": "LegionBotBasicArtillery"
-    },
-    {
-      "build_conditions": [
-        [
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -370,6 +359,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -402,7 +396,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Sniper Bot",
+      "name": "Legion - Lancer",
       "priority": 97,
       "to_build": "LegionBotBasicSniper"
     },
@@ -410,6 +404,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -429,6 +428,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -460,8 +464,76 @@
         "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
+      "max_num_assisters": 15,
+      "name": "Legion - Gladiator",
+      "priority": 199,
+      "to_build": "LegionBotBasicArtillery"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.35
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicBot"
+      ],
+      "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Suicide Bot",
+      "name": "Legion - Purger",
       "priority": 97,
       "to_build": "LegionBotBasicBomb"
     },
@@ -469,6 +541,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -494,6 +571,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -522,6 +604,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "compare0": ">",
             "string0": "Air",
             "string1": "AntiAir",
@@ -530,6 +617,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -561,7 +653,7 @@
         "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic AA Bot",
+      "name": "Legion - Patriot",
       "priority": 97,
       "to_build": "LegionBotBasicAA"
     },
@@ -569,6 +661,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -594,6 +691,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -622,6 +724,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "compare0": ">",
             "string0": "Orbital",
             "string1": "AntiOrbital",
@@ -630,6 +737,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -661,7 +773,7 @@
         "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic AO Bot",
+      "name": "Legion - Protector",
       "priority": 97,
       "to_build": "LegionBotBasicAO"
     },
@@ -669,6 +781,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -688,6 +805,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -718,7 +840,7 @@
         "LegionFactoryBasicVehicle"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Combat Fabber Vehicle",
+      "name": "Legion - Guardian",
       "priority": 97,
       "to_build": "LegionVehicleBasicCFab"
     },
@@ -726,106 +848,10 @@
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Air",
-            "test_type": "PlanetThreat",
-            "value0": 0
-          },
-          {
             "boolean": true,
-            "test_type": "CanDeployLandFromBase"
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "value0": 0.1
-          }
-        ],
-        [
-          {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "value0": 0.25
-          }
-        ],
-        [
-          {
-            "compare0": ">",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "test_type": "BaseThreatRatio",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "value0": 0.1
-          },
-          {
-            "boolean": true,
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "value0": 0
-          }
-        ]
-      ],
-      "builders": [
-        "LegionFactoryBasicVehicle",
-        "LegionOrbitalAdvancedCannon",
-        "LegionFactoryBasicNaval"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Basic AA Hover",
-      "priority": 97,
-      "to_build": "LegionVehicleBasicHover"
-    },
-    {
-      "build_conditions": [
-        [
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -836,34 +862,14 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": false,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Custom4 & (Bot | Tank)"
           }
         ],
         [
-          {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
           {
             "boolean": true,
-            "test_type": "CanDeployLandFromBase"
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<=",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout)",
-            "unit_type_string1": "Tank & Basic & Custom4",
-            "value0": 0.65
-          }
-        ],
-        [
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -880,13 +886,6 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
             "value0": 0
-          },
-          {
-            "compare0": "<=",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout)",
-            "unit_type_string1": "Tank & Basic & Custom4",
-            "value0": 0.65
           }
         ]
       ],
@@ -896,7 +895,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Light Laser Tank",
+      "name": "Legion - Shank",
       "priority": 97,
       "to_build": "LegionVehicleBasicLaser"
     },
@@ -904,6 +903,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -913,21 +917,14 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Custom4 & (Bot | Tank)"
-          },
-          {
-            "compare0": "<=",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Basic & Custom4",
-            "unit_type_string1": "Tank & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout) | Tank & Basic & Custom4",
-            "value0": 0.45
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -944,13 +941,6 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
             "value0": 0
-          },
-          {
-            "compare0": "<=",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Basic & Custom4",
-            "unit_type_string1": "Tank & Basic & Offense - (Custom4 | AirDefense | Artillery | Heavy | Scout) | Tank & Basic & Custom4",
-            "value0": 0.45
           }
         ]
       ],
@@ -960,7 +950,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Light Shell Tank",
+      "name": "Legion - Marshall's Lament",
       "priority": 97,
       "to_build": "LegionVehicleBasicShell"
     },
@@ -968,6 +958,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -989,6 +984,11 @@
         [
           {
             "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
             "test_type": "AloneOnPlanet"
           },
           {
@@ -1014,11 +1014,12 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicVehicle"
+        "LegionFactoryBasicVehicle",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Armor Tank",
+      "name": "Legion - Maul",
       "priority": 97,
       "to_build": "LegionVehicleBasicArmor"
     },
@@ -1026,6 +1027,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -1041,6 +1047,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1069,12 +1080,11 @@
       ],
       "builders": [
         "LegionFactoryBasicVehicle",
-        "LegionFactoryBasicNaval",
         "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Amphibious Tank",
+      "name": "Legion - Stoke",
       "priority": 97,
       "to_build": "LegionVehicleBasicHover"
     },
@@ -1082,6 +1092,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -1097,6 +1112,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1129,13 +1149,18 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Hover Artillery",
+      "name": "Legion - Thunderbolt",
       "priority": 97,
-      "to_build": "LegionVehicleBasicArtillery"
+      "to_build": "LegionVehicleBasicHover"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -1152,6 +1177,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -1177,6 +1207,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -1192,6 +1227,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -1217,14 +1257,28 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1249,7 +1303,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Assault Bot",
+      "name": "Legion - Enforcer",
       "priority": 199,
       "to_build": "LegionBotAdvancedAssault"
     },
@@ -1257,14 +1311,28 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1289,7 +1357,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Flame Bot",
+      "name": "Legion - Pyro",
       "priority": 199,
       "to_build": "LegionBotAdvancedFlame"
     },
@@ -1297,6 +1365,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -1316,6 +1389,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1347,7 +1425,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Artillery Bot",
+      "name": "Legion - Miniman",
       "priority": 199,
       "to_build": "LegionBotAdvancedArtillery"
     },
@@ -1355,6 +1433,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -1370,10 +1453,15 @@
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Heavy",
             "unit_type_string1": "(Tank | Bot) - Fabber",
-            "value0": 0.35
+            "value0": 0.5
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1386,7 +1474,7 @@
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Heavy",
             "unit_type_string1": "(Tank | Bot) - Fabber",
-            "value0": 0.35
+            "value0": 0.5
           },
           {
             "boolean": true,
@@ -1405,7 +1493,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Laser Bot",
+      "name": "Legion - Eviscerator",
       "priority": 199,
       "to_build": "LegionBotAdvancedLaser"
     },
@@ -1413,63 +1501,10 @@
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "boolean": true,
-            "test_type": "CanDeployLandFromBase"
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Heavy",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "value0": 0.5
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Heavy",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "value0": 0.5
-          },
-          {
-            "boolean": true,
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "value0": 0
-          }
-        ]
-      ],
-      "builders": [
-        "LegionFactoryAdvancedBot"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "name": "Legion - Advanced Heavy Bot",
-      "priority": 199,
-      "to_build": "LegionBotAdvancedTactical"
-    },
-    {
-      "build_conditions": [
-        [
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -1494,23 +1529,92 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 15,
-      "name": "Legion - Support Commander",
+      "name": "Legion - Praetorian",
       "priority": 199,
       "to_build": "LegionBotAdvancedSupportCommander"
     },
     {
+      "name": "Legion - Enthraller",
+      "to_build": "LegionBotAdvancedArtillery",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedBot"
+      ],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
           },
           {
             "compare0": "<",
@@ -1521,6 +1625,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1552,7 +1661,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Advanced Suicide Bot",
+      "name": "Legion - Necromancer",
       "priority": 199,
       "to_build": "LegionBotAdvancedBomb"
     },
@@ -1560,6 +1669,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -1585,6 +1699,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -1613,6 +1732,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "compare0": ">",
             "string0": "Air",
             "string1": "AntiAir",
@@ -1621,6 +1745,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1652,114 +1781,83 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Advanced AA Bot",
+      "name": "Legion - Orbweaver",
       "priority": 199,
       "to_build": "LegionBotAdvancedAA"
     },
     {
+      "name": "Locust",
+      "to_build": "LegionNanoSwarm",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedBot"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">",
-            "string0": "Air",
-            "test_type": "PlanetThreat",
-            "value0": 0
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
-            "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string0": "(Tank | Bot) & Deconstruction",
             "unit_type_string1": "(Tank | Bot) - Fabber",
+            "compare0": "<",
             "value0": 0.1
           }
         ],
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
-            "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string0": "(Tank | Bot) & Deconstruction",
             "unit_type_string1": "(Tank | Bot) - Fabber",
-            "value0": 0.25
-          }
-        ],
-        [
-          {
-            "compare0": ">",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "test_type": "BaseThreatRatio",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
             "value0": 0.1
           },
           {
-            "boolean": true,
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
           },
           {
-            "compare0": ">",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
             "value0": 0
           }
         ]
-      ],
-      "builders": [
-        "LegionOrbitalAdvancedCannon"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "name": "Legion - Advanced AA Bot",
-      "priority": 97,
-      "to_build": "LegionBotAdvancedAA"
+      ]
     },
     {
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -1772,6 +1870,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1796,7 +1899,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Laser Tank",
+      "name": "Legion - Scorpion",
       "priority": 199,
       "to_build": "LegionVehicleAdvancedLaser"
     },
@@ -1804,18 +1907,24 @@
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
           },
           {
             "test_type": "CanAffordBuildDemand"
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1840,7 +1949,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Heavy Tank",
+      "name": "Legion - Obliterator",
       "priority": 199,
       "to_build": "LegionVehicleAdvancedHeavy"
     },
@@ -1848,6 +1957,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -1867,6 +1981,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1898,7 +2017,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Armor Tank",
+      "name": "Legion - Tremor",
       "priority": 199,
       "to_build": "LegionVehicleAdvancedArmor"
     },
@@ -1906,6 +2025,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -1921,6 +2045,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1948,6 +2077,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -1963,6 +2097,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -1990,18 +2129,22 @@
         ]
       ],
       "builders": [
-        "LegionFactoryAdvancedVehicle",
-        "LegionFactoryAdvancedNaval"
+        "LegionFactoryAdvancedVehicle"
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Artillery Vehicle",
+      "name": "Legion - Berserker",
       "priority": 199,
       "to_build": "LegionVehicleAdvancedHover"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -2018,6 +2161,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -2049,13 +2197,18 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Sniper Vehicle",
+      "name": "Legion - Deathmark",
       "priority": 199,
       "to_build": "LegionVehicleAdvancedSniper"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -2078,6 +2231,11 @@
         [
           {
             "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
             "test_type": "AloneOnPlanet"
           },
           {
@@ -2107,7 +2265,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Swarm Tank",
+      "name": "Legion - Havoc",
       "priority": 199,
       "to_build": "LegionVehicleAdvancedSwarm"
     }

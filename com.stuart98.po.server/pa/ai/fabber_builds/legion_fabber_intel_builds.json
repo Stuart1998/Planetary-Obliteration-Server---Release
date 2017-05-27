@@ -4,310 +4,10 @@
       "build_conditions": [
         [
           {
-            "test_type": "CanAffordBuildDemand"
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Recon & Advanced - Orbital) | (Recon & Orbital - Structure)",
-            "value0": 1
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Naval & Structure & Recon & Basic",
-            "value0": 1
-          },
-          {
-            "string0": "LegionIntelBasicSonar",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "compare0": "<",
-            "string0": "Ally",
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Naval & Structure & Recon & Basic",
-            "value0": 200,
-            "value1": 1
-          },
-          {
-            "string0": "LegionIntelBasicSonar",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabber"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Basic Sonar",
-      "placement_rules": {
-        "buffer": 2,
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "priority": 90,
-      "shared_instance_count": "BasicSonar",
-      "to_build": "LegionIntelBasicSonar"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Recon & Advanced - Orbital) | (Recon & Orbital - Structure)",
-            "value0": 1
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Naval & Structure & Recon & Basic",
-            "value0": 1
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Artillery | Tactical)",
-            "value0": 0
-          },
-          {
-            "string0": "LegionIntelBasicSonar",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "compare0": "<",
-            "string0": "Ally",
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Naval & Structure & Recon & Basic",
-            "value0": 200,
-            "value1": 1
-          },
-          {
-            "string0": "LegionIntelBasicSonar",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabber"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Basic Sonar - Need for Ranged",
-      "placement_rules": {
-        "buffer": 2,
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "priority": 246,
-      "shared_instance_count": "BasicSonar",
-      "to_build": "LegionIntelBasicSonar"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Construction) - Orbital - NukeDefense - Nuke - SelfDestruct",
-            "value0": 1
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Recon & Structure - Orbital) | (Recon & Orbital - Structure)",
-            "value0": 2
-          },
-          {
-            "string0": "LegionIntelBasicSonar",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "string0": "LegionIntelBasicSonar",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabber"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Basic Sonar - Have none",
-      "placement_rules": {
-        "buffer": 2,
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "priority": 605,
-      "shared_instance_count": "BasicSonar",
-      "to_build": "LegionIntelBasicSonar"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Naval & Structure & Recon & Advanced",
-            "value0": 1
-          },
-          {
-            "string0": "LegionIntelAdvancedSonar",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "compare0": "<",
-            "string0": "Ally",
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Naval & Structure & Recon & Advanced",
-            "value0": 350,
-            "value1": 1
-          },
-          {
-            "string0": "LegionIntelAdvancedSonar",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Advanced Sonar",
-      "placement_rules": {
-        "buffer": 2,
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "priority": 91,
-      "shared_instance_count": "AdvancedSonar",
-      "to_build": "LegionIntelAdvancedSonar"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Naval & Structure & Recon & Advanced",
-            "value0": 1
-          },
-          {
-            "string0": "LegionIntelAdvancedSonar",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Artillery | Tactical)",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "string0": "Ally",
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Naval & Structure & Recon & Advanced",
-            "value0": 350,
-            "value1": 1
-          },
-          {
-            "string0": "LegionIntelAdvancedSonar",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Advanced Sonar - Need for Ranged",
-      "placement_rules": {
-        "buffer": 2,
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "priority": 247,
-      "shared_instance_count": "AdvancedSonar",
-      "to_build": "LegionIntelAdvancedSonar"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Recon & Structure - Orbital) | (Recon & Orbital - Structure)",
-            "value0": 1
-          },
-          {
-            "string0": "LegionIntelAdvancedSonar",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "string0": "LegionIntelAdvancedSonar",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Advanced Sonar - Have none",
-      "placement_rules": {
-        "buffer": 2,
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "priority": 265,
-      "shared_instance_count": "AdvancedSonar",
-      "to_build": "LegionIntelAdvancedSonar"
-    },
-    {
-      "build_conditions": [
-        [
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -342,7 +42,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabber"
+        "LegionCommander",
+        "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
       "name": "Legion - Basic Radar",
@@ -363,6 +64,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -402,7 +108,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabber"
+        "LegionCommander",
+        "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
       "name": "Legion - Basic Radar - Need for Ranged",
@@ -423,6 +130,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -434,7 +146,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Recon & Structure - Orbital) | (Recon & Orbital - Structure)",
+            "unit_type_string0": "(Recon & Structure - Orbital - Naval) | (Recon & Orbital - Structure)",
             "value0": 1
           },
           {
@@ -448,7 +160,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabber"
+        "LegionCommander",
+        "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
       "name": "Legion - Basic Radar - Have none",
@@ -468,6 +181,201 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Structure & Recon & Advanced",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Naval & Structure & Recon & Basic",
+            "value0": 1
+          },
+          {
+            "string0": "LegionIntelBasicSonar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "string0": "Ally",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Naval & Structure & Recon & Basic",
+            "value0": 200,
+            "value1": 1
+          },
+          {
+            "string0": "LegionIntelBasicSonar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Scanner",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 90,
+      "shared_instance_count": "BasicSonar",
+      "to_build": "LegionIntelBasicSonar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Structure & Recon & Advanced",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Naval & Structure & Recon & Basic",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "string0": "Sub",
+            "test_type": "PlanetThreat",
+            "value0": 0
+          },
+          {
+            "string0": "LegionIntelBasicSonar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "string0": "Ally",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Naval & Structure & Recon & Basic",
+            "value0": 200,
+            "value1": 1
+          },
+          {
+            "string0": "LegionIntelBasicSonar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Scanner - Subs Spotted",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 246,
+      "shared_instance_count": "BasicSonar",
+      "to_build": "LegionIntelBasicSonar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction) - Orbital - NukeDefense - Nuke - SelfDestruct",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Structure & Recon",
+            "value0": 1
+          },
+          {
+            "string0": "LegionIntelBasicSonar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionIntelBasicSonar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Scanner - Have none",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 605,
+      "shared_instance_count": "BasicSonar",
+      "to_build": "LegionIntelBasicSonar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -500,7 +408,7 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Radar",
+      "name": "Legion - Overseer",
       "placement_rules": {
         "buffer": 2,
         "threat": {
@@ -517,6 +425,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -555,7 +468,7 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Radar - Need for Ranged",
+      "name": "Legion - Overseer - Need for Ranged",
       "placement_rules": {
         "buffer": 2,
         "threat": {
@@ -573,12 +486,17 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "compare0": "<",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Recon & Structure - Orbital) | (Recon & Orbital - Structure)",
+            "unit_type_string0": "(Recon & Structure - Orbital - Naval) | (Recon & Orbital - Structure)",
             "value0": 1
           },
           {
@@ -596,7 +514,7 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Radar - Have none",
+      "name": "Legion - Overseer - Have none",
       "placement_rules": {
         "buffer": 2,
         "threat": {
@@ -609,6 +527,166 @@
       "priority": 265,
       "shared_instance_count": "AdvancedRadar",
       "to_build": "LegionIntelAdvancedRadar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Naval & Structure & Recon & Advanced",
+            "value0": 1
+          },
+          {
+            "string0": "LegionIntelAdvancedSonar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "string0": "Ally",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Naval & Structure & Recon & Advanced",
+            "value0": 350,
+            "value1": 1
+          },
+          {
+            "string0": "LegionIntelAdvancedSonar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Advanced Scanner",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 91,
+      "shared_instance_count": "AdvancedSonar",
+      "to_build": "LegionIntelAdvancedSonar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Naval & Structure & Recon & Advanced",
+            "value0": 1
+          },
+          {
+            "string0": "LegionIntelAdvancedSonar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": ">",
+            "string0": "Sub",
+            "test_type": "PlanetThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "string0": "Ally",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Naval & Structure & Recon & Advanced",
+            "value0": 350,
+            "value1": 1
+          },
+          {
+            "string0": "LegionIntelAdvancedSonar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Advanced Scanner - Subs Spotted",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 247,
+      "shared_instance_count": "AdvancedSonar",
+      "to_build": "LegionIntelAdvancedSonar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Structure & Recon",
+            "value0": 1
+          },
+          {
+            "string0": "LegionIntelAdvancedSonar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionIntelAdvancedSonar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Advanced Scanner - Have none",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 265,
+      "shared_instance_count": "AdvancedSonar",
+      "to_build": "LegionIntelAdvancedSonar"
     }
   ]
 }

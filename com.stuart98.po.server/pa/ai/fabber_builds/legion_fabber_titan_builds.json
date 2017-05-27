@@ -4,6 +4,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -31,15 +36,16 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedFabber",
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
-      "name": "Legion - Bot Titan",
+      "name": "Legion - Thor",
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "buffer": 5,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "compare_type": "<",
           "influence_type": "AntiSurface",
@@ -55,6 +61,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -82,15 +93,15 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
+        "LegionVehicleAdvancedFabber"
       ],
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
-      "name": "Legion - Vehicle Titan",
+      "name": "Legion - Odin",
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "buffer": 5,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "compare_type": "<",
           "influence_type": "AntiSurface",
@@ -106,6 +117,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -133,13 +149,12 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
+        "LegionAirAdvancedFabber"
       ],
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
-      "name": "Legion - Air Titan",
+      "name": "Legion - Loki",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -156,6 +171,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -181,7 +201,7 @@
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
-      "name": "Legion - Orbital Titan",
+      "name": "Legion - Tyr",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {

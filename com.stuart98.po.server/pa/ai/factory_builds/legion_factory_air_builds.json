@@ -4,6 +4,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -19,6 +24,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -42,6 +52,136 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 200
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": true
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Legion - Marauder - Intel",
+      "priority": 98,
+      "to_build": "LegionAirBasicGunship"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Gunship",
+            "value0": 20
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Legion - Marauder",
+      "priority": 97,
+      "to_build": "LegionAirBasicGunship"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -58,6 +198,11 @@
         [
           {
             "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
             "test_type": "AloneOnPlanet"
           },
           {
@@ -71,6 +216,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -88,6 +238,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "compare0": ">",
             "string0": "Air",
             "string1": "AntiAir",
@@ -101,13 +256,18 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Air Fighter",
+      "name": "Legion - Scythe",
       "priority": 97,
       "to_build": "LegionAirBasicFighter"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -129,13 +289,18 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Air Bomb",
+      "name": "Legion - Nova",
       "priority": 97,
       "to_build": "LegionAirBasicBomb"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -145,6 +310,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -165,7 +335,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Air Bomber",
+      "name": "Legion - Dauntless",
       "priority": 97,
       "to_build": "LegionAirBasicBomber"
     },
@@ -173,41 +343,10 @@
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          }
-        ],
-        [
-          {
             "boolean": true,
-            "test_type": "AloneOnPlanet"
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Gunship",
-            "value0": 20
-          }
-        ]
-      ],
-      "builders": [
-        "LegionFactoryBasicAir"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "name": "Legion - Basic Air Gunship",
-      "priority": 97,
-      "to_build": "LegionAirBasicGunship"
-    },
-    {
-      "build_conditions": [
-        [
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -224,6 +363,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -249,6 +393,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -265,6 +414,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -280,6 +434,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -304,13 +463,18 @@
         "LegionFactoryAdvancedAir"
       ],
       "instance_count": 1,
-      "name": "Legion - Air Scout",
+      "name": "Legion - Infiltrator",
       "priority": 199,
       "to_build": "LegionAirAdvancedScout"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -328,6 +492,11 @@
         [
           {
             "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
             "test_type": "AloneOnPlanet"
           },
           {
@@ -341,6 +510,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -358,6 +532,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "compare0": ">",
             "string0": "Air",
             "string1": "AntiAir",
@@ -371,13 +550,18 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Air Fighter",
+      "name": "Legion - Firebird",
       "priority": 198,
       "to_build": "LegionAirAdvancedFighter"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -387,6 +571,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -407,13 +596,18 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Air Bomber",
+      "name": "Legion - Perdition",
       "priority": 198,
       "to_build": "LegionAirAdvancedBomber"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -423,6 +617,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -443,13 +642,18 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Gunship",
+      "name": "Legion - Lockheed",
       "priority": 198,
       "to_build": "LegionAirAdvancedGunship"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -464,7 +668,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Advanced Air Carrier",
+      "name": "Legion - Meteor",
       "priority": 198,
       "to_build": "LegionAirAdvancedCarrier"
     }

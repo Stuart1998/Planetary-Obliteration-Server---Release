@@ -4,6 +4,28 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Land - Orbital",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -35,15 +57,50 @@
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Naval & Scout",
+            "compare0": "<",
+            "value0": 200
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
           }
         ]
       ],
@@ -52,13 +109,18 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Destroyer",
+      "name": "Legion - Catfish - Intel",
       "priority": 97,
-      "to_build": "LegionNavalBasicDestroyer"
+      "to_build": "LegionNavalBasicScout"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -69,13 +131,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<=",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Basic & Custom4",
-            "unit_type_string1": "(Naval & Basic & Offense - Custom4 | Construction | Sub | Scout) | Naval & Basic & Offense & Custom4",
-            "value0": 0.4
           }
         ]
       ],
@@ -84,13 +139,84 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Torpedo Boat",
-      "priority": 98,
-      "to_build": "LegionNavalBasicTorpBoat"
+      "name": "Legion - Catfish",
+      "priority": 97,
+      "to_build": "LegionNavalBasicScout"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
+            "unit_type_string1": "(Naval & Mobile) - Fabber",
+            "value0": 0.1
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Wrasse",
+      "priority": 97,
+      "to_build": "LegionNavalBasicCFab"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Legion - Bowhead",
+      "priority": 97,
+      "to_build": "LegionNavalBasicBowhead"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -122,7 +248,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Attack Sub",
+      "name": "Legion - Akula",
       "priority": 97,
       "to_build": "LegionNavalBasicSub"
     },
@@ -130,40 +256,10 @@
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
             "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Offense | Economy | FactoryBuild | CmdBuild"
-          },
-          {
-            "boolean": false,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Recon & Naval"
-          }
-        ]
-      ],
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "name": "Legion Attack Sub - Smells Blood",
-      "priority": 300,
-      "to_build": "LegionNavalBasicSub"
-    },
-    {
-      "build_conditions": [
-        [
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -190,6 +286,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -218,6 +319,11 @@
         ],
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "compare0": ">",
             "string0": "Air",
             "string1": "AntiAir",
@@ -231,13 +337,18 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Frigate",
+      "name": "Legion - Talos",
       "priority": 97,
       "to_build": "LegionNavalBasicAA"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -256,13 +367,86 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Scout",
+      "name": "Legion - Seabass",
       "priority": 97,
-      "to_build": "LegionNavalBasicScout"
+      "to_build": "LegionNavalBasicTorpBoat"
     },
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & (Hover | Sub)",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.2
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & (Hover | Sub)",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.2
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Legion - Thunderbolt",
+      "priority": 97,
+      "to_build": "LegionVehicleBasicHover"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -295,6 +479,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -318,7 +507,7 @@
         "LegionFactoryAdvancedNaval"
       ],
       "instance_count": 1,
-      "name": "Legion - Fabrication Sub",
+      "name": "Legion - Remora",
       "priority": 199,
       "to_build": "LegionNavalAdvancedFabberSub"
     },
@@ -326,6 +515,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -343,7 +537,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Battleship",
+      "name": "Legion - Hydra",
       "priority": 199,
       "to_build": "LegionNavalAdvancedBattleship"
     },
@@ -351,6 +545,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -368,7 +567,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Frigate",
+      "name": "Legion - Manta",
       "priority": 199,
       "to_build": "LegionNavalAdvancedTactical"
     },
@@ -376,6 +575,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -393,31 +597,227 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Destroyer",
+      "name": "Legion - Hammerhead",
       "priority": 199,
       "to_build": "LegionNavalAdvancedDestroyer"
     },
     {
+      "name": "Kaiju",
+      "to_build": "LegionNavalAdvancedHover",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.35
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & (Hover | Sub)",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.2
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & (Hover | Sub)",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "value0": 0.2
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
           }
         ]
       ],
       "builders": [
-        "LegionFactoryAdvancedNaval",
-        "LegionFactoryAdvancedVehicle"
+        "LegionFactoryAdvancedNaval"
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Hover Ship",
+      "name": "Legion - Berserker",
       "priority": 199,
-      "to_build": "LegionNavalAdvancedHover"
+      "to_build": "LegionVehicleAdvancedHover"
+    },
+    {
+      "name": "Locust",
+      "to_build": "LegionNanoSwarm",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Deconstruction",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Deconstruction",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
     }
   ]
 }

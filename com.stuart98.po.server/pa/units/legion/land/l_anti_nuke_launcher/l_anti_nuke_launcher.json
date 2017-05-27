@@ -136,7 +136,7 @@
     "UNITTYPE_NukeDefense",
     "UNITTYPE_Basic",
     "UNITTYPE_Factory",
-    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_FabBuild",
     "UNITTYPE_Important",
     "UNITTYPE_Custom1"
   ]

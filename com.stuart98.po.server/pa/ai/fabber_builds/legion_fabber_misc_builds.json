@@ -4,10 +4,20 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "compare0": ">",
             "test_type": "CurrentMetalEfficiency",
@@ -29,7 +39,8 @@
         "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
+        "LegionBotAdvancedSupportCommander",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": -1,
       "name": "Legion - Fabber Assist",
@@ -39,6 +50,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -58,6 +74,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -80,6 +101,11 @@
           }
         ],
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -127,47 +153,10 @@
       "build_conditions": [
         [
           {
-            "test_type": "CanAffordBuildDemand"
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
           },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "value0": 1
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Air",
-            "value0": 1
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 3,
-      "name": "Legion - Teleporter - Need Fabber",
-      "placement_rules": {
-        "buffer": 6,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "priority": 615,
-      "shared_instance_count": "Teleporter",
-      "to_build": "LegionStructureBasicTeleporter"
-    },
-    {
-      "build_conditions": [
-        [
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -217,6 +206,11 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -256,6 +250,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -300,6 +299,11 @@
     {
       "build_conditions": [
         [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
           {
             "boolean": true,
             "test_type": "PlanetWithoutFabberWithTeleporter"

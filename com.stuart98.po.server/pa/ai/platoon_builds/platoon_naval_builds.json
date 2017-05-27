@@ -1,30 +1,63 @@
 {
   "build_list": [
     {
+      "name": "Naval Scout Platoon",
+      "to_build": "Naval_Scout",
+      "instance_count": 5,
+      "priority": 100,
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "test_type": "EnemySurfacePresenceOnPlanet"
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
-            "compare0": ">=",
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile) - Fabber",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "boolean": true,
-            "string0": "WL_AnySurface",
-            "test_type": "CanAttackWithPoolUnits"
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Scout",
+            "compare0": ">=",
+            "value0": 1
           }
         ]
       ],
-      "instance_count": -1,
+      "task_type": "Scout"
+    },
+    {
       "name": "Naval Attack Platoon",
+      "to_build": "Naval_Attack",
+      "instance_count": -1,
       "priority": 100,
-      "task_type": "NavalAttack",
-      "to_build": "Naval_Attack"
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile) - Fabber",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "NavalAttack"
     }
   ]
 }
