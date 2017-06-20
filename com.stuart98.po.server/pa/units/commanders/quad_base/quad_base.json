@@ -1,0 +1,59 @@
+{
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Commander_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    }
+  },
+  "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+  "build_metal_cost": 6750,
+  "description": "Quadruped Class Commander. - If you're seeing this, something is wrong in your commander.",
+  "display_name": "Quadruped Class Commander",
+  "max_health": 16500,
+  "model": {
+    "animations": {
+      "aim_down": "/pa/units/commanders/quad_base/quad_base_anim_aimDown.papa",
+      "aim_up": "/pa/units/commanders/quad_base/quad_base_anim_aimUp.papa",
+      "idle": "/pa/units/commanders/quad_base/quad_base_anim_idle.papa",
+      "walk": "/pa/units/commanders/quad_base/quad_base_anim_walk.papa",
+      "walk_stop": "/pa/units/commanders/quad_base/quad_base_anim_walkStop.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/commander_quad_anim_tree.json",
+    "filename": "/pa/units/commanders/quad_osiris/quad_osiris.papa",
+    "walk_speed": 5.0
+  },
+  "navigation": {
+    "acceleration": 60,
+    "brake": -1,
+    "move_speed": 10,
+    "park_stamp": {
+      "cost": 20,
+      "shape": "sphere",
+      "type_data": [
+        {
+          "move_type": "land-small",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "simple"
+        }
+      ]
+    },
+    "turn_in_place": false,
+    "turn_speed": 90,
+    "type": "amphibious"
+  },
+  "production": {
+    "energy": 1350,
+    "metal": 27
+  }
+}

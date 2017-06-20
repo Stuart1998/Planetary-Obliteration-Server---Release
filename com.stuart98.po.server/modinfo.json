@@ -1,6 +1,6 @@
 {
   "author": "Stuart98, (See credits.txt)",
-  "build": "94684",
+  "build": "105067",
   "category": [
     "units",
     "balance",
@@ -11,12 +11,12 @@
     "com.stuart98.po.client1.dev"
   ],
   "context": "server",
-  "date": "2017/05/27",
+  "date": "2017/06/21",
   "dependencies": [
     "com.stuart98.po.client1.dev",
     "com.stuart98.po.client2.dev"
   ],
-  "description": "Legion + New Units + New Balance = New & Better Expeience. Work in progress, please report bugs and other feedback to the forum thread.",
+  "description": "Legion + New Units + New Balance = New & Better Experience. Work in progress, please report bugs and other feedback to the forum thread.",
   "display_name": "Planetary Obliteration Alpha (WIP)",
   "enabled": true,
   "forum": "https://forums.uberent.com/threads/wip-server-planetary-obliteration.71781/",
@@ -29,5 +29,5 @@
     ]
   },
   "signature": "(not yet implemented)",
-  "version": "0.Alpha.13"
+  "version": "0.Alpha.14"
 }

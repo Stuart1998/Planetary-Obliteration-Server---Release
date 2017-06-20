@@ -14,6 +14,7 @@
     }
   },
   "base_spec": "/pa/units/commanders/raptor_base_missile/raptor_base.json",
+  "buildable_types": "CmdBuild & Custom1",
   "catalog_object_name": "RaptorEnderstryke71",
   "client": {
     "ui": {
@@ -24,6 +25,13 @@
   },
   "description": "Raptor Enderstryke71 Commander",
   "display_name": "Enderstryke71 Commander",
+  "fx_offsets": [
+    {
+      "bone": "socket_leftMuzzle",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    }
+  ],
   "headlights": [
     {
       "bone": "bone_spine",
@@ -90,5 +98,15 @@
   ],
   "model": {
     "filename": "/pa/units/commanders/raptor_enderstryke71/raptor_enderstryke71.papa"
-  }
+  },
+  "si_name": "l_commander",
+  "unit_types": [
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_NoBuild",
+    "UNITTYPE_Custom1"
+  ]
 }

@@ -77,6 +77,10 @@
     "filename": "/pa/units/commanders/l_overwatch/l_overwatch.papa",
     "walk_speed": 6
   },
+  "production": {
+    "energy": 1650,
+    "metal": 33
+  },
   "selection_icon": {
     "diameter": 16.6
   },
@@ -87,7 +91,7 @@
     },
     {
       "aim_bone": "turret",
-      "ammo_weapon": true,
+      "aim_weapon": true,
       "muzzle_bone": "muzzle",
       "primary_weapon": true,
       "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_weapon.json"
@@ -97,7 +101,11 @@
       "ammo_weapon": true,
       "muzzle_bone": "muzzle",
       "secondary_weapon": true,
-      "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"
+      "spec_id": "/pa/tools/uber_cannon/uber_cannon.json"
+    },
+    {
+      "death_weapon": true,
+      "spec_id": "/pa/tools/commander_death/commander_death.json"
     }
   ]
 }

@@ -109,6 +109,10 @@
     "filename": "/pa/units/commanders/l_wasushi/l_wasushi.papa",
     "walk_speed": 5.5
   },
+  "production": {
+    "energy": 1650,
+    "metal": 33
+  },
   "selection_icon": {
     "diameter": 16.6
   },
@@ -126,10 +130,14 @@
     },
     {
       "aim_bone": "bone_turret",
-      "aim_weapon": true,
+      "ammo_weapon": true,
       "muzzle_bone": "socket_muzzle",
       "secondary_weapon": true,
-      "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"
+      "spec_id": "/pa/tools/uber_laser/uber_cannon.json"
+    },
+    {
+      "death_weapon": true,
+      "spec_id": "/pa/tools/commander_death/commander_death.json"
     }
   ]
 }

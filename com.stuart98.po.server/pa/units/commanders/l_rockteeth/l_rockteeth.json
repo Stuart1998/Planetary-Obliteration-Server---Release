@@ -14,6 +14,7 @@
     }
   },
   "base_spec": "/pa/units/commanders/l_base/l_base.json",
+  "build_metal_cost": 4000,
   "catalog_object_name": "LegionRockteeth",
   "client": {
     "ui": {
@@ -100,6 +101,7 @@
       "radius": 4
     }
   ],
+  "max_health": 17250,
   "mesh_bounds": [
     11.1,
     9.8,
@@ -116,9 +118,39 @@
     "animtree": "/pa/anim/anim_trees/commander_tank_anim_tree.json",
     "filename": "/pa/units/commanders/l_rockteeth/l_rockteeth.papa"
   },
+  "navigation": {
+    "acceleration": 60,
+    "brake": -1,
+    "move_speed": 7,
+    "park_stamp": {
+      "cost": 20,
+      "shape": "sphere",
+      "type_data": [
+        {
+          "move_type": "land-small",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "simple"
+        }
+      ]
+    },
+    "turn_in_place": false,
+    "turn_speed": 90,
+    "type": "amphibious"
+  },
   "scrolling_uv": {
     "scroll_rate": 0.4,
     "uv_split": 0.8
+  },
+  "storage": {
+    "energy": 55000,
+    "metal": 1650
   },
   "tools": [
     {
@@ -129,16 +161,20 @@
       "aim_bone": "bone_turret",
       "aim_weapon": true,
       "muzzle_bone": "socket_rightMuzzle",
-      "secondary_weapon": true,
-      "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "aim_weapon": true,
-      "muzzle_bone": "socket_rightMuzzle",
       "primary_weapon": true,
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/commanders/l_rockteeth/gatling_gun_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "ammo_weapon": true,
+      "muzzle_bone": "socket_rightMuzzle",
+      "secondary_weapon": true,
+      "spec_id": "/pa/tools/uber_laser/uber_cannon.json"
+    },
+    {
+      "death_weapon": true,
+      "spec_id": "/pa/tools/commander_death/commander_death.json"
     }
   ]
 }

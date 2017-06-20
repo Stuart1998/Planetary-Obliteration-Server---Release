@@ -14,6 +14,7 @@
     }
   },
   "base_spec": "/pa/units/commanders/quad_base_laser/quad_base.json",
+  "buildable_types": "CmdBuild & Custom1",
   "catalog_object_name": "QuadArmalisk",
   "client": {
     "ui": {
@@ -24,6 +25,13 @@
   },
   "description": "Quadruped Armalisk Commander.",
   "display_name": "Armalisk Commander",
+  "fx_offsets": [
+    {
+      "bone": "socket_leftMuzzle",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    }
+  ],
   "headlights": [
     {
       "bone": "bone_spine",
@@ -85,5 +93,15 @@
   ],
   "model": {
     "filename": "/pa/units/commanders/quad_armalisk/quad_armalisk.papa"
-  }
+  },
+  "si_name": "l_commander",
+  "unit_types": [
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_NoBuild",
+    "UNITTYPE_Custom1"
+  ]
 }
