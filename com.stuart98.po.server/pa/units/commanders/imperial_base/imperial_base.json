@@ -15,7 +15,7 @@
     "walk_speed": 6.0
   },
   "production": {
-    "energy": 1650,
-    "metal": 33
+    "energy": 2500,
+    "metal": 36
   }
 }

@@ -53,7 +53,7 @@
     "type": "amphibious"
   },
   "production": {
-    "energy": 1350,
-    "metal": 27
+    "energy": 1000,
+    "metal": 25
   }
 }
