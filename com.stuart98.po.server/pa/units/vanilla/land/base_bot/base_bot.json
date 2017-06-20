@@ -119,6 +119,9 @@
   },
   "strategic_icon_priority": 3,
   "teleportable": {},
+  "transportable": {
+    "size": 1
+  },
   "unit_types": [
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
