@@ -7,7 +7,6 @@
       "layer": "WL_Air"
     }
   ],
-  "ammo_per_shot": 2,
   "ammo_source": "time",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
@@ -19,7 +18,7 @@
   "max_range": 150,
   "pitch_range": 0,
   "pitch_rate": 3600,
-  "rate_of_fire": 2,
+  "rate_of_fire": 0.75,
   "spread_fire": true,
   "target_layers": [
     "WL_Air"

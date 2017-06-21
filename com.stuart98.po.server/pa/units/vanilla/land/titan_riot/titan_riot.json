@@ -1,0 +1,270 @@
+{
+  "TEMP_texelinfo": 20,
+  "area_build_separation": 0.1,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_vagaurd_loop_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/tactical_missile_bot"
+    }
+  },
+  "base_spec": "/pa/units/generic/super_.json",
+  "build_metal_cost": 16000,
+  "death_weapon": {
+    "air_ammo_spec": "/pa/units/generic/super_death_weapon.json",
+    "air_height_threshold": 7,
+    "ground_ammo_spec": "/pa/units/generic/super_death_weapon.json"
+  },
+  "description": "Riot Titan: Highly effective against large groups of units.",
+  "display_name": "Pallas",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh",
+      "effect_scale": 2
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_scale": 4
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/structure/laser_defense_adv_fire",
+      "effect_scale": 2,
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle01A /pa/effects/specs/default_muzzle_flash.pfx muzzle01B"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/sea/T2_battleship_fire"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "muzzle02A",
+      "filename": "/pa/units/vanilla/land/titan_riot/titan_riot_idle.pfx",
+      "type": "energy"
+    },
+    {
+      "bone": "muzzle02B",
+      "filename": "/pa/units/vanilla/land/titan_riot/titan_riot_idle.pfx",
+      "orientation": [
+        180,
+        0,
+        0
+      ],
+      "type": "energy"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/trail_mb1.pfx",
+      "offset": [
+        11,
+        10.5,
+        0
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/trail_mb1.pfx",
+      "offset": [
+        5,
+        10.5,
+        0
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/trail_mb1.pfx",
+      "offset": [
+        -11,
+        10.5,
+        0
+      ],
+      "orientation": [
+        180,
+        0,
+        0
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/trail_mb1.pfx",
+      "offset": [
+        -5,
+        10.5,
+        0
+      ],
+      "orientation": [
+        180,
+        0,
+        0
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/trail_mb1.pfx",
+      "offset": [
+        14,
+        -14,
+        0
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/trail_mb1.pfx",
+      "offset": [
+        -14,
+        -14,
+        0
+      ],
+      "orientation": [
+        180,
+        0,
+        0
+      ],
+      "type": "moving"
+    }
+  ],
+  "guard_layer": "WL_LandHorizontal",
+  "guard_radius": 80,
+  "headlights": [
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "far_distance": 50,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 3,
+      "near_distance": 5,
+      "near_height": 5,
+      "near_width": 5,
+      "offset": [
+        8,
+        -10,
+        6.5
+      ],
+      "orientation": [
+        0,
+        65,
+        0
+      ]
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "far_distance": 50,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 3,
+      "near_distance": 5,
+      "near_height": 5,
+      "near_width": 5,
+      "offset": [
+        -8,
+        -10,
+        6.5
+      ],
+      "orientation": [
+        0,
+        65,
+        0
+      ]
+    }
+  ],
+  "influence_radius": 1000,
+  "max_health": 22000,
+  "mesh_bounds": [
+    28,
+    26,
+    32
+  ],
+  "model": {
+    "animations": {
+      "fire": "/pa/units/vanilla/land/titan_riot/titan_riot_anim_fire.papa"
+    },
+    "animtree": "/pa/units/vanilla/land/titan_riot/titan_riot_anim_tree.json",
+    "filename": "/pa/units/vanilla/land/titan_riot/titan_riot.papa"
+  },
+  "navigation": {
+    "acceleration": 8,
+    "brake": 8,
+    "group_preference": "front",
+    "move_speed": 10,
+    "turn_in_place": true,
+    "turn_speed": 30,
+    "type": "amphibious"
+  },
+  "physics": {
+    "push_class": 90,
+    "radius": 12
+  },
+  "placement_size": [
+    28,
+    28
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 140,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "scrolling_uv": {
+    "scroll_rate": 0.8,
+    "uv_split": 0.8046875
+  },
+  "si_name": "titan",
+  "tools": [
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired1",
+      "muzzle_bone": "muzzle01A",
+      "record_index": 0,
+      "spec_id": "/pa/units/vanilla/land/titan_riot/titan_riot_tool_weapon.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired1",
+      "muzzle_bone": "muzzle01B",
+      "record_index": 1,
+      "spec_id": "/pa/units/vanilla/land/titan_riot/titan_riot_tool_weapon.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired2",
+      "muzzle_bone": [
+        "muzzle02Ax",
+        "muzzle02Bx"
+      ],
+      "record_index": 2,
+      "spec_id": "/pa/units/vanilla/land/titan_riot/titan_riot_tool_weapon_big.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Titan",
+    "UNITTYPE_Important",
+    "UNITTYPE_FabAdvBuild"
+  ]
+}

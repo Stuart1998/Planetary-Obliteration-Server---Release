@@ -41,7 +41,9 @@ var Build = (function() {
                 "/pa/units/vanilla/land/metal_extractor/metal_extractor.json": ["utility", 23],
 
 
-		"/pa/units/vanilla/air/titan_air/titan_air.json": ["factory", 9],
+		"/pa/units/vanilla/air/titan_air/titan_air.json": ["factory", 8],
+		"/pa/units/vanilla/air/titan_light/titan_light.json": ["factory", 7],
+		"/pa/units/vanilla/land/titan_riot/titan_riot.json": ["factory", 9],
                 "/pa/units/vanilla/land/titan_bot/titan_bot.json": ["factory", 10],
                 "/pa/units/vanilla/land/titan_vehicle/titan_vehicle.json": ["factory", 11],
                 "/pa/units/vanilla/land/unit_cannon/unit_cannon.json": ["factory", 13],
@@ -164,9 +166,11 @@ var Build = (function() {
                 "/pa/units/vanilla/land/nuke_launcher/nuke_launcher_ammo.json": ["ammo", 16],
 
 
-		"/pa/units/legion/air/l_titan_air/l_titan_air.json": [ "L_factory", 8 ],
-		"/pa/units/legion/land/l_titan_bot/l_titan_bot.json": [ "L_factory", 9 ],
-		"/pa/units/legion/land/l_titan_vehicle/l_titan_vehicle.json": [ "L_factory", 10 ],
+		"/pa/units/legion/air/l_titan_air/l_titan_air.json": [ "L_factory", 7 ],
+		"/pa/units/legion/land/l_titan_bot/l_titan_bot.json": [ "L_factory", 10 ],
+		"/pa/units/legion/land/l_titan_vehicle/l_titan_vehicle.json": [ "L_factory", 11 ],
+		"/pa/units/legion/land/l_titan_sniper/l_titan_sniper.json": [ "L_factory", 8],
+		"/pa/units/legion/land/l_titan_assault/l_titan_assault.json": [ "L_factory", 9],
 		"/pa/units/legion/orbital/l_titan_orbital/l_titan_orbital.json": [ "L_orbital_structure", 6 ],
 		"/pa/units/legion/air/l_flying_teleporter/l_flying_teleporter.json": [ "L_factory", 6 ],
 		"/pa/units/legion/land/l_unit_cannon/l_unit_cannon.json": [ "L_factory", 12 ],

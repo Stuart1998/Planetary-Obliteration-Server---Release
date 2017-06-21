@@ -381,6 +381,10 @@
     "/pa/units/legion/land/l_bot_morty_adv/l_bot_morty_adv.json",
     "/pa/units/legion/land/l_flame_bot/l_flame_bot.json",
     "/pa/units/legion/sea/l_boat_torpedo/l_boat_torpedo.json",
-    "/pa/units/legion/sea/l_battlecruiser/l_battlecruiser.json"
+    "/pa/units/legion/sea/l_battlecruiser/l_battlecruiser.json",
+    "/pa/units/legion/land/l_titan_sniper/l_titan_sniper.json",
+    "/pa/units/legion/land/l_titan_assault/l_titan_assault.json",
+    "/pa/units/vanilla/air/titan_light/titan_light.json",
+    "/pa/units/vanilla/land/titan_riot/titan_riot.json"
   ]
 }

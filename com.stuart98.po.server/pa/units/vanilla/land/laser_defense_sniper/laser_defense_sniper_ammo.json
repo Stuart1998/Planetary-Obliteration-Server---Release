@@ -5,7 +5,7 @@
   "base_spec": "/pa/ammo/base_beam/base_beam.json",
   "collision_check": "target",
   "collision_response": "impact",
-  "damage": 8000,
+  "damage": 7000,
   "fx_beam_spec": "/pa/units/vanilla/land/laser_defense_sniper/sniper_ammo_trail.pfx",
   "fx_collision_spec": "/pa/units/vanilla/land/laser_defense_sniper/sniper_ammo_hit.pfx",
   "splash_damage": 2000,

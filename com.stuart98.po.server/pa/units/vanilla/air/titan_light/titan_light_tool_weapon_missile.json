@@ -1,0 +1,14 @@
+{
+  "ammo_id": "/pa/units/vanilla/air/titan_light/titan_light_missile_ammo.json",
+  "ammo_source": "infinite",
+  "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
+  "max_range": 400,
+  "rate_of_fire": 0.75,
+  "target_layers": [
+    "WL_Air"
+  ],
+  "target_priorities": [
+    "Air & Fighter",
+    "Air"
+  ]
+}

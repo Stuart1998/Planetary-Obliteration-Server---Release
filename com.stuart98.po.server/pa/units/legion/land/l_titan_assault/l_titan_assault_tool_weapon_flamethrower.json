@@ -1,0 +1,25 @@
+{
+  "ammo_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_flamethrower_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "firing_arc_pitch": 45,
+  "firing_arc_yaw": 45,
+  "idle_aim_delay": 0,
+  "max_range": 70,
+  "pitch_range": 60,
+  "pitch_rate": 90,
+  "rate_of_fire": 8,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface"
+  ],
+  "target_priorities": [
+    "Mobile - Air",
+    "Mobile",
+    "Structure - Wall"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 180
+}

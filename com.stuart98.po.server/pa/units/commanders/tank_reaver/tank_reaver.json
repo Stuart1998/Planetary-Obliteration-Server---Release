@@ -99,10 +99,6 @@
   "model": {
     "filename": "/pa/units/commanders/tank_reaver/tank_reaver.papa"
   },
-  "scrolling_uv": {
-    "scroll_rate": -0.21,
-    "uv_split": 0.9
-  },
   "si_name": "l_commander",
   "unit_types": [
     "UNITTYPE_Commander",

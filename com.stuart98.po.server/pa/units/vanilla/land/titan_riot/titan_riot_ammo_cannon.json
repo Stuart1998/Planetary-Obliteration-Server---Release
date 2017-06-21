@@ -1,0 +1,28 @@
+{
+  "base_spec": "/pa/ammo/base_shell/base_shell.json",
+  "damage": 625,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/shell_tank",
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }
+  },
+  "full_damage_splash_radius": 8,
+  "fx_trail": {
+    "filename": "/pa/effects/specs/shell_artillery_large_proj_trail.pfx",
+    "offset": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "initial_velocity": 150.0,
+  "lifetime": 2,
+  "max_velocity": 150.0,
+  "model": {
+    "filename": "/pa/units/air/shell_large/shell_large.papa"
+  },
+  "splash_damage": 625,
+  "splash_damages_allies": true,
+  "splash_radius": 15
+}

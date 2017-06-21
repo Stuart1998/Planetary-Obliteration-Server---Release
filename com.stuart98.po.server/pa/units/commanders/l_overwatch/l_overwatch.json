@@ -78,8 +78,8 @@
     "walk_speed": 6
   },
   "production": {
-    "energy": 1650,
-    "metal": 33
+    "energy": 2500,
+    "metal": 36
   },
   "selection_icon": {
     "diameter": 16.6

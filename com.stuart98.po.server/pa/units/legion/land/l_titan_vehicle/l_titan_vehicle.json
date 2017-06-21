@@ -44,7 +44,7 @@
     ]
   },
   "death_weapon": {
-    "ground_ammo_spec": "/pa/units/land/titan_vehicle/titan_vehicle_ammo_death.json"
+    "ground_ammo_spec": "/pa/units/vanilla/land/titan_vehicle/titan_vehicle_ammo_death.json"
   },
   "description": "Experimental Rolling Fortress - Long Range. Heavily Armored and Deals Very High Damage.",
   "display_name": "Odin",
@@ -257,7 +257,7 @@
       "radius": 3.0
     }
   ],
-  "max_health": 50000,
+  "max_health": 20000,
   "mesh_bounds": [
     38,
     42,
@@ -368,14 +368,6 @@
       "projectiles_per_fire": 1,
       "record_index": 2,
       "spec_id": "/pa/units/legion/land/l_titan_vehicle/l_titan_vehicle_tool_weapon_side.json"
-    },
-    {
-      "aim_bone": "bone_root",
-      "fire_event": "fired",
-      "muzzle_bone": "bone_root",
-      "projectiles_per_fire": 1,
-      "record_index": -1,
-      "spec_id": "/pa/units/legion/land/l_titan_vehicle/l_titan_vehicle_tool_weapon_stomp.json"
     }
   ],
   "unit_types": [

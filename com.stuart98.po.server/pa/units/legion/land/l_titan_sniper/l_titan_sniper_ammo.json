@@ -1,0 +1,26 @@
+{
+  "base_spec": "/pa/ammo/base_shell/base_shell.json",
+  "damage": 90,
+  "events": {
+    "died": {
+      "effect_spec": "/pa/units/legion/land/l_titan_sniper/electric_arcs_hit.pfx"
+    }
+  },
+  "fx_trail": {
+    "filename": "/pa/units/legion/land/l_titan_sniper/electric_arcs.pfx",
+    "offset": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "initial_velocity": 1500.0,
+  "lifetime": 1,
+  "max_velocity": 1500.0,
+  "model": {
+    "filename": ""
+  },
+  "splash_damage": 70,
+  "splash_damages_allies": true,
+  "splash_radius": 1
+}

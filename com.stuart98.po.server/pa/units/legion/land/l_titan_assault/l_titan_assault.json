@@ -1,0 +1,145 @@
+{
+  "TEMP_texelinfo": 4.07719,
+  "atrophy_cool_down": 30.0,
+  "atrophy_rate": 20.0,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        60
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/commander/Commander_move_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/T2_assault"
+    }
+  },
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "build_metal_cost": 12500,
+  "death_weapon": {
+    "air_ammo_spec": "/pa/units/generic/super_death_weapon.json",
+    "air_height_threshold": 7,
+    "ground_ammo_spec": "/pa/units/generic/super_death_weapon.json"
+  },
+  "description": "Type Uber Heavy Assault Bot. Equipped with a heavy flamethrower, a shotgun, and an anti-anything heavy missile.",
+  "display_name": "Baldr",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/bot",
+      "effect_scale": 2
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Factory",
+      "effect_scale": 2,
+      "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/veh/tank_flame",
+      "effect_scale": 2,
+      "effect_spec": "/pa/units/legion/land/l_titan_assault/l_titan_assault_flamethrower_effect.pfx muzzle01"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
+      "effect_scale": 3,
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx muzzle02"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",
+      "effect_scale": 2
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "max_health": 29000,
+  "mesh_bounds": [
+    31.85,
+    36.05,
+    33.322
+  ],
+  "model": {
+    "animations": {
+      "fire": "/pa/units/legion/land/l_titan_assault/l_titan_assault_anim_fire.papa",
+      "walk": "/pa/units/legion/land/l_titan_assault/l_titan_assault_anim_walk.papa"
+    },
+    "animtree": "/pa/units/legion/land/l_titan_assault/l_titan_assault_anim_tree.json",
+    "filename": "/pa/units/legion/land/l_titan_assault/l_titan_assault.papa",
+    "walk_speed": 4.8
+  },
+  "navigation": {
+    "acceleration": 50,
+    "brake": 50,
+    "move_speed": 11,
+    "turn_speed": 90,
+    "type": "amphibious"
+  },
+  "physics": {
+    "push_class": 2
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 160,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "si_name": "titan",
+  "tools": [
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "muzzle02"
+      ],
+      "projectiles_per_fire": 8,
+      "record_index": 1,
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_shell.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired2",
+      "muzzle_bone": [
+        "muzzle03",
+        "muzzle04"
+      ],
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_missile.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired0",
+      "muzzle_bone": "muzzle01",
+      "record_index": 0,
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_flamethrower.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Titan",
+    "UNITTYPE_Important",
+    "UNITTYPE_Custom1"
+  ],
+  "wreckage_health_frac": 1.0
+}
