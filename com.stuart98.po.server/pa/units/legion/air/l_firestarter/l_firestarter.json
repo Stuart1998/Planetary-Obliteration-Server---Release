@@ -28,7 +28,7 @@
   "events": {
     "died": {
       "effect_scale": 0.85,
-      "effect_spec": "/pa/units/vanilla/air/base_flyer/base_flyer_death_t2.pfx"
+      "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/structure/artillery_short_fire"

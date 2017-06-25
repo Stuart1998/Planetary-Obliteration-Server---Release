@@ -92,12 +92,6 @@
       "rotation_bone": "pitch02",
       "type": "procedural_aim",
       "weapon_index": 2
-    },
-    {
-      "rotation_axis": "x",
-      "rotation_bone": "pitch03",
-      "type": "procedural_aim",
-      "weapon_indxex": 3
     }
   ]
 }

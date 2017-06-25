@@ -10,7 +10,10 @@
       "priority": 480,
       "builders": [
         "AdvancedBotFabber",
-        "UberSupportCommander"
+        "UberSupportCommander",
+		"AdvancedNavalFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
       ],
       "build_conditions": [
         [
@@ -58,6 +61,66 @@
       }
     },
     {
+      "name": "Pallas",
+      "to_build": "RiotTitan",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "builders": [
+        "AdvancedBotFabber",
+        "UberSupportCommander",
+		"AdvancedNavalFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "RiotTitan"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "RiotTitan"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5,
+        "placement_type": "FromBasePerimeter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Ares",
       "to_build": "FortressVehicle",
       "instance_count": 1,
@@ -66,7 +129,11 @@
       "shared_instance_count": "Titan",
       "priority": 480,
       "builders": [
-        "AdvancedVehicleFabber"
+        "AdvancedBotFabber",
+        "UberSupportCommander",
+		"AdvancedNavalFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
       ],
       "build_conditions": [
         [
@@ -122,6 +189,10 @@
       "shared_instance_count": "Titan",
       "priority": 480,
       "builders": [
+        "AdvancedBotFabber",
+        "UberSupportCommander",
+		"AdvancedNavalFabber",
+        "AdvancedVehicleFabber",
         "AdvancedAirFabber"
       ],
       "build_conditions": [
@@ -155,6 +226,65 @@
           {
             "test_type": "CanFindPlaceToBuild",
             "string0": "TeslaGunship"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Hyperion",
+      "to_build": "LightGunshipTitan",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "builders": [
+        "AdvancedBotFabber",
+        "UberSupportCommander",
+		"AdvancedNavalFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LightGunshipTitan"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LightGunshipTitan"
           }
         ]
       ],

@@ -127,6 +127,41 @@
       ]
     },
     {
+      "name": "Barracuda - Smells Blood",
+      "to_build": "Sub",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 300,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Offense & (Land | Naval) | Economy | FactoryBuild | CmdBuild"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Recon & Naval"
+          }
+		]
+      ]
+    },
+    {
       "name": "Piranha - Intel",
       "to_build": "SeaScout",
       "instance_count": -1,

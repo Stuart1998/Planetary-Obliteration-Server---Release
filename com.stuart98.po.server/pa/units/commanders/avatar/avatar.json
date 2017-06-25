@@ -57,7 +57,7 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_pitch",
+      "aim_bone": "bone_turret",
       "spec_id": "/pa/units/commanders/avatar/avatar_build_arm.json"
     }
   ],

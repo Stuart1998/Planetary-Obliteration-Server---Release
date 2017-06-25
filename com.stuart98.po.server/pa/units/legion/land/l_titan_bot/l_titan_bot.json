@@ -2,6 +2,20 @@
   "TEMP_texelinfo": 35.2973,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 200.0,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        3.5
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
   "audio": {
     "loops": {
       "move": {

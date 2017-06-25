@@ -23,5 +23,5 @@
     "type": "Projectile"
   },
   "splash_damage": 225,
-  "splash_radius": 10
+  "splash_radius": 15
 }

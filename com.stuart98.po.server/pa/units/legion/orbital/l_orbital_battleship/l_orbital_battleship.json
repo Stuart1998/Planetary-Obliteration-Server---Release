@@ -26,7 +26,7 @@
     "died": {
       "audio_cue": "/SE/Death/orbital",
       "effect_scale": 2.5,
-      "effect_spec": "/pa/units/vanilla/air/base_flyer/base_flyer_death_t2.pfx"
+      "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",

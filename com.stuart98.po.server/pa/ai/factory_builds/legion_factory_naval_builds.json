@@ -256,6 +256,41 @@
       "build_conditions": [
         [
           {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Offense & (Land | Naval) | Economy | FactoryBuild | CmdBuild"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Recon & Naval"
+          }
+		]
+      ],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Legion - Akula - Smells Blood",
+      "priority": 300,
+      "to_build": "LegionNavalBasicSub"
+    },
+    {
+      "build_conditions": [
+        [
+          {
             "boolean": true,
             "string0": "Vanilla",
             "test_type": "HasPersonalityTag"

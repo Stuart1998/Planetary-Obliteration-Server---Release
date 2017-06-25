@@ -324,6 +324,12 @@
     "LegionTitanAdvancedBot": {
       "spec_id": "/pa/units/legion/land/l_titan_bot/l_titan_bot.json"
     },
+	"LegionTitanSniperBot": {
+	  "spec_id": "/pa/units/legion/land/l_titan_sniper/l_titan_sniper.json"
+	},
+	"LegionTitanAssaultBot": {
+	  "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault.json"
+	},
     "LegionTitanAdvancedOrbital": {
       "spec_id": "/pa/units/legion/orbital/l_titan_orbital/l_titan_orbital.json"
     },
