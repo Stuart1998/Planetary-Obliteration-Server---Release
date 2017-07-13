@@ -126,7 +126,7 @@
     ]
   ],
   "selection_icon": {
-    "diameter": 75
+    "diameter": -75
   },
   "si_name": "naval_factory_adv",
   "spawn_layers": "WL_DeepWater",

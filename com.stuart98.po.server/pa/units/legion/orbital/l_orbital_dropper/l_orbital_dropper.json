@@ -6,11 +6,11 @@
   "atrophy_rate": 60,
   "audio": {
     "loops": {
-      "enabled": {
-        "cue": "/SE/Buildings/helios_teleporter_loop",
-        "flag": "enable_changed",
-        "should_start_func": "is_enabled",
-        "should_stop_func": "is_disabled"
+      "build": {
+        "cue": "/SE/Construction/Factory_contruction_loop_unit_cannon",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
       }
     },
     "selection_response": {
@@ -137,7 +137,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 70
+    "diameter": -70
   },
   "tools": [
     {
@@ -162,5 +162,5 @@
     "UNITTYPE_FabOrbBuild",
     "UNITTYPE_Custom1"
   ],
-  "wait_to_rolloff_time": 0
+  "wait_to_rolloff_time": 3.0
 }

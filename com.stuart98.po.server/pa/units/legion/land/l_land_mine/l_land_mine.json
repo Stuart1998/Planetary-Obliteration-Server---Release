@@ -115,7 +115,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 7
+    "diameter": -7
   },
   "si_name": "land_mine",
   "spawn_layers": "WL_LandHorizontal",

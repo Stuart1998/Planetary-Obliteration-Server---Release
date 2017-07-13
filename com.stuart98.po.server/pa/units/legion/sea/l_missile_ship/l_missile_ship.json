@@ -68,7 +68,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 32
+    "diameter": -32
   },
   "si_name": "missile_ship",
   "tools": [

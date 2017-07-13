@@ -25,7 +25,7 @@
     "energy": 900
   },
   "description": "Basic Radar Satellite - Detects Enemy Units Within a Medium-Sized Area.",
-  "display_name": "Sputnik",
+  "display_name": "Intrepid",
   "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {
@@ -120,7 +120,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 35
+    "diameter": -35
   },
   "si_name": "radar_satellite",
   "unit_types": [

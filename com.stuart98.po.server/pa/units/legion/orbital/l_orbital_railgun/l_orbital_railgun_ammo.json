@@ -5,5 +5,8 @@
   "fx_beam_spec": "/pa/effects/specs/orbital_railgun_beam.pfx",
   "fx_collision_spec": "/pa/effects/specs/orbital_railgun_hit.pfx",
   "initial_velocity": 500.0,
-  "max_velocity": 500.0
+  "max_velocity": 500.0,
+  "splash_damage": 300,
+  "splash_damages_allies": true,
+  "splash_radius": 1
 }

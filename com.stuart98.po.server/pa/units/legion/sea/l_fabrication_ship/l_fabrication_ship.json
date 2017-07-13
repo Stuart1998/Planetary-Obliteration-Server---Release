@@ -95,7 +95,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 13
+    "diameter": -13
   },
   "si_name": "fabrication_ship_adv",
   "tools": [

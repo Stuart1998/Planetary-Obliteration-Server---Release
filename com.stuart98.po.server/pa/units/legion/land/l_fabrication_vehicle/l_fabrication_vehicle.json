@@ -102,7 +102,7 @@
     "uv_split": 0.875
   },
   "selection_icon": {
-    "diameter": 12
+    "diameter": -12
   },
   "si_name": "fabrication_vehicle",
   "tools": [

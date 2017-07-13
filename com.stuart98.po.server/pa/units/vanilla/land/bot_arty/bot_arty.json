@@ -69,7 +69,7 @@
   },
   "navigation": {
     "acceleration": 250,
-    "brake": -1,
+    "brake": 250,
     "move_speed": 9,
     "turn_speed": 720,
     "type": "land-small"

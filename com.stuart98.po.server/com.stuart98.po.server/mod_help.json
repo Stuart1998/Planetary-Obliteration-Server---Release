@@ -1,0 +1,15 @@
+{
+  "topics": {
+    "Attack Layers": "The majority of the weapons can target anything; this doesn't mean that they are effective at it.",
+    "Comsplosions": "Commander explosions one shot nearby commanders. You have been warned.",
+    "Shielder": "T1 MLA vehicle. Mobile wall. Very high health for a relatively cheap cost, but no weapon. Amphibious.",
+    "Storage": "Storage is non-buildable by commanders. All factories and resource production structures increase storage slightly.",
+    "T1 Fabbers": "Bots are fast but weaker lathe and less health, vehicles are a little costlier and slower with more health and a stronger lathe. Air fabbers are weak and are meant to be spammed.",
+    "Uber Cannon": "The Uber cannon one-shots everything in the game, including other commanders; it also has a massive energy cost.",
+    "Why don't I have any metal?!": "Reclaiming wreckage is a useful action in this mod and has been facilitated with high HP combat fabbers that excel in this role.",
+	"Why don't I have any energy?!": "Although more energy is required in this mod than in vanilla, it's also much, much cheaper. Just build more of it. T2 energy is particularly effective, though volatile.",
+    "Wreckage": "A balancing factor. A successful defense means that your opponent gave you a ton of metal",
+    "description": "Reworks the game completely to create a more fluid and strategic experience. Includes Legion.",
+    "help": "Use !commands to see all commands and !topics to view all topics. To view the description of a topic, use ?topic."
+  }
+}

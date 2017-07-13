@@ -1,0 +1,28 @@
+{
+  "ammo_id": "/pa/units/vanilla/sea/hover_ship/depth_charge_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/shell_artillery",
+      "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
+    }
+  },
+  "firing_standard_deviation": 8.5,
+  "max_firing_velocity": 120,
+  "max_range": 110,
+  "min_firing_velocity": 5,
+  "pitch_range": 360,
+  "pitch_rate": 3600,
+  "rate_of_fire": 0.4,
+  "spread_fire": false,
+  "target_layers": [
+    "WL_Seafloor",
+    "WL_Underwater"
+  ],
+  "target_priorities": [
+    "Mobile & Defense"
+  ],
+  "yaw_range": 360,
+  "yaw_rate": 3600
+}

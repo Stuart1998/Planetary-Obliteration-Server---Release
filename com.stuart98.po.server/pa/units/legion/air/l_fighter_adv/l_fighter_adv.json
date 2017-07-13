@@ -114,7 +114,6 @@
       "type": "moving_forward"
     }
   ],
-  "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Air",
   "max_health": 600,
   "mesh_bounds": [
@@ -130,10 +129,8 @@
     "acceleration": 75,
     "bank_factor": 30,
     "brake": 75,
-    "inter_planetary_type": "system",
     "move_speed": 75,
-    "turn_speed": 250,
-    "vertical_speed": 50
+    "turn_speed": 250
   },
   "recon": {
     "observer": {
@@ -148,11 +145,10 @@
     }
   },
   "selection_icon": {
-    "diameter": 20.0,
+    "diameter": -20.0,
     "vertical_offset": -2.0
   },
   "si_name": "fighter_adv",
-  "system_velocity_multiplier": 15.0,
   "tools": [
     {
       "aim_bone": "recoil_right",

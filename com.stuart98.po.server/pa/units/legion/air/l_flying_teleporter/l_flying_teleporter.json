@@ -186,7 +186,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 40
+    "diameter": -40
   },
   "system_velocity_multiplier": 15.0,
   "teleporter": {

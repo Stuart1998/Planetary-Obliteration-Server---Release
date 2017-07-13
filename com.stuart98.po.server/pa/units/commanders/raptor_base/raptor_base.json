@@ -27,7 +27,7 @@
   },
   "navigation": {
     "acceleration": 60,
-    "brake": -1,
+    "brake": 60,
     "move_speed": 12,
     "park_stamp": {
       "cost": 20,

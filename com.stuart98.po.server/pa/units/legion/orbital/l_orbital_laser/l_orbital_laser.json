@@ -17,7 +17,7 @@
     "ORDER_Attack"
   ],
   "description": "Orbital Laser - Equipped with a High Damage Plasma Cannon. Attacks Land and Naval.",
-  "display_name": "Black Knight",
+  "display_name": "Templar",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"

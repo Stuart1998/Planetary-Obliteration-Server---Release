@@ -110,7 +110,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 72
+    "diameter": -72
   },
   "si_name": "orbital_battleship",
   "spawn_layers": "WL_Orbital",

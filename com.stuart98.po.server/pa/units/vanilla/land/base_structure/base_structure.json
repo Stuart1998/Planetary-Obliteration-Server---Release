@@ -4,6 +4,9 @@
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/structure_small"
+    },
+    "sing_selection_response": {
+      "cue": "/SE/UI/plus/sing"
     }
   },
   "build_metal_cost": 1,

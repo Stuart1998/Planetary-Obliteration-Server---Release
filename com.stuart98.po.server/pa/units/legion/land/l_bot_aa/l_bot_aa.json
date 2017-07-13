@@ -55,7 +55,7 @@
   },
   "navigation": {
     "acceleration": 120,
-    "brake": -1,
+    "brake": 120,
     "move_speed": 11,
     "turn_speed": 720
   },
@@ -76,7 +76,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 8
+    "diameter": -8
   },
   "si_name": "bot_grenadier",
   "tools": [

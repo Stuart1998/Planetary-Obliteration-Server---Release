@@ -89,7 +89,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 56.0
+    "diameter": -56.0
   },
   "si_name": "battleship",
   "spawn_layers": "WL_WaterSurface",

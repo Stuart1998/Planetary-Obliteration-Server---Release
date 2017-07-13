@@ -129,7 +129,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 16.0
+    "diameter": -16.0
   },
   "si_name": "gunship",
   "spawn_layers": "WL_Air",

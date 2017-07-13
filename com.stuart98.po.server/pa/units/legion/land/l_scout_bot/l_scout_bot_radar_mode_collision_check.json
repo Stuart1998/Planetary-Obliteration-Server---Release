@@ -128,7 +128,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 8
+    "diameter": -8
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "spawn_unit_on_death": "/pa/units/legion/land/l_scout_bot/l_scout_bot_radar_mode.json",

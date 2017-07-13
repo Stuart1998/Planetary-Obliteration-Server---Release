@@ -18,7 +18,7 @@
     "ORDER_Assist"
   ],
   "description": "Orbital Radar Probe - Fast. Small Vision Radius.",
-  "display_name": "Intrepid",
+  "display_name": "Spectre",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
@@ -140,7 +140,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 28.0
+    "diameter": -28.0
   },
   "si_name": "orbital_probe",
   "system_velocity_multiplier": 40.0,

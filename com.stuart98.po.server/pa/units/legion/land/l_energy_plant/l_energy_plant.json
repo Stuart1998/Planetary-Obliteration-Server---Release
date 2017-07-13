@@ -78,7 +78,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 19
+    "diameter": -19
   },
   "si_name": "energy_plant",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",

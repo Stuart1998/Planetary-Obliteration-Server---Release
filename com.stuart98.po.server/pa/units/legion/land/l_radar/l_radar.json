@@ -119,7 +119,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 20
+    "diameter": -20
   },
   "si_name": "radar",
   "spawn_layers": "WL_AnySurface",

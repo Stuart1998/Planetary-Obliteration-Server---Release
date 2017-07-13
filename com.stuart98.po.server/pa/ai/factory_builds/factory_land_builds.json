@@ -7,7 +7,8 @@
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
-        "BasicBotFactory"
+        "BasicBotFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [
@@ -55,7 +56,8 @@
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
-        "BasicVehicleFactory"
+        "BasicVehicleFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [
@@ -593,7 +595,8 @@
       "instance_count": 1,
       "priority": 97,
       "builders": [
-        "BasicBotFactory"
+        "BasicBotFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [
@@ -657,7 +660,8 @@
       "shared_instance_count": "LandScout",
       "priority": 98,
       "builders": [
-        "BasicVehicleFactory"
+        "BasicVehicleFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [
@@ -723,7 +727,8 @@
       "shared_instance_count": "LandScout",
       "priority": 97,
       "builders": [
-        "BasicVehicleFactory"
+        "BasicVehicleFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [
@@ -842,7 +847,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicVehicleFactory"
+        "BasicVehicleFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [
@@ -906,7 +912,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicVehicleFactory"
+        "BasicVehicleFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [
@@ -1094,7 +1101,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicVehicleFactory"
+        "BasicVehicleFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [
@@ -1223,7 +1231,8 @@
       "max_num_assisters": 15,
       "priority": 200,
       "builders": [
-        "AdvancedBotFactory"
+        "AdvancedBotFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [
@@ -1273,7 +1282,8 @@
       "max_num_assisters": 15,
       "priority": 200,
       "builders": [
-        "AdvancedVehicleFactory"
+        "AdvancedVehicleFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [
@@ -1323,7 +1333,8 @@
       "max_num_assisters": 15,
       "priority": 199,
       "builders": [
-        "AdvancedBotFactory"
+        "AdvancedBotFactory",
+		"UnitCannon"
       ],
       "build_conditions": [
         [

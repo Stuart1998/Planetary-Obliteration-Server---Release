@@ -87,7 +87,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 75
+    "diameter": -75
   },
   "si_name": "teleporter",
   "teleporter": {

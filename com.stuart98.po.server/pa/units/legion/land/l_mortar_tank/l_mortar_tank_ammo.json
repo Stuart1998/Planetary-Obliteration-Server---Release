@@ -5,7 +5,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_artillery",
-      "effect_spec": "/pa/units/land/l_mortar_tank/l_mortar_explosion.pfx"
+      "effect_spec": "/pa/units/legion/land/l_mortar_tank/l_mortar_explosion.pfx"
     }
   },
   "full_damage_splash_radius": 2,

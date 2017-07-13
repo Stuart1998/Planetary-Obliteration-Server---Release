@@ -40,7 +40,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicBot"
+        "LegionFactoryBasicBot",
+		"LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -88,7 +89,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicVehicle"
+        "LegionFactoryBasicVehicle",
+		"LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -154,7 +156,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicBot"
+        "LegionFactoryBasicBot",
+		"LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
       "name": "Legion - Investigator - Intel",
@@ -218,7 +221,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicBot"
+        "LegionFactoryBasicBot",
+		"LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
       "name": "Legion - Investigator",
@@ -529,7 +533,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicBot"
+        "LegionFactoryBasicBot",
+		"LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -837,7 +842,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicVehicle"
+        "LegionFactoryBasicVehicle",
+		"LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
       "name": "Legion - Guardian",
@@ -1195,7 +1201,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryAdvancedBot"
+        "LegionFactoryAdvancedBot",
+		"LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
       "max_num_assisters": 15,
@@ -1245,7 +1252,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryAdvancedVehicle"
+        "LegionFactoryAdvancedVehicle",
+		"LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
       "max_num_assisters": 15,
@@ -1525,7 +1533,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryAdvancedBot"
+        "LegionFactoryAdvancedBot",
+		"LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
       "max_num_assisters": 15,

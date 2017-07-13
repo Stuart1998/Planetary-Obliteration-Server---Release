@@ -73,7 +73,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 28
+    "diameter": -28
   },
   "si_name": "destroyer",
   "spawn_layers": "WL_DeepWater",

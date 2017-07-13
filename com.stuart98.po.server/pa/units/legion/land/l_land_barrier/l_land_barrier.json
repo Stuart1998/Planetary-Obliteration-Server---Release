@@ -50,7 +50,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 9
+    "diameter": -9
   },
   "si_name": "land_barrier",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",

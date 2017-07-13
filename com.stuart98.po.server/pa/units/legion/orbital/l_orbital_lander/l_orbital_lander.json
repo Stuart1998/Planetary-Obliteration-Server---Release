@@ -163,7 +163,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 39
+    "diameter": -39
   },
   "si_name": "orbital_lander",
   "system_velocity_multiplier": 10.0,

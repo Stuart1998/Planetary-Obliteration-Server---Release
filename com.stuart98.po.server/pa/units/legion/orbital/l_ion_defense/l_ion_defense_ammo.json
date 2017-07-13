@@ -6,8 +6,8 @@
   "collision_check": "target",
   "collision_response": "impact",
   "damage": 1000,
-  "fx_beam_spec": "/pa/units/vanilla/land/laser_defense_sniper/sniper_ammo_trail.pfx",
-  "fx_collision_spec": "/pa/units/vanilla/land/laser_defense_sniper/sniper_ammo_hit.pfx",
+  "fx_beam_spec": "/pa/units/legion/orbital/l_ion_defense/beam.pfx",
+  "fx_collision_spec": "/pa/units/legion/orbital/l_ion_defense/beam_hit.pfx",
   "splash_damage": 1000,
   "splash_damages_allies": true,
   "splash_radius": 1

@@ -42,7 +42,7 @@
       "type": "idle"
     }
   ],
-  "max_health": 600,
+  "max_health": 1800,
   "mesh_bounds": [
     118.558,
     118.558,
@@ -80,7 +80,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 83
+    "diameter": -83
   },
   "si_name": "mining_platform",
   "storage": {

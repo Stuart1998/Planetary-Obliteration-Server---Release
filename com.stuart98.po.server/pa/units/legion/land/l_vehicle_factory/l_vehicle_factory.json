@@ -236,7 +236,7 @@
     ]
   ],
   "selection_icon": {
-    "diameter": 50
+    "diameter": -50
   },
   "si_name": "vehicle_factory",
   "storage": {

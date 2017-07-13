@@ -85,7 +85,7 @@
   },
   "navigation": {
     "acceleration": 200,
-    "brake": -1,
+    "brake": 200,
     "move_speed": 30,
     "turn_speed": 720
   },
@@ -106,7 +106,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 9
+    "diameter": -9
   },
   "si_name": "bot_bomb",
   "spawn_layers": "WL_LandHorizontal",

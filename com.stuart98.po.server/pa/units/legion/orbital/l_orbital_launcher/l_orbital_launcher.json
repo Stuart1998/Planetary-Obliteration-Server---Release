@@ -396,7 +396,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 75
+    "diameter": -75
   },
   "si_name": "orbital_launcher",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",

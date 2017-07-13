@@ -91,7 +91,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 55
+    "diameter": -55
   },
   "si_name": "battlecruiser",
   "tools": [

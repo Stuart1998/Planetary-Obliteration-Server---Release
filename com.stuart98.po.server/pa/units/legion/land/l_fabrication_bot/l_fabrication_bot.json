@@ -105,7 +105,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 8
+    "diameter": -8
   },
   "si_name": "fabrication_bot",
   "tools": [

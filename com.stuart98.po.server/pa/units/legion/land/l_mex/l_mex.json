@@ -74,7 +74,7 @@
     "/pa/units/legion/land/l_mex_adv/l_mex_adv.json"
   ],
   "selection_icon": {
-    "diameter": 24
+    "diameter": -24
   },
   "si_name": "metal_extractor",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",

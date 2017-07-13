@@ -59,7 +59,7 @@
   },
   "navigation": {
     "acceleration": 250,
-    "brake": -1,
+    "brake": 250,
     "move_speed": 8,
     "turn_speed": 720,
     "type": "land-small"
@@ -80,7 +80,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 8.0
+    "diameter": -8.0
   },
   "tools": [
     {

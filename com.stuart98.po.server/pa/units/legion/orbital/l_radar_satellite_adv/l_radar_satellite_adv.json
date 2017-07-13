@@ -116,7 +116,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 33
+    "diameter": -33
   },
   "si_name": "radar_satellite_adv",
   "tools": [

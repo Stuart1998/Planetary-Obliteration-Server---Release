@@ -102,7 +102,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 19
+    "diameter": -19
   },
   "si_name": "bomber",
   "tools": [

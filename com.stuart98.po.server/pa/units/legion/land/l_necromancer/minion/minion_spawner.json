@@ -64,7 +64,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 1
+    "diameter": -1
   },
   "spawn_unit_on_death": "/pa/units/legion/land/l_necromancer/minion/minion.json",
   "tools": [

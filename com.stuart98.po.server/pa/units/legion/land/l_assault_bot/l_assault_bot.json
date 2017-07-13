@@ -47,7 +47,7 @@
   },
   "navigation": {
     "acceleration": 250,
-    "brake": -1,
+    "brake": 250,
     "group_preference": "front",
     "move_speed": 15,
     "turn_speed": 720,
@@ -69,7 +69,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 8
+    "diameter": -8
   },
   "si_name": "assault_bot",
   "tools": [

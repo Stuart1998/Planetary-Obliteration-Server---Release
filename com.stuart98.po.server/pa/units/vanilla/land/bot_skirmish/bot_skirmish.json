@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/land/base_bot/base_bot.json",
-  "build_metal_cost": 800,
+  "build_metal_cost": 600,
   "description": "Skirmish Bot- Long range, medium damage. Medium armor. Low firing arc.",
   "display_name": "Cerberus",
   "events": {
@@ -133,7 +133,7 @@
   "navigation": {
     "acceleration": 40,
     "aggressive_distance": 90,
-    "brake": -1,
+    "brake": 40,
     "move_speed": 14,
     "turn_speed": 720,
     "type": "land-small"

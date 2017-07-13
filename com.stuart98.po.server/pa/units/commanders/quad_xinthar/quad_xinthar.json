@@ -94,6 +94,9 @@
   "model": {
     "filename": "/pa/units/commanders/quad_xinthar/quad_xinthar.papa"
   },
+  "selection_icon": {
+    "diameter": -16.6
+  },
   "si_name": "l_commander",
   "unit_types": [
     "UNITTYPE_Commander",

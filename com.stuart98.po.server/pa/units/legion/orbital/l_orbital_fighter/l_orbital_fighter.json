@@ -48,7 +48,7 @@
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
   "guard_radius": 60,
-  "max_health": 150,
+  "max_health": 165,
   "mesh_bounds": [
     12,
     11,
@@ -87,7 +87,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 30
+    "diameter": -30
   },
   "si_name": "orbital_fighter",
   "tools": [

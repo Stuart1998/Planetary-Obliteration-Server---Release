@@ -222,7 +222,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 133.0,
+    "diameter": -133.0,
     "vertical_offset": -10
   },
   "si_name": "titan",
