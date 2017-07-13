@@ -10,7 +10,7 @@
   },
   "firing_standard_deviation": 8.5,
   "max_firing_velocity": 120,
-  "max_range": 110,
+  "max_range": 60,
   "min_firing_velocity": 5,
   "pitch_range": 360,
   "pitch_rate": 3600,
