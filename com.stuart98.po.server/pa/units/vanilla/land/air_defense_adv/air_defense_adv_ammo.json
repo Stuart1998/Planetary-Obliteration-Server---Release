@@ -43,7 +43,7 @@
   "max_health": 1,
   "max_velocity": 250.0,
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 1,
     "radius": 10

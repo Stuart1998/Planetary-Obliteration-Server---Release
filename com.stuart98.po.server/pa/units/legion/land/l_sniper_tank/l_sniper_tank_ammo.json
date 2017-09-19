@@ -21,7 +21,7 @@
   "max_velocity": 500,
   "min_velocity": 90,
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 26,
     "radius": 1

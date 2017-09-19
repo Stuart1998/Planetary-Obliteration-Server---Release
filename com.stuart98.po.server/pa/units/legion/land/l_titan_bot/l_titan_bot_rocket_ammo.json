@@ -21,7 +21,7 @@
     "filename": "/pa/units/air/missile_tactical/missile_tactical.papa"
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "gravity_scalar": 5,
     "ignore_gravity": true,
     "radius": 1

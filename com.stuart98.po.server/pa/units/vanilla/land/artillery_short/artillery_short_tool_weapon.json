@@ -8,7 +8,7 @@
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
   "max_range": 260,
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "gravity_scalar": 2,
     "push_class": 1,
     "radius": 1

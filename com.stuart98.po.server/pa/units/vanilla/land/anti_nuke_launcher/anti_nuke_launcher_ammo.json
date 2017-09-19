@@ -33,7 +33,7 @@
     "filename": "/pa/units/air/missile_anti_nuke/missile_anti_nuke.papa"
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 3,
     "ignore_gravity": true,

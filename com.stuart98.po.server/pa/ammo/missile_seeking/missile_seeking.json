@@ -23,7 +23,7 @@
     "filename": "/pa/units/air/missile/missile.papa"
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 5,
     "ignore_gravity": true,

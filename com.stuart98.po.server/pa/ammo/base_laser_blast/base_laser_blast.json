@@ -18,7 +18,7 @@
     "filename": ""
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "gravity_scalar": 1,
     "ignore_gravity": true,
     "radius": 1

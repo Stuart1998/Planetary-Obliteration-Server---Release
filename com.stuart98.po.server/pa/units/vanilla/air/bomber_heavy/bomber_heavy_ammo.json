@@ -27,7 +27,7 @@
     "filename": "/pa/units/air/bomb_guided/bomb_guided.papa"
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "gravity_scalar": 10,
     "radius": 1
   },

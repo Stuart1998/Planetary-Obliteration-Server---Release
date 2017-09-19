@@ -9,7 +9,7 @@
     "filename": "/pa/units/sea/torpedo_small/torpedo_small.papa"
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 5,
     "radius": 1

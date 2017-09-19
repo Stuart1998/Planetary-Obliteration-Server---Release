@@ -33,7 +33,7 @@
     "filename": "/pa/units/legion/land/l_anti_nuke_launcher/missile/missile.papa"
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 3,
     "ignore_gravity": true,

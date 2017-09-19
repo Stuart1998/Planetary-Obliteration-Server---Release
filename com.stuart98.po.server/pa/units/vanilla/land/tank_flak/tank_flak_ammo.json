@@ -42,7 +42,7 @@
   "lifetime": 15,
   "max_velocity": 60.0,
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "gravity_scalar": 5,
     "ignore_gravity": true,
     "radius": 1

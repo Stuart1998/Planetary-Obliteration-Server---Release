@@ -35,7 +35,7 @@
     "filename": "/pa/units/land/bot_nanoswarm/bot_nanoswarm.papa"
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "gravity_scalar": 5,
     "ignore_gravity": true,
     "radius": 0

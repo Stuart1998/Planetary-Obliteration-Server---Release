@@ -21,7 +21,7 @@
     "filename": "/pa/units/legion/air/l_air_bomb/l_air_bomb.papa"
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 1,
     "ignore_gravity": true,

@@ -19,7 +19,7 @@
   "initial_velocity": 110.0,
   "lifetime": 7,
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 5,
     "ignore_gravity": true,

@@ -26,7 +26,7 @@
   "max_velocity": 250,
   "model": null,
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "gravity_scalar": 10,
     "ignore_gravity": true,
     "radius": 10,

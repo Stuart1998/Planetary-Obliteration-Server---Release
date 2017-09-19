@@ -24,7 +24,7 @@
     "filename": "/pa/units/vanilla/air/bomb/bomb.papa"
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "air_friction": 1.0,
     "allow_underground": true,
     "gravity_scalar": 3,

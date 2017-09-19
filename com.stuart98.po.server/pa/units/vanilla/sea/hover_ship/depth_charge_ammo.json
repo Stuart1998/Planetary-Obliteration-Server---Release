@@ -19,7 +19,7 @@
     "filename": "/pa/units/air/bomb_guided/bomb_guided.papa"
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 15,
     "push_class": 1,

@@ -11,7 +11,7 @@
   "lifetime": 3,
   "max_velocity": 140.0,
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 10,
     "push_class": 1,
