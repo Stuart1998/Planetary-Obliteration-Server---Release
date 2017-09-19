@@ -16,6 +16,7 @@
       ]
     }
   },
+  "attack_range_frac": 0.2,
   "audio": {
     "loops": {
       "move": {
@@ -105,11 +106,80 @@
   "tools": [
     {
       "aim_bone": "turret00",
+      "fire_event": "fired0",
+      "muzzle_bone": "muzzle01",
+      "record_index": 0,
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_flamethrower.json"
+    },
+    {
+      "aim_bone": "turret00",
       "fire_event": "fired1",
       "muzzle_bone": [
         "muzzle02"
       ],
-      "projectiles_per_fire": 8,
+      "record_index": 1,
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_shell.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "muzzle02"
+      ],
+      "record_index": 1,
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_shell.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "muzzle02"
+      ],
+      "record_index": 1,
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_shell.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "muzzle02"
+      ],
+      "record_index": 1,
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_shell.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "muzzle02"
+      ],
+      "record_index": 1,
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_shell.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "muzzle02"
+      ],
+      "record_index": 1,
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_shell.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "muzzle02"
+      ],
+      "record_index": 1,
+      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_shell.json"
+    },
+    {
+      "aim_bone": "turret00",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "muzzle02"
+      ],
       "record_index": 1,
       "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_shell.json"
     },
@@ -121,13 +191,6 @@
         "muzzle04"
       ],
       "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_missile.json"
-    },
-    {
-      "aim_bone": "turret00",
-      "fire_event": "fired0",
-      "muzzle_bone": "muzzle01",
-      "record_index": 0,
-      "spec_id": "/pa/units/legion/land/l_titan_assault/l_titan_assault_tool_weapon_flamethrower.json"
     }
   ],
   "unit_types": [

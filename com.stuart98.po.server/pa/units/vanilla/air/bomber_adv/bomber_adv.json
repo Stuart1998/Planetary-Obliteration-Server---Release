@@ -53,14 +53,19 @@
     "filename": "/pa/units/air/bomber_adv/bomber_adv.papa"
   },
   "navigation": {
-    "acceleration": 60,
-    "aggressive_distance": 300.0,
+    "acceleration": 35,
+    "aggressive_behavior": "circle",
+    "aggressive_distance": 180.0,
     "aggressive_height": 100.0,
-    "brake": 60,
+    "bank_factor": 1,
+    "brake": 35,
+    "circle_max_time": 4.0,
+    "circle_min_time": 2.0,
     "dodge_multiplier": 0.0,
     "dodge_radius": 0,
+    "hover_time": -1.0,
     "move_speed": 35,
-    "turn_speed": 65,
+    "turn_speed": 135,
     "type": "air",
     "wobble_factor": 0.05,
     "wobble_speed": 0.1

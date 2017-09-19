@@ -39,7 +39,7 @@
     }
   },
   "spawn_layers": "WL_Air",
-  "spawn_unit_on_death": "/pa/units/sea/drone_carrier/drone/drone.json",
+  "spawn_unit_on_death": "/pa/units/vanilla/sea/drone_carrier/drone/drone.json",
   "spawn_unit_on_death_with_velocity": true,
   "splash_damage": 0,
   "splash_radius": 0,
