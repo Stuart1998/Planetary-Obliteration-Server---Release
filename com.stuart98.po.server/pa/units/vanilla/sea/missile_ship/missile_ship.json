@@ -93,6 +93,16 @@
       ],
       "record_index": 0,
       "spec_id": "/pa/units/vanilla/sea/missile_ship/missile_ship_tool_weapon.json"
+    },
+    {
+      "aim_bone": "socket_missile_muzzle01",
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "socket_missile_muzzle01",
+        "socket_missile_muzzle02"
+      ],
+      "record_index": 0,
+      "spec_id": "/pa/units/vanilla/sea/missile_ship/missile_ship_tool_antidrop.json"
     }
   ],
   "unit_types": [

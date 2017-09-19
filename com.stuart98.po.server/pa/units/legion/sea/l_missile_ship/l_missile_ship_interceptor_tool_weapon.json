@@ -10,6 +10,9 @@
     "/pa/units/vanilla/land/bot_arty/bot_arty_ammo.json",
     "/pa/units/vanilla/land/air_defense/air_defense_ammo.json",
     "/pa/units/vanilla/land/rocket_defense/rocket_defense_ammo.json",
+    "/pa/units/vanilla/sea/missile_ship/missile_ship_ammo.json",
+    "/pa/units/vanilla/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
+    "/pa/units/vanilla/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
     "/pa/units/vanilla/sea/sea_scout/sea_scout_ammo_missile.json",
     "/pa/units/vanilla/sea/drone_carrier/drone/drone_ammo.json",
     "/pa/units/legion/air/l_fighter_adv/l_fighter_adv_rocket_ammo.json",
@@ -25,7 +28,8 @@
     "/pa/units/legion/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json",
     "/pa/units/legion/land/l_titan_assault/l_titan_assault_missile_ammo.json",
     "/pa/units/legion/land/l_titan_bot/l_titan_bot_rocket_ammo.json",
-    "/pa/units/legion/land/l_bot_aa/l_bot_aa_ammo.json"
+    "/pa/units/legion/land/l_bot_aa/l_bot_aa_ammo.json",
+	"/pa/units/legion/land/l_rocket_barrage/l_rocket_barrage_ammo.json"
   ],
   "auto_attack": true,
   "auto_task_type": "anti_entity",

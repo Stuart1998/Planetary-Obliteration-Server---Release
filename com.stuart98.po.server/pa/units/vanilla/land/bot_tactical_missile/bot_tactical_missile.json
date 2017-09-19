@@ -29,7 +29,7 @@
   },
   "base_spec": "/pa/units/vanilla/land/base_bot/base_bot.json",
   "build_metal_cost": 700,
-  "description": "Mobile Tactical Missile - Long range light homing missiles with slight aoe.",
+  "description": "Mobile Tactical Missile - Long range light homing missiles with slight aoe. Attacks land, sea, and orbital.",
   "display_name": "Pummeler",
   "events": {
     "build_complete": {
