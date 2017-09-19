@@ -50,6 +50,13 @@
   },
   "si_name": "sonar",
   "spawn_layers": "WL_WaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "spec_id": "/pa/units/vanilla/sea/sonar/sonar_tool_weapon.json"
+    }
+  ],
   "unit_types": [
     "UNITTYPE_Structure",
     "UNITTYPE_Basic",

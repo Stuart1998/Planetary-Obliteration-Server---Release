@@ -1,0 +1,12 @@
+{
+  "base_spec": "/pa/ammo/torpedo/torpedo.json",
+  "cruise_height": 2,
+  "damage": 0,
+  "events": {},
+  "fx_trail": {},
+  "initial_velocity": 5.0,
+  "lifetime": 0.1,
+  "max_velocity": 5.0,
+  "model": {},
+  "turn_rate": 50
+}

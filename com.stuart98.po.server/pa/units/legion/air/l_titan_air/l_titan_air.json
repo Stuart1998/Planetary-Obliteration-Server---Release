@@ -125,6 +125,7 @@
     "diameter": -72.0
   },
   "si_name": "titan",
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
       "aim_bone": "bone_turret_main",

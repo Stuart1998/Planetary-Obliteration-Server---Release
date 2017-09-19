@@ -385,6 +385,7 @@
     "/pa/units/legion/land/l_titan_sniper/l_titan_sniper.json",
     "/pa/units/legion/land/l_titan_assault/l_titan_assault.json",
     "/pa/units/vanilla/air/titan_light/titan_light.json",
-    "/pa/units/vanilla/land/titan_riot/titan_riot.json"
+    "/pa/units/vanilla/land/titan_riot/titan_riot.json",
+    "/pa/units/vanilla/air/bomber_naval/bomber_naval.json"
   ]
 }

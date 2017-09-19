@@ -114,6 +114,7 @@
     "thickness": 2.0
   },
   "si_name": "titan",
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
       "aim_bone": "socket_muzzle_center",

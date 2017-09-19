@@ -37,7 +37,7 @@
     "ORDER_Repair",
     "ORDER_Assist"
   ],
-  "description": "Support Platform - Repairs nearby units. Intercepts homing missiles. Does not attack.",
+  "description": "Support Platform - Repairs nearby units. Point defense. Does not attack.",
   "display_name": "Angel",
   "events": {
     "build_complete": {

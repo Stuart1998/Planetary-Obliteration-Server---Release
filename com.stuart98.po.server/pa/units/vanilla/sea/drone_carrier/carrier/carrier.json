@@ -23,7 +23,7 @@
     "ORDER_Use",
     "ORDER_FireSecondaryWeapon"
   ],
-  "description": "Drone Carrier - Builds and launches missile drones at enemies. Attacks land, air and sea targets.",
+  "description": "Drone Carrier - Builds and launches missile drones at enemies. Attacks land, air and sea targets. Point defense.",
   "display_name": "Typhoon",
   "events": {
     "build_complete": {
@@ -34,9 +34,13 @@
       "effect_scale": 1.25,
       "effect_spec": "/pa/effects/specs/default_explosion_naval_t2.pfx"
     },
-    "fired": {
+    "fired1": {
       "audio_cue": "/SE/Weapons/sea/drone_carrier_fire",
       "effect_spec": "/pa/units/vanilla/sea/drone_carrier/carrier/carrier_drone_launch.pfx bone_root"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+      "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx bone_root"
     }
   },
   "fx_offsets": [
@@ -284,7 +288,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 200,
+          "radius": 250,
+          "shape": "capsule"
+        },
+        {
+          "channel": "radar",
+          "layer": "underwater",
+          "radius": 250,
           "shape": "capsule"
         }
       ]
@@ -297,13 +307,21 @@
   "tools": [
     {
       "aim_bone": "socket_muzzle",
-      "fire_event": "fired",
+      "fire_event": "fired1",
       "muzzle_bone": [
         "socket_muzzle"
       ],
       "record_index": 0,
       "secondary_weapon": true,
       "spec_id": "/pa/units/vanilla/sea/drone_carrier/carrier/carrier_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired2",
+      "muzzle_bone": [
+        "bone_root"
+      ],
+      "spec_id": "/pa/units/vanilla/sea/drone_carrier/carrier/carrier_tool_interception.json"
     }
   ],
   "unit_types": [

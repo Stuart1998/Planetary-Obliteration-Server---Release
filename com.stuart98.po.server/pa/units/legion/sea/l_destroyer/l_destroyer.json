@@ -12,7 +12,7 @@
   },
   "base_spec": "/pa/units/vanilla/sea/base_ship/base_ship.json",
   "build_metal_cost": 800,
-  "description": "Destroyer - Equipped with Heavy Cannons. Attacks Naval and Land.",
+  "description": "Destroyer - Equipped with Heavy Cannons. Attacks Naval and Land. Torpedo defense.",
   "display_name": "Bowhead",
   "events": {
     "died": {
@@ -33,6 +33,9 @@
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 5.0,
       "effect_spec": "/pa/units/legion/sea/l_destroyer/muzzle_flash.pfx socket_main_muzzle"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/sea/torpedo_fire"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -107,6 +110,12 @@
       "projectiles_per_fire": 1,
       "record_index": 2,
       "spec_id": "/pa/units/legion/sea/l_destroyer/l_destroyer_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired3",
+      "muzzle_bone": "bone_root",
+      "spec_id": "/pa/units/legion/sea/l_destroyer/l_destroyer_tool_torpedo.json"
     }
   ],
   "unit_types": [

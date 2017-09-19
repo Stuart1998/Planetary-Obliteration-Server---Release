@@ -14,7 +14,7 @@
     }
   },
   "base_spec": "/pa/units/vanilla/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 900,
+  "build_metal_cost": 1150,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -105,7 +105,7 @@
     "diameter": -20.0,
     "vertical_offset": -2.0
   },
-  "si_name": "bomber_adv",
+  "si_name": "bomber_heavy",
   "tools": [
     {
       "aim_bone": "bone_altDrop",

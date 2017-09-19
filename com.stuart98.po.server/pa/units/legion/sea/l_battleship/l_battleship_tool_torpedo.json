@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/legion/sea/l_destroyer/l_destroyer_torpedo_ammo.json",
+  "ammo_id": "/pa/units/legion/sea/l_battleship/l_battleship_torpedo_ammo.json",
   "anti_entity_targets": [
     "/pa/units/vanilla/air/bomber_naval/bomber_naval_ammo.json",
     "/pa/units/vanilla/land/bot_mortar/bot_mortar_torpedo_ammo.json",
@@ -25,10 +25,10 @@
   "base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
   "firing_arc_pitch": 180,
   "firing_arc_yaw": 180,
-  "max_range": 80,
+  "max_range": 220,
   "pitch_range": 90,
   "pitch_rate": 180,
-  "rate_of_fire": 0.2,
+  "rate_of_fire": 2,
   "spread_fire": true,
   "target_layers": [
     "WL_WaterSurface",

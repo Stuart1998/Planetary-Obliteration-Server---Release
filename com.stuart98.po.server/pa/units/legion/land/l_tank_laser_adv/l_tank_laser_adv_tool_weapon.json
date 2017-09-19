@@ -5,13 +5,14 @@
   "idle_aim_delay": 3,
   "max_range": 120,
   "pitch_range": 40,
-  "pitch_rate": 60,
+  "pitch_rate": 40,
   "rate_of_fire": 0.25,
   "spread_fire": true,
   "target_layers": [
     "WL_LandHorizontal",
     "WL_Seafloor",
-    "WL_WaterSurface"
+    "WL_WaterSurface",
+    "WL_Air"
   ],
   "yaw_range": 180,
   "yaw_rate": 60

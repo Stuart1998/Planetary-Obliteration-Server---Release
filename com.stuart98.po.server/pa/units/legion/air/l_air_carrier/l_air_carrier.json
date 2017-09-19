@@ -128,9 +128,9 @@
     "move_speed": 30,
     "turn_speed": 40,
     "type": "air",
+    "vertical_speed": 30,
     "wobble_factor": 0.2,
-    "wobble_speed": 0.1,
-    "vertical_speed": 30
+    "wobble_speed": 0.1
   },
   "physics": {
     "gravity_scalar": 1,

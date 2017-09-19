@@ -164,6 +164,7 @@ $(document).ready(function () {
 			'l_flame_bot',
 			'l_boat_torpedo',
 			'tank_orbital',
+			'bomber_naval',
         ]);
 
         self.sendIconList = function () {

@@ -3,9 +3,9 @@
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/air/air_bomber_T2_loop",
+        "cue": "/SE/Movement/air/air_bomber_loop",
         "flag": "vel_changed",
-        "should_start_func": "is_moving_laterally",
+        "should_start_func": "is_moving",
         "should_stop_func": "is_not_moving"
       }
     },
@@ -14,35 +14,43 @@
     }
   },
   "base_spec": "/pa/units/vanilla/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 850,
-  "description": "Missile Gunship - Fires tactical missiles from range. Slow.",
-  "display_name": "Hornet",
+  "build_metal_cost": 400,
+  "description": "Torpedo Bomber: Anti-naval torpedos. Very effective vs Naval units, effective vs Naval Structures.",
+  "display_name": "Kingfisher",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"
     },
     "died": {
-      "audio_cue": "/SE/Death/Air",
-      "effect_scale": 1.0,
-      "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
+      "audio_cue": "/SE/Death/Air"
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/air/bomber_T2_fire"
+      "audio_cue": "/SE/Weapons/air/bomber_fire"
     }
   },
   "fx_offsets": [
     {
-      "filename": "/pa/units/air/bomber_adv/bomber_adv_jets.pfx",
+      "filename": "/pa/effects/misc/jets.pfx",
       "offset": [
-        0,
-        0,
-        0
+        5.1,
+        2.5,
+        1
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/effects/misc/jets.pfx",
+      "offset": [
+        -5.1,
+        2.5,
+        1
       ],
       "type": "moving_forward"
     }
   ],
   "guard_layer": "WL_AnySurface",
-  "max_health": 550,
+  "guard_radius": 100,
+  "max_health": 325,
   "mesh_bounds": [
     23,
     9.5,
@@ -50,17 +58,17 @@
   ],
   "model": {
     "arrows": 5,
-    "filename": "/pa/units/air/bomber_adv/bomber_adv.papa"
+    "filename": "/pa/units/vanilla/air/bomber_naval/bomber_torpedo.papa"
   },
   "navigation": {
-    "acceleration": 60,
-    "aggressive_distance": 300.0,
+    "acceleration": 75,
+    "aggressive_distance": 250.0,
     "aggressive_height": 100.0,
-    "brake": 60,
+    "brake": 20,
     "dodge_multiplier": 0.0,
     "dodge_radius": 0,
-    "move_speed": 35,
-    "turn_speed": 65,
+    "move_speed": 60,
+    "turn_speed": 55,
     "type": "air",
     "wobble_factor": 0.05,
     "wobble_speed": 0.1
@@ -69,8 +77,9 @@
     "air_friction": 1.0,
     "allow_pushing": false,
     "gravity_scalar": 1,
+    "push_class": 2,
     "push_sideways": false,
-    "radius": 9
+    "radius": 6
   },
   "recon": {
     "observer": {
@@ -78,29 +87,30 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 150,
+          "radius": 120,
           "shape": "capsule"
         }
       ]
     }
   },
-  "selection_icon": {
-    "diameter": 32.0
-  },
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": "bone_root",
-      "spec_id": "/pa/units/vanilla/air/bomber_adv/bomber_adv_tool_weapon.json"
+      "muzzle_bone": "bone_socketMuzzle_left",
+      "spec_id": "/pa/units/vanilla/air/bomber_naval/bomber_naval_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_socketMuzzle_right",
+      "spec_id": "/pa/units/vanilla/air/bomber_naval/bomber_naval_tool_weapon.json"
     }
   ],
   "unit_types": [
     "UNITTYPE_Bomber",
-    "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
+    "UNITTYPE_Mobile",
     "UNITTYPE_Air",
-    "UNITTYPE_Tactical",
-    "UNITTYPE_Advanced",
+    "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild"
   ]
 }

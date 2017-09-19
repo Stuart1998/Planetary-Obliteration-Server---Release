@@ -122,6 +122,8 @@ var Build = (function() {
                 "/pa/units/vanilla/air/bomber_adv/bomber_adv.json": ["airadv", 21],
                 "/pa/units/vanilla/air/bomber_heavy/bomber_heavy.json": ["airadv", 22],
  
+ 
+				"/pa/units/vanilla/air/bomber_naval/bomber_naval.json": ["air", 12],
                 "/pa/units/vanilla/air/fabrication_aircraft/fabrication_aircraft.json": ["air", 18],
                 "/pa/units/vanilla/air/fighter/fighter.json": ["air", 19],
                 "/pa/units/vanilla/air/bomber/bomber.json": ["air", 20],
@@ -272,6 +274,7 @@ var Build = (function() {
 		"/pa/units/legion/air/l_air_bomb/l_air_bomb.json": [ "L_air", 23 ],
 
 		
+		"/pa/units/legion/sea/l_battleship/l_battleship.json": [ "L_seaadv", 12 ],
 		"/pa/units/legion/sea/l_hover_ship/l_hover_ship.json": [ "L_seaadv", 19 ],
 		"/pa/units/legion/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json": [ "L_seaadv", 18 ],
 		"/pa/units/legion/sea/l_sea_tank/l_sea_tank.json": [ "L_seaadv", 20 ],

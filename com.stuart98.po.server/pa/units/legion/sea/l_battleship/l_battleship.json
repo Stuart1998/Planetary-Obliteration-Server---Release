@@ -14,8 +14,8 @@
     }
   },
   "base_spec": "/pa/units/vanilla/sea/base_ship/base_ship.json",
-  "build_metal_cost": 4000,
-  "description": "Battleship - Equipped with High-Damage Laser Cannons. Attacks Land and Naval Targets. ",
+  "build_metal_cost": 6000,
+  "description": "Battleship - Equipped with High-Damage Plasma Cannons. Attacks Land and Naval Targets. Torpedo defense.",
   "display_name": "Epoch",
   "events": {
     "died": {
@@ -57,7 +57,7 @@
     }
   ],
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 4500,
+  "max_health": 7200,
   "mesh_bounds": [
     9,
     40,
@@ -93,7 +93,6 @@
   "selection_icon": {
     "diameter": -55
   },
-  "si_name": "battlecruiser",
   "tools": [
     {
       "aim_bone": "bone_turret01",
@@ -120,6 +119,7 @@
     "UNITTYPE_Offense",
     "UNITTYPE_Artillery",
     "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
   ]
 }

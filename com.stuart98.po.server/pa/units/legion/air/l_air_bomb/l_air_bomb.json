@@ -70,6 +70,8 @@
   "selection_icon": {
     "diameter": -24
   },
+  "spawn_unit_on_death": "/pa/units/legion/air/l_air_bomb/triggered/l_air_bomb.json",
+  "spawn_unit_on_death_with_velocity": false,
   "tools": [
     {
       "aim_bone": "bone_root",

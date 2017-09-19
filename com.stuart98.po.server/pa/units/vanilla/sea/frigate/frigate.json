@@ -12,7 +12,7 @@
   },
   "base_spec": "/pa/units/vanilla/sea/base_ship/base_ship.json",
   "build_metal_cost": 900,
-  "description": "Frigate - Light flak frigate. Heavy anti-air damage, but weak to sea.",
+  "description": "Frigate - Light flak frigate. Heavy anti-air damage, but weak to sea. Torpedo defense.",
   "display_name": "Narwhal",
   "events": {
     "build_complete": {
@@ -32,6 +32,9 @@
       "audio_cue": "/SE/Weapons/structure/air_defense_flak_fire",
       "effect_scale": 0.5,
       "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle02 /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/sea/torpedo_fire"
     }
   },
   "fx_offsets": [
@@ -99,6 +102,12 @@
       ],
       "record_index": 1,
       "spec_id": "/pa/units/vanilla/sea/frigate/frigate_tool_weapon_aa.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired3",
+      "muzzle_bone": "bone_root",
+      "spec_id": "/pa/units/vanilla/sea/frigate/frigate_tool_torpedo.json"
     }
   ],
   "unit_types": [

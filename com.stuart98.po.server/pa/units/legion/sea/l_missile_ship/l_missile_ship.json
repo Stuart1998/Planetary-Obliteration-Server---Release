@@ -95,6 +95,28 @@
       "spec_id": "/pa/units/legion/sea/l_missile_ship/l_missile_ship_light_tool_weapon.json"
     },
     {
+      "aim_bone": "pitch001",
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "muzzle001",
+        "muzzle002"
+      ],
+      "projectiles_per_fire": 2,
+      "record_index": 0,
+      "spec_id": "/pa/units/legion/sea/l_missile_ship/l_missile_ship_interceptor_tool_weapon.json"
+    },
+    {
+      "aim_bone": "pitch003",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "muzzle003",
+        "muzzle004"
+      ],
+      "projectiles_per_fire": 2,
+      "record_index": 1,
+      "spec_id": "/pa/units/legion/sea/l_missile_ship/l_missile_ship_interceptor_tool_weapon.json"
+    },
+    {
       "aim_bone": "rocket002",
       "fire_event": "fired4",
       "muzzle_bone": [
