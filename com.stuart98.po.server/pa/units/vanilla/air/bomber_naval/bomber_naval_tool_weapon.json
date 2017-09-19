@@ -24,6 +24,6 @@
     "WL_WaterSurface",
     "WL_Seafloor"
   ],
-  "yaw_range": 180,
+  "yaw_range": 45,
   "yaw_rate": 3600
 }
