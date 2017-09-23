@@ -71,7 +71,7 @@
       "idle": "/pa/units/legion/air/l_air_bomb/l_air_bomb_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-    "filename": "/pa/units/leigon/air/l_air_bomb/l_air_bomb.papa"
+    "filename": "/pa/units/legion/air/l_air_bomb/l_air_bomb.papa"
   },
   "navigation": {
     "acceleration": 400,
