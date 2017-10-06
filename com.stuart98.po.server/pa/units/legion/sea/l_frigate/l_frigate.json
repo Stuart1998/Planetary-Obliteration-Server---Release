@@ -12,7 +12,7 @@
   },
   "base_spec": "/pa/units/vanilla/sea/base_ship/base_ship.json",
   "build_metal_cost": 550,
-  "description": "Frigate- Only Attacks Air.",
+  "description": "Frigate - High damage AA Missiles. Sonar.",
   "display_name": "Talos",
   "events": {
     "died": {

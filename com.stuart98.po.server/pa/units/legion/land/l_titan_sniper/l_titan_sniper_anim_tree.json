@@ -2,8 +2,7 @@
   "blend_root": {
     "nodes": {
       "being_built": {
-        "anim_name": "still",
-        "type": "playback"
+        "type": "bind_pose"
       },
       "dead": {
         "type": "bind_pose"
@@ -12,10 +11,6 @@
         "type": "bind_pose"
       },
       "living": {
-        "node_idle": {
-          "anim_name": "idle",
-          "type": "playback"
-        },
         "node_walk": {
           "anim_name": "walk",
           "type": "playback"

@@ -19,6 +19,7 @@
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
+    "ORDER_Attack",
     "ORDER_Assist"
   ],
   "description": "Suicide Drone - Explodes into orbital units. Fast, small amount of vision.",

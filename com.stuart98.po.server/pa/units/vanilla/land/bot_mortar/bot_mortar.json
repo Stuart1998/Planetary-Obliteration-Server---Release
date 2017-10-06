@@ -54,7 +54,7 @@
       "death01": "/pa/units/vanilla/land/bot_artillery/bot_artillery_anim_death01.papa",
       "walk": "/pa/units/vanilla/land/bot_artillery/bot_artillery_anim_run.papa"
     },
-    "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/smasher_anim_tree.json",
     "filename": "/pa/units/vanilla/land/bot_artillery/bot_artillery.papa",
     "walk_speed": 10
   },

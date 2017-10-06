@@ -9,10 +9,6 @@
       },
       "ghost": {
         "type": "bind_pose"
-      },
-      "living": {
-        "anim_name": "idle",
-        "type": "playback"
       }
     },
     "type": "unit_state"

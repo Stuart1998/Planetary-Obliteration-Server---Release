@@ -22,7 +22,7 @@
     "ORDER_FactoryBuild",
     "ORDER_Attack"
   ],
-  "description": "Interplanetary Transport - Builds and launches up to 12 units at once anywhere in the system.",
+  "description": "Interplanetary Transport - Builds and launches up to 20 units at once anywhere in the system.",
   "display_name": "Unit Cannon",
   "events": {
     "build_complete": {

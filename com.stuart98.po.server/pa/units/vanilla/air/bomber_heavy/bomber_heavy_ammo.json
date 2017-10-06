@@ -33,5 +33,5 @@
   },
   "splash_damage": 500,
   "splash_damages_allies": true,
-  "splash_radius": 30
+  "splash_radius": 35
 }

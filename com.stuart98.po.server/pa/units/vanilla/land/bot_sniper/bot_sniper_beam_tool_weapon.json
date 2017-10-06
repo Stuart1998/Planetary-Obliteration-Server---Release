@@ -29,7 +29,7 @@
     "/pa/units/legion/land/l_titan_assault/l_titan_assault_missile_ammo.json",
     "/pa/units/legion/land/l_titan_bot/l_titan_bot_rocket_ammo.json",
     "/pa/units/legion/land/l_bot_aa/l_bot_aa_ammo.json",
-	"/pa/units/legion/land/l_rocket_barrage/l_rocket_barrage_ammo.json"
+    "/pa/units/legion/land/l_rocket_barrage/l_rocket_barrage_ammo.json"
   ],
   "anti_entity_targets_units": false,
   "auto_attack": true,

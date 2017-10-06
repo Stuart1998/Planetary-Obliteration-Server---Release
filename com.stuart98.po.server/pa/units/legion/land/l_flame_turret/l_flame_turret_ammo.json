@@ -18,5 +18,5 @@
     "add_to_spatial_db": false
   },
   "splash_damage": 50,
-  "splash_radius": 10
+  "splash_radius": 20
 }
