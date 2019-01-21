@@ -1,0 +1,98 @@
+{
+  "TEMP_texelinfo": 6.38702,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/swarm_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/swarm"
+    }
+  },
+  "base_spec": "/pa/units/vanilla/land/base_bot/base_bot.json",
+  "build_metal_cost": 30,
+  "description": "Hover Combat Drone - Equipped with powerful cutting lasers.",
+  "display_name": "Swarmling",
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/swarm",
+      "effect_scale": 1.0
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/sniper_fire",
+      "effect_scale": 0.8,
+      "effect_spec": "/pa/units/legion/land/l_sniper_bot/muzzle_flash_medium.pfx socket_muzzle001 /pa/units/legion/land/l_sniper_bot/muzzle_flash_medium.pfx socket_muzzle002"
+    }
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "guard_radius": 300,
+  "max_health": 160,
+  "mesh_bounds": [
+    1,
+    1,
+    1
+  ],
+  "model": {
+    "animations": {
+      "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
+    },
+    "animtree": "/pa/units/legion/orbital/l_orbital_laser/l_nanobot/l_nanobot_anim_tree.json",
+    "filename": "/pa/units/legion/orbital/l_orbital_laser/l_nanobot/l_nanobot.papa"
+  },
+  "navigation": {
+    "acceleration": 400,
+    "brake": 400,
+    "move_speed": 20,
+    "turn_speed": 1080,
+    "type": "hover"
+  },
+  "physics": {
+    "allow_pushing": true,
+    "radius": 1
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 40,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -1
+  },
+  "spawn_layers": "WL_LandHorizontal",
+  "tools": [
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": [
+        "socket_muzzle001",
+        "socket_muzzle002"
+      ],
+      "projectiles_per_fire": 2,
+      "spec_id": "/pa/units/legion/orbital/l_orbital_laser/l_nanobot/l_nanobot_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/legion/orbital/l_orbital_laser/l_nanobot/l_nanobot_death_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Hover",
+    "UNITTYPE_Custom1"
+  ],
+  "wreckage_health_frac": 0.0
+}
